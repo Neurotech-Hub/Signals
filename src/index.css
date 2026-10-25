@@ -55,47 +55,42 @@
   margin-left: 0.08em;
   flex: none;
 }
-.signals-mark__dot,
-.signals-mark__ring {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  border-radius: 9999px;
-  translate: -50% -50%;
+.signals-mark__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: var(--mark-ring-color, #60a5fa);
 }
 .signals-mark__dot {
-  width: 0.22em;
-  height: 0.22em;
-  background: #3b82f6;
+  fill: #3b82f6;
+}
+.signals-mark__ring,
+.signals-mark__wave {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.7;
 }
 .signals-mark__ring {
-  width: 0.2em;
-  height: 0.2em;
-  border: 0.045em solid currentColor;
-  color: var(--mark-ring-color, #8b5cf6);
-}
-.signals-mark__ring--static {
-  scale: 1.9;
   opacity: 0.7;
 }
-.signals-mark__ring--static-outer {
-  scale: 3;
+.signals-mark__ring--outer {
   opacity: 0.35;
 }
-.signals-mark__ring--pulse {
+.signals-mark__wave {
   opacity: 0;
   animation: signals-ring-pulse 3s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
 }
-.signals-mark__ring--pulse:nth-child(5) {
+.signals-mark__wave--late {
   animation-delay: 1.5s;
 }
 @keyframes signals-ring-pulse {
   0% {
-    scale: 1;
+    r: 3.5;
     opacity: 0.9;
   }
   100% {
-    scale: 3.4;
+    r: 11.2;
     opacity: 0;
   }
 }
@@ -142,10 +137,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .signals-mark__ring--pulse {
+  .signals-mark__wave {
     animation: none;
     opacity: 0.35;
-    scale: 1.7;
+    r: 7.6;
+  }
+  .signals-mark__wave--late {
+    opacity: 0;
   }
   .constellation-node__drift {
     animation: none;

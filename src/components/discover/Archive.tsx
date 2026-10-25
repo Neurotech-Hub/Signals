@@ -38,8 +38,8 @@ export function Archive() {
   };
 
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-12 lg:grid-cols-12 lg:px-10">
-      <div className="lg:col-span-8">
+    <div className="archive mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-12 lg:grid-cols-12 lg:px-10">
+      <div className="min-w-0 lg:col-span-8">
         <LatestDiscoveries
           records={records}
           featured={featured}
@@ -53,7 +53,7 @@ export function Archive() {
           onClearDomain={() => setDomain(null)}
         />
       </div>
-      <div className="lg:col-span-4">
+      <div className="min-w-0 lg:col-span-4">
         <Sidebar
           records={records}
           domain={domain}

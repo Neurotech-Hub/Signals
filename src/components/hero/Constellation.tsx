@@ -73,7 +73,7 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
     <div ref={containerRef} className={`relative ${className}`}>
       <svg
         viewBox={`0 0 ${width} ${height}`}
-        className="block h-auto w-full select-none"
+        className="block h-auto w-full min-w-0 max-w-full select-none"
         role="img"
         aria-label={`Innovation archive: ${records.length} records across ${clusters.length} domains`}
         onClick={(e) => {
@@ -109,7 +109,7 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
 
         {/* Decorative specks (not data) */}
         {dust && (
-          <g pointerEvents="none" aria-hidden="true">
+          <g className="constellation-dust" pointerEvents="none" aria-hidden="true">
             {layout.dust.map((d, i) => (
               <circle key={i} cx={d.x} cy={d.y} r={d.r} fill="#fff" opacity={d.o} />
             ))}
@@ -201,7 +201,7 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
                   {line.toUpperCase()}
                 </tspan>
               ))}
-              <tspan x={c.labelX} dy={15} fontSize={11} fontWeight={400} fill="rgba(255,255,255,0.62)">
+              <tspan className="constellation-count" x={c.labelX} dy={15} fontSize={11} fontWeight={400} fill="rgba(255,255,255,0.62)">
                 {c.count} {c.count === 1 ? 'discovery' : 'discoveries'}
               </tspan>
             </text>

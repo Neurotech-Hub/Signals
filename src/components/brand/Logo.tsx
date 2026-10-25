@@ -32,11 +32,13 @@ export function Logo({ size = 'md', tone = 'light', className = '', href = '#top
     >
       <span>signals</span>
       <span className="signals-mark translate-y-[0.06em]" aria-hidden="true">
-        <span className="signals-mark__dot" />
-        <span className="signals-mark__ring signals-mark__ring--static" />
-        <span className="signals-mark__ring signals-mark__ring--static signals-mark__ring--static-outer" />
-        <span className="signals-mark__ring signals-mark__ring--pulse" />
-        <span className="signals-mark__ring signals-mark__ring--pulse" />
+        <svg className="signals-mark__svg" viewBox="0 0 24 24">
+          <circle className="signals-mark__ring signals-mark__ring--outer" cx="12" cy="12" r="9.6" />
+          <circle className="signals-mark__ring" cx="12" cy="12" r="6" />
+          <circle className="signals-mark__wave" cx="12" cy="12" r="3.5" />
+          <circle className="signals-mark__wave signals-mark__wave--late" cx="12" cy="12" r="3.5" />
+          <circle className="signals-mark__dot" cx="12" cy="12" r="3.5" />
+        </svg>
       </span>
     </a>
   );

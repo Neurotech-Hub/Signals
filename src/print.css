@@ -1,0 +1,115 @@
+/* Loaded with media="print" so none of these rules apply on screen.
+   Print flattens the navy hero into a black-on-white document: stacked
+   columns, every record's detail visible, external links written out. */
+
+@page {
+  margin: 16mm 16mm 18mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: 'Inter Variable', sans-serif;
+    font-size: 9pt;
+    color: #6b7286;
+  }
+}
+
+.screen-only,
+.hero-atmosphere,
+.constellation-dust,
+[role='tooltip'],
+[role='dialog'] {
+  display: none !important;
+}
+
+.discovery-detail,
+.discovery-aside {
+  display: block !important;
+}
+
+#top {
+  background: #fff !important;
+  color: #0a0f1f !important;
+  overflow: visible !important;
+}
+#top a,
+#top h1,
+#top p,
+#top dd,
+#top dt,
+#top [class*='text-white'] {
+  color: #0a0f1f !important;
+}
+#top [class*='border-white'] {
+  border-color: rgba(10, 15, 31, 0.18) !important;
+}
+.constellation-count {
+  fill: #3b4257;
+}
+
+.hero-layout,
+.archive {
+  display: block !important;
+  min-height: 0 !important;
+}
+.hero-layout > * + *,
+.archive > * + * {
+  margin-top: 1.75rem;
+}
+aside {
+  position: static !important;
+}
+
+#discoveries .truncate,
+#discoveries .line-clamp-1 {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+article,
+#discoveries li,
+aside > * {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+h1,
+h2,
+h3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+p,
+li {
+  orphans: 3;
+  widows: 3;
+}
+
+a[href^='http']::after {
+  content: ' (' attr(href) ')';
+  font-weight: 400;
+  font-size: 0.85em;
+  word-break: break-all;
+}
+
+[style*='background-color'],
+svg {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.signals-mark__wave,
+.constellation-node__drift,
+.constellation-node__body {
+  animation: none !important;
+  transition: none !important;
+}
+.signals-mark__wave {
+  opacity: 0.35;
+  r: 7.6;
+}
+.signals-mark__wave--late {
+  opacity: 0;
+}

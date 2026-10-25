@@ -19,12 +19,12 @@ export function Sidebar(props: SidebarProps) {
   const max = Math.max(...byDomain.map(([, n]) => n), 1);
 
   return (
-    <aside className="space-y-6 lg:sticky lg:top-6">
+    <aside className="min-w-0 space-y-6 lg:sticky lg:top-6">
       <Landscape {...props} />
 
       <div className="rounded-xl border border-ink-100 p-5">
         <h2 className="text-sm font-semibold text-ink-950">Archive by domain</h2>
-        <p className="mt-0.5 text-[11px] text-ink-500">Filter the discoveries.</p>
+        <p className="screen-only mt-0.5 text-[11px] text-ink-500">Filter the discoveries.</p>
         <ul className="mt-3 space-y-1">
           {byDomain.map(([key, count], i) => {
             const meta = domainMeta(key, i);

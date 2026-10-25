@@ -57,7 +57,7 @@ export function LatestDiscoveries({
             <button
               type="button"
               onClick={onClearDomain}
-              className="rounded-full border border-ink-300 px-2 py-0.5 font-medium text-ink-950 hover:border-ink-950"
+              className="screen-only rounded-full border border-ink-300 px-2 py-0.5 font-medium text-ink-950 hover:border-ink-950"
             >
               Clear
             </button>
@@ -139,13 +139,13 @@ function DiscoveryRow({
           <span className="block truncate text-sm font-medium text-ink-950">{record.name}</span>
           <span className={`mt-0.5 block text-xs text-ink-500 ${open ? '' : 'line-clamp-1'}`}>{record.description}</span>
         </span>
-        <span className="hidden shrink-0 text-right text-xs text-ink-500 sm:block">
+        <span className="discovery-aside hidden shrink-0 text-right text-xs text-ink-500 sm:block">
           <span className="block text-ink-700">{record.originating_lab}</span>
           {pub && <span className="block">{pub.label}</span>}
         </span>
         <span
           aria-hidden="true"
-          className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border border-ink-100 text-ink-500 ${open ? 'rotate-90' : ''}`}
+          className={`screen-only grid h-7 w-7 shrink-0 place-items-center rounded-full border border-ink-100 text-ink-500 ${open ? 'rotate-90' : ''}`}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="m9 6 6 6-6 6" />
@@ -153,8 +153,7 @@ function DiscoveryRow({
         </span>
       </button>
 
-      {open && (
-        <div className="px-4 pb-4 pl-[4.25rem] pr-12 text-sm">
+      <div className={`discovery-detail px-4 pb-4 pl-[4.25rem] pr-12 text-sm ${open ? '' : 'hidden'}`}>
           <dl className="grid gap-1.5 text-xs sm:grid-cols-2">
             <div>
               <dt className="text-ink-500">Investigators</dt>
@@ -197,7 +196,6 @@ function DiscoveryRow({
             </div>
           )}
         </div>
-      )}
     </li>
   );
 }

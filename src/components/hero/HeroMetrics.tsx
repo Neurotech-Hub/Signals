@@ -14,10 +14,10 @@ export function HeroMetrics({ metrics }: HeroMetricsProps) {
   ];
 
   return (
-    <dl className="grid grid-cols-2 gap-x-4 gap-y-6 @md:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-x-3 gap-y-6 @min-[22rem]:grid-cols-4 @min-[22rem]:gap-x-4">
       {items.map((m) => (
-        <div key={m.label} className="first:pl-0 @md:border-l @md:border-white/15 @md:pl-3.5 @md:first:border-l-0 @md:first:pl-0">
-          <dd className="font-brand text-4xl font-semibold leading-none tabular-nums tracking-tight text-white @md:text-5xl">
+        <div key={m.label} className="@min-[22rem]:border-l @min-[22rem]:border-white/15 @min-[22rem]:pl-3 @min-[22rem]:first:border-l-0 @min-[22rem]:first:pl-0">
+          <dd className="font-brand text-4xl font-semibold leading-none tabular-nums tracking-tight text-white @min-[28rem]:text-5xl">
             {m.value}
           </dd>
           <dt className="mt-2 whitespace-pre-line text-[13px] leading-tight text-white/60">{m.label}</dt>

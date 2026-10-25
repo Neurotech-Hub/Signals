@@ -66,14 +66,14 @@ export function Landscape({
   const innerH = H - PAD.t - PAD.b;
 
   return (
-    <div className="rounded-xl border border-ink-100 p-5">
+    <div className="min-w-0 rounded-xl border border-ink-100 p-5">
       <h2 className="text-sm font-semibold text-ink-950">The innovation landscape</h2>
       <p className="mt-0.5 text-[11px] leading-snug text-ink-500">
-        Scout estimates. Selecting a point opens that discovery.
+        Scout estimates. <span className="screen-only">Selecting a point opens that discovery.</span>
       </p>
 
       <div className="relative mt-3">
-        <svg viewBox={`0 0 ${W} ${H}`} className="block w-full" role="img" aria-label="Scientific utility versus commercial potential">
+        <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full min-w-0 max-w-full" role="img" aria-label="Scientific utility versus commercial potential">
           {ticks.map((t) => {
             const x = PAD.l + (t / 100) * innerW;
             const y = PAD.t + (1 - t / 100) * innerH;
@@ -151,9 +151,11 @@ export function Landscape({
         </svg>
       </div>
 
-      <p className="mt-1 min-h-8 text-xs leading-snug text-ink-700">{active ? active.name : 'Hover or select a point.'}</p>
+      <p className={`mt-1 min-h-8 text-xs leading-snug text-ink-700 ${active ? '' : 'screen-only'}`}>
+        {active ? active.name : 'Hover or select a point.'}
+      </p>
 
-      <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1.5">
+      <ul className="mt-2 flex min-w-0 flex-wrap gap-x-3 gap-y-1.5">
         {domains.map(([key, meta]) => {
           const pressed = domain === key;
           return (
@@ -162,7 +164,7 @@ export function Landscape({
                 type="button"
                 aria-pressed={pressed}
                 onClick={() => onToggleDomain(key)}
-                className={`inline-flex items-center gap-1.5 text-[11px] ${pressed ? 'font-semibold text-ink-950' : 'text-ink-500 hover:text-ink-950'}`}
+                className={`inline-flex max-w-full items-center gap-1.5 text-left text-[11px] ${pressed ? 'font-semibold text-ink-950' : 'text-ink-500 hover:text-ink-950'}`}
               >
                 <span className="h-2 w-2 rounded-full" style={{ backgroundColor: meta.color, opacity: pressed || domain === null ? 1 : 0.35 }} />
                 {meta.label}
