@@ -1,0 +1,4105 @@
+{
+ "schema_version": "1.1",
+ "generated": "2026-10-24",
+ "scope": "DoN pilot",
+ "extensible_scopes": [
+  "DoN",
+  "NeurotechHub"
+ ],
+ "resource_registry": "https://neurotech-hub.github.io/next-move/resources.json",
+ "resource_registry_version": "0.2.0",
+ "records": [
+  {
+   "innovation_id": "DON-2026-001",
+   "name": "Saline-free chronic in vivo imaging prep for adult Drosophila",
+   "description": "Surgical protocol that opens the head cuticle without external saline and reseals a transparent window, enabling repeated single-neuron spiking and calcium imaging over 7\u201310 days.",
+   "investigators": [
+    {
+     "name": "Cheng Huang",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Huang lab (DoN)",
+   "category": "protocol/method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.02.18.706199",
+    "https://doi.org/10.1016/j.xpro.2026.104550",
+    "https://doi.org/10.5281/zenodo.18675612"
+   ],
+   "problem_solved": "Acute fly preps limit imaging to hours, precluding longitudinal studies of learning, aging, sleep",
+   "technical_advantage": "Multi-day longitudinal imaging in the same fly; no saline perfusion",
+   "difference_from_prior": "Saline-free, resealed window vs. acute saline-bathed dissections",
+   "maturity": "Peer-reviewed protocol (STAR Protocols 2026) + data on Zenodo",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 75,
+    "reproducibility": 80,
+    "adoption": 70,
+    "score": 74
+   },
+   "commercial_potential": {
+    "novelty": 55,
+    "customer_need": 35,
+    "feasibility": 75,
+    "market": 20,
+    "scalability": 50,
+    "score": 44
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed protocol (STAR Protocols 2026) + data on Zenodo. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination; workshop/training; possible kit (mounting hardware) via core",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Feature it in a DoN methods showcase; Neurotech Hub to standardize the mounting fixtures.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed protocol (STAR Protocols 2026) + data on Zenodo: Multi-day longitudinal imaging in the same fly; no saline perfusion",
+    "what_is_distinctive": "Saline-free, resealed window vs. acute saline-bathed dissections",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open dissemination; workshop/training; possible kit (mounting hardware) via core",
+    "suggested_resources": [
+     "neurotech-hub"
+    ],
+    "next_steps": "Feature it in a DoN methods showcase; Neurotech Hub to standardize the mounting fixtures.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-002",
+   "name": "Super Recombinator (SuRe) integrated genetic arrays",
+   "description": "In vivo recombination system to assemble multiple transgenes into one genomic locus (integrated genetic array) in Drosophila.",
+   "investigators": [
+    {
+     "name": "Cheng Huang",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Schnitzer lab (Stanford) with Huang",
+   "category": "biological tool/reagent",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1101/2025.04.15.646138"
+   ],
+   "problem_solved": "Combining many transgenes requires laborious recombination and crosses",
+   "technical_advantage": "Keeps many transgenic components linked so they don't segregate in crosses",
+   "difference_from_prior": "Engineered recombination at a single locus vs. sequential transgenesis",
+   "maturity": "Preprint (2025)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 85,
+    "usefulness": 75,
+    "reproducibility": 55,
+    "adoption": 70,
+    "score": 71
+   },
+   "commercial_potential": {
+    "novelty": 70,
+    "customer_need": 50,
+    "feasibility": 55,
+    "market": 35,
+    "scalability": 50,
+    "score": 52
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Stock-center distribution; reagent licensing via originating institution",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Clarify WashU contribution and whether stocks/reagents will be deposited (Bloomington)",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Stanford; Schnitzer lab)"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "event": "rescored",
+     "field": "scientific_utility.reproducibility",
+     "old": 60,
+     "new": 55,
+     "score_old": 72,
+     "score_new": 71,
+     "reason": "External-lead preprint without independent replication; consistent with 007/017"
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Stanford; Schnitzer lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-003",
+   "name": "DRUMS deep-learning cortical surface alignment",
+   "description": "Deep learning registration tool trained on multimodal HCP features to align cortical surfaces across individuals with learned, spatially non-uniform regularization; can run on folding-only inputs at inference.",
+   "investigators": [
+    {
+     "name": "Matthew Glasser",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "David Van Essen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Glasser / Van Essen (HCP)",
+   "category": "software/algorithm",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.09.01.748559"
+   ],
+   "problem_solved": "Folding-based registration misaligns functional areas across individuals",
+   "technical_advantage": "More precise areal alignment, usable when only structural MRI is available",
+   "difference_from_prior": "Learns where folding is trustworthy; multimodal training vs. MSMAll/FreeSurfer heuristics",
+   "maturity": "Preprint (Sep 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 85,
+    "usefulness": 85,
+    "reproducibility": 65,
+    "adoption": 80,
+    "score": 79
+   },
+   "commercial_potential": {
+    "novelty": 70,
+    "customer_need": 55,
+    "feasibility": 70,
+    "market": 45,
+    "scalability": 65,
+    "score": 60
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (Sep 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open-source release in HCP pipelines; possible commercial neuroimaging software licensing (inferred)",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "identified (not core-led; retained)",
+   "next_action": "Talk with Glasser/Van Essen about the DRUMS release plan, license and clinical (presurgical mapping) use; DEP check with neuroimaging software vendors.",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-004"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "affiliate",
+      "Radiology (Glasser; core co-author Van Essen)"
+     ]
+    }
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Radiology (Glasser; core co-author Van Essen)",
+   "lead_flags": [
+    "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-004",
+   "name": "Automatic individual cortical parcellation (HCP_MMP1.0 classifier update)",
+   "description": "Improved automated areal classifier producing subject-specific multimodal parcellations, including atypical topologies.",
+   "investigators": [
+    {
+     "name": "Matthew Glasser",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "David Van Essen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Glasser / Van Essen (HCP)",
+   "category": "software/algorithm",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1101/2025.04.29.651219"
+   ],
+   "problem_solved": "Group parcellations misrepresent individual brains",
+   "technical_advantage": "Captures individual areal variability registration cannot reconcile",
+   "difference_from_prior": "Semi-supervised learning beyond group labels; RSN feature comparison",
+   "maturity": "Preprint (2025)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 85,
+    "reproducibility": 65,
+    "adoption": 75,
+    "score": 76
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 50,
+    "feasibility": 70,
+    "market": 40,
+    "scalability": 60,
+    "score": 54
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open release via HCP; pairs with DRUMS",
+   "recommended_resources": [
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Bundle with DRUMS conversation",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-003"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "affiliate",
+      "Radiology (Glasser; core co-author Van Essen)"
+     ]
+    }
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Radiology (Glasser; core co-author Van Essen)",
+   "lead_flags": [
+    "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-005",
+   "name": "Pollen imaging phantom for nonlinear optical microscopy benchmarking",
+   "description": "Uses pollen as a low-cost, multimodal imaging phantom to calibrate and benchmark an adaptive-optics multiphoton microscope.",
+   "investigators": [
+    {
+     "name": "Eduardo Rosa-Molinar",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Rosa-Molinar lab / imaging core",
+   "category": "protocol/assay (calibration standard)",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1002/cpz1.70177",
+    "https://doi.org/10.1083/jcb.202601032",
+    "https://doi.org/10.17504/protocols.io.5qpvo992bv4o/v2",
+    "https://doi.org/10.17504/protocols.io.36wgqd3wyvk5/v1"
+   ],
+   "problem_solved": "Commercial calibration standards limited (fluorescence, volume, aberrations)",
+   "technical_advantage": "Cheap, stable, 3D, autofluorescent/SHG-capable standard",
+   "difference_from_prior": "Natural biological phantom vs. beads/dye slides",
+   "maturity": "Peer-reviewed protocol (Current Protocols 2025)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 65,
+    "reproducibility": 85,
+    "adoption": 75,
+    "score": 72
+   },
+   "commercial_potential": {
+    "novelty": 50,
+    "customer_need": 45,
+    "feasibility": 85,
+    "market": 30,
+    "scalability": 60,
+    "score": 51
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed protocol (Current Protocols 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination; core QC SOP; potential calibration-slide product (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Propose the pollen phantom and protocols.io SOPs as a cross-core QC standard; DEP check of the calibration-slide market.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "event": "rescored",
+     "field": "scientific_utility.adoption",
+     "old": 70,
+     "new": 75,
+     "score_old": 71,
+     "score_new": 72,
+     "reason": "Public step-by-step protocols.io SOPs (pollen prep v2, microscope operation) lower the adoption barrier"
+    }
+   ],
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed protocol (Current Protocols 2025): Cheap, stable, 3D, autofluorescent/SHG-capable standard",
+    "what_is_distinctive": "Natural biological phantom vs. beads/dye slides",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open dissemination; core QC SOP; potential calibration-slide product (hypothesis)",
+    "suggested_resources": [
+     "neurotech-hub",
+     "dep"
+    ],
+    "next_steps": "Propose the pollen phantom and protocols.io SOPs as a cross-core QC standard; DEP check of the calibration-slide market.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
+  },
+  {
+   "innovation_id": "DON-2026-006",
+   "name": "Leakage-safe neural decoding pipeline (leaky-decoder)",
+   "description": "Code and analysis pipeline showing and preventing data leakage in neural decoding analyses.",
+   "investigators": [
+    {
+     "name": "Geoffrey Goodhill",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Goodhill lab",
+   "category": "software/analysis method",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.01.26.701583",
+    "https://doi.org/10.5281/zenodo.22262736",
+    "https://github.com/GoodhillLab/leaky-decoder"
+   ],
+   "problem_solved": "Common cross-validation mistakes inflate reported decoding",
+   "technical_advantage": "Prevents inflated decoding accuracy from train/test leakage",
+   "difference_from_prior": "Explicit leakage-aware pipeline and benchmarks",
+   "maturity": "Preprint (Jan 2026) + public code (Zenodo/GitHub)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 80,
+    "reproducibility": 85,
+    "adoption": 80,
+    "score": 78
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 30,
+    "feasibility": 85,
+    "market": 20,
+    "scalability": 60,
+    "score": 42
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Code public (Zenodo/GitHub 2026); paper status to confirm. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open-source; community best-practice guidance",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s3 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Adopt the leakage-safe decoding checklist as a departmental analysis standard and training module.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "event": "field_change",
+     "field": "maturity",
+     "old": "Code public (Zenodo/GitHub 2026); paper status to confirm",
+     "new": "Preprint (Jan 2026) + public code (Zenodo/GitHub)",
+     "reason": "Found the companion preprint while searching core-led publications"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "rescored",
+     "field": "scientific_utility.reproducibility",
+     "old": 85,
+     "new": 85,
+     "score_old": 78,
+     "score_new": 78,
+     "reason": "Unchanged; checked against the preprint"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "field_change",
+     "field": "confidence",
+     "old": "Medium",
+     "new": "High",
+     "reason": "The preprint plus public code corroborate the claims"
+    }
+   ],
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "investigator_brief": {
+    "why_identified": "Preprint (Jan 2026) + public code (Zenodo/GitHub): Prevents inflated decoding accuracy from train/test leakage",
+    "what_is_distinctive": "Explicit leakage-aware pipeline and benchmarks",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open-source; community best-practice guidance",
+    "suggested_resources": [
+     "washu-innovation"
+    ],
+    "next_steps": "Adopt the leakage-safe decoding checklist as a departmental analysis standard and training module.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
+  },
+  {
+   "innovation_id": "DON-2026-007",
+   "name": "CaMero membrane-permeable small-molecule calmodulin biosensor",
+   "description": "Trifluoperazine linked to merocyanine dye creating a cell-permeant biosensor of calmodulin activation, usable without genetic manipulation.",
+   "investigators": [
+    {
+     "name": "Jason Yi",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Hahn lab (UNC) with Yi",
+   "category": "biological tool/reagent (biosensor)",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.05.22.727289"
+   ],
+   "problem_solved": "Genetically encoded sensors impossible in many organisms/primary tissues",
+   "technical_advantage": "No genetic encoding needed; works in intractable cells/animals",
+   "difference_from_prior": "Small-molecule conformational sensor vs. GECIs",
+   "maturity": "Preprint (May 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 85,
+    "usefulness": 70,
+    "reproducibility": 60,
+    "adoption": 65,
+    "score": 69
+   },
+   "commercial_potential": {
+    "novelty": 75,
+    "customer_need": 55,
+    "feasibility": 55,
+    "market": 40,
+    "scalability": 50,
+    "score": 55
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (May 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Reagent licensing via lead institution; WashU role to clarify",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research",
+      "stage s3 outside listed states ['s4', 's5', 's6', 's7', 's8']"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "status": "identified (not core-led; retained)",
+   "next_action": "Ask Yi about the WashU contribution and use in Angelman/primary-tissue models; OTM/JROC only if WashU-generated reagents exist.",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (UNC; Hahn lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (UNC; Hahn lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-008",
+   "name": "Rheotaxis station-holding assay for lateral line function",
+   "description": "Bio-protocol for sensitive measurement of lateral line hair-cell function in larval zebrafish via station-holding in flow.",
+   "investigators": [
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Sheets lab (WashU Otolaryngology) with Gaidica",
+   "category": "protocol/assay",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.21769/bioprotoc.5540"
+   ],
+   "problem_solved": "Ototoxicity screens need quantitative functional readouts",
+   "technical_advantage": "Sensitive behavioral readout of hair-cell damage/protection",
+   "difference_from_prior": "Station-holding metric vs. simple rheotaxis orientation",
+   "maturity": "Peer-reviewed protocol (Bio-protocol 2025)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 55,
+    "usefulness": 65,
+    "reproducibility": 85,
+    "adoption": 60,
+    "score": 67
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 45,
+    "feasibility": 80,
+    "market": 30,
+    "scalability": 55,
+    "score": 49
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed protocol (Bio-protocol 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination; ototoxicity screening service (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Package flow-chamber build files for other labs",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Otolaryngology (Sheets lab; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Otolaryngology (Sheets lab; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-009",
+   "name": "Biocosm simulation environment for energy-constrained ethological sensors",
+   "description": "Hardware-agnostic simulation framework separating latent behavior, observation model, sensing policy and energy model to design battery-limited wildlife/animal sensors.",
+   "investigators": [
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "sole author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Gaidica (Neurotech Hub)",
+   "category": "software/design tool",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.05.18.725991"
+   ],
+   "problem_solved": "Device designers pick duty cycles ad hoc; data bias unknown",
+   "technical_advantage": "Quantifies how sensing policies bias inferred behavior before building hardware",
+   "difference_from_prior": "Measurement-process simulation vs. energy-budget-only calculators",
+   "maturity": "Preprint (May 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 60,
+    "reproducibility": 70,
+    "adoption": 50,
+    "score": 63
+   },
+   "commercial_potential": {
+    "novelty": 50,
+    "customer_need": 35,
+    "feasibility": 75,
+    "market": 30,
+    "scalability": 55,
+    "score": 46
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (May 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open-source; design service via Neurotech Hub",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Note: user is the investigator \u2014 self-assessment; confirm code release",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "event": "rescored",
+     "field": "scientific_utility.adoption",
+     "old": 55,
+     "new": 50,
+     "score_old": 64,
+     "score_new": 63,
+     "reason": "Single-author preprint with no confirmed code release; consistency with other unreleased tools"
+    }
+   ],
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [
+    "Investigator is Matt Gaidica (the user), so this is a self-assessment."
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-010",
+   "name": "XR-glasses calibration pipeline for controlled ocular photostimulation",
+   "description": "Validated pipeline linking consumer micro-OLED XR display settings to corneal-plane spectroradiometry and melanopic EDI for dosed light therapy.",
+   "investigators": [
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Gaidica with Rosengart (Surgery)",
+   "category": "instrument/calibration method",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.08.26.26361398"
+   ],
+   "problem_solved": "Light-therapy studies lack calibrated, wearable, controllable exposure",
+   "technical_advantage": "Turns consumer XR glasses into dose-specified light delivery",
+   "difference_from_prior": "Settings-to-exposure model for see-through XR vs. light boxes",
+   "maturity": "Preprint (medRxiv Aug 2026)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 70,
+    "reproducibility": 75,
+    "adoption": 65,
+    "score": 71
+   },
+   "commercial_potential": {
+    "novelty": 70,
+    "customer_need": 65,
+    "feasibility": 70,
+    "market": 55,
+    "scalability": 55,
+    "score": 63
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (medRxiv Aug 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Clinical research tool; digital therapeutic partnership (inferred); OTM conversation if unpublished extensions",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "deadline listed: 2026-09-14 (invited CTRFP applications; verify) (likely past; verify next cycle)"
+     ],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. As of 2026-09-04 the 2026 CTRFP LOI deadline had passed; invited full applic"
+    },
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires digital-health/mhealth",
+      "stage s4 outside listed states ['s1', 's2', 's3', 's6', 's7']"
+     ],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Plan a clinical study through ICTS (verify the next CTRFP cycle); OTM consult only for undisclosed extensions.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience (first author; senior author Rosengart, Surgery)"
+     ]
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Preprint (medRxiv Aug 2026): Turns consumer XR glasses into dose-specified light delivery",
+    "what_is_distinctive": "Settings-to-exposure model for see-through XR vs. light boxes",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Clinical research tool; digital therapeutic partnership (inferred); OTM conversation if unpublished extensions",
+    "suggested_resources": [
+     "otm-core",
+     "icts",
+     "mhealth-research-core"
+    ],
+    "next_steps": "Plan a clinical study through ICTS (verify the next CTRFP cycle); OTM consult only for undisclosed extensions.",
+    "flags": [
+     "Core faculty member is first author; senior author is outside DoN (Surgery).",
+     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
+    ],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience (first author; senior author Rosengart, Surgery)",
+   "lead_flags": [
+    "Core faculty member is first author; senior author is outside DoN (Surgery).",
+    "Investigator is Matt Gaidica (the user), so this is a self-assessment."
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-011",
+   "name": "FLEX-DBS wireless bilateral constant-current rodent DBS",
+   "description": "Head-mounted battery-powered stimulator with improved Howland pumps on \u00b15V rails; programmable amplitude/pulse width/frequency, continuous and burst, in freely moving rodents.",
+   "investigators": [
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Gaidica (Neurotech Hub)",
+   "category": "instrument/device",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.10.09.757775"
+   ],
+   "problem_solved": "Tethers constrain behavior; existing wireless stimulators fixed-parameter, ~3V",
+   "technical_advantage": "Untethered, reprogrammable bilateral DBS with higher compliance voltage",
+   "difference_from_prior": "\u00b15V constant-current, runtime-programmable vs. preset low-voltage devices",
+   "maturity": "Preprint (Oct 2026)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 80,
+    "reproducibility": 75,
+    "adoption": 70,
+    "score": 75
+   },
+   "commercial_potential": {
+    "novelty": 70,
+    "customer_need": 65,
+    "feasibility": 75,
+    "market": 45,
+    "scalability": 60,
+    "score": 63
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (Oct 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open hardware or licensing to preclinical device vendors; DEP market check",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    },
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Decide open hardware vs. licensing for FLEX-DBS; DEP session on vendor and lab demand; list adopter labs (e.g., Creed).",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Preprint (Oct 2026): Untethered, reprogrammable bilateral DBS with higher compliance voltage",
+    "what_is_distinctive": "\u00b15V constant-current, runtime-programmable vs. preset low-voltage devices",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open hardware or licensing to preclinical device vendors; DEP market check",
+    "suggested_resources": [
+     "neurotech-hub",
+     "dep",
+     "otm-core"
+    ],
+    "next_steps": "Decide open hardware vs. licensing for FLEX-DBS; DEP session on vendor and lab demand; list adopter labs (e.g., Creed).",
+    "flags": [
+     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
+    ],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [
+    "Investigator is Matt Gaidica (the user), so this is a self-assessment."
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-012",
+   "name": "Design rules for C. elegans bipartite reporter systems",
+   "description": "Systematic characterization of binding-site number/spacing, basal promoters and 3'UTRs for driver/reporter design, with reagents.",
+   "investigators": [
+    {
+     "name": "Michael Nonet",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Nonet lab",
+   "category": "biological tool/reagent",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1093/genetics/iyaf076"
+   ],
+   "problem_solved": "Worm bipartite systems lag Drosophila; no design rules",
+   "technical_advantage": "Rational design of tissue-specific expression",
+   "difference_from_prior": "Quantitative parameter map vs. ad hoc constructs",
+   "maturity": "Peer-reviewed (Genetics 2025); reagents",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 75,
+    "reproducibility": 85,
+    "adoption": 75,
+    "score": 76
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 30,
+    "feasibility": 85,
+    "market": 20,
+    "scalability": 60,
+    "score": 42
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (Genetics 2025); reagents. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Addgene/CGC deposit; open dissemination",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Joint conversation with DON-2026-035: deposit strains and plasmids (CGC/Addgene) and run a toolkit workshop for worm labs.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-035"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    }
+   ],
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed (Genetics 2025); reagents: Rational design of tissue-specific expression",
+    "what_is_distinctive": "Quantitative parameter map vs. ad hoc constructs",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Addgene/CGC deposit; open dissemination",
+    "suggested_resources": [
+     "washu-innovation"
+    ],
+    "next_steps": "Joint conversation with DON-2026-035: deposit strains and plasmids (CGC/Addgene) and run a toolkit workshop for worm labs.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
+  },
+  {
+   "innovation_id": "DON-2026-013",
+   "name": "Lightsheet staining protocol with conjugated antibodies",
+   "description": "Tissue-processing protocol for whole-tissue fluorescent lightsheet imaging using directly conjugated antibodies.",
+   "investigators": [
+    {
+     "name": "Peter Bayguinov",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Ding lab with Bayguinov",
+   "category": "protocol",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.17504/protocols.io.ewov1r18ylr2/v1"
+   ],
+   "problem_solved": "Lightsheet staining is lab-specific and hard to reproduce",
+   "technical_advantage": "Shared, reproducible whole-mount staining workflow",
+   "difference_from_prior": "Public protocols.io SOP",
+   "maturity": "Public protocol (2026)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 45,
+    "usefulness": 65,
+    "reproducibility": 80,
+    "adoption": 65,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 25,
+    "customer_need": 30,
+    "feasibility": 85,
+    "market": 20,
+    "scalability": 55,
+    "score": 39
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Public protocol (2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Core SOP dissemination",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Cross-link with ADAPT-3D for core offerings",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-026"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Medicine (Ding lab; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Medicine (Ding lab; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-014",
+   "name": "Optimal pairwise merge algorithm for NMF (NMFMerge.jl)",
+   "description": "Over-complete NMF followed by analytically solvable pairwise merges to escape poor minima and improve consistency.",
+   "investigators": [
+    {
+     "name": "Timothy Holy",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Holy lab",
+   "category": "algorithm/software",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1109/tsp.2025.3585893",
+    "https://github.com/HolyLab/NMFMerge.jl"
+   ],
+   "problem_solved": "NMF converges to poor/inconsistent minima",
+   "technical_advantage": "Higher-quality, reproducible factorizations",
+   "difference_from_prior": "Merge strategy vs. random restarts",
+   "maturity": "Peer-reviewed (IEEE TSP 2025) + Julia package",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 75,
+    "reproducibility": 85,
+    "adoption": 70,
+    "score": 76
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 40,
+    "feasibility": 85,
+    "market": 40,
+    "scalability": 65,
+    "score": 52
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (IEEE TSP 2025) + Julia package. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open-source; ports to Python for adoption",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Bundle NMFMerge and GSVD-NMF (DON-2026-032) as one toolkit; suggest a Python port and outreach to imaging users.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-032"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed (IEEE TSP 2025) + Julia package: Higher-quality, reproducible factorizations",
+    "what_is_distinctive": "Merge strategy vs. random restarts",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open-source; ports to Python for adoption",
+    "suggested_resources": [
+     "washu-innovation"
+    ],
+    "next_steps": "Bundle NMFMerge and GSVD-NMF (DON-2026-032) as one toolkit; suggest a Python port and outreach to imaging users.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-015",
+   "name": "Integrated peripheral glia / DRG single-cell atlas with cross-study mapping",
+   "description": "Atlas integrating >200k DRG and sciatic nerve transcriptomes (26 cell types) enabling mapping of new datasets; plus human DRG reference atlas.",
+   "investigators": [
+    {
+     "name": "Valeria Cavalli",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Cavalli lab",
+   "category": "data resource/platform",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.01.29.702614",
+    "https://doi.org/10.1101/2025.11.05.686654",
+    "https://doi.org/10.5281/zenodo.21299569",
+    "https://doi.org/10.1242/dmm.053052"
+   ],
+   "problem_solved": "Fragmented DRG datasets, inconsistent annotations",
+   "technical_advantage": "Reference for label transfer across injury paradigms",
+   "difference_from_prior": "Integrated multi-study reference vs. single-study atlases",
+   "maturity": "Preprints + deposited data (2025\u201326)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 85,
+    "reproducibility": 75,
+    "adoption": 80,
+    "score": 78
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 50,
+    "feasibility": 75,
+    "market": 35,
+    "scalability": 55,
+    "score": 50
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Preprints + deposited data (2025\u201326). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open data portal; pharma pain-target collaboration (inferred)",
+   "recommended_resources": [
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    },
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call"
+     ],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Discuss a hosted DRG atlas query portal; JROC only if an industry sponsor emerges.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "core",
+      "Neuroscience"
+     ]
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Preprints + deposited data (2025\u201326): Reference for label transfer across injury paradigms",
+    "what_is_distinctive": "Integrated multi-study reference vs. single-study atlases",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open data portal; pharma pain-target collaboration (inferred)",
+    "suggested_resources": [
+     "jroc",
+     "hope-center"
+    ],
+    "next_steps": "Discuss a hosted DRG atlas query portal; JROC only if an industry sponsor emerges.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-016",
+   "name": "Chemogenetic activation of endogenous GPCRs (cPACAP)",
+   "description": "Shield-1-dependent protein switches regulating peptide agonists for cell-specific, timed activation of endogenous GPCRs in vivo.",
+   "investigators": [
+    {
+     "name": "Yao Chen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Wang lab (Michigan) with Chen",
+   "category": "biological tool",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1073/pnas.2501228123"
+   ],
+   "problem_solved": "DREADDs use exogenous receptors; endogenous signaling hard to control cell-specifically",
+   "technical_advantage": ">15-fold chemical-dependent control of endogenous receptor",
+   "difference_from_prior": "Regulated ligand instead of engineered receptor",
+   "maturity": "Peer-reviewed (PNAS 2026)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 85,
+    "usefulness": 75,
+    "reproducibility": 65,
+    "adoption": 65,
+    "score": 72
+   },
+   "commercial_potential": {
+    "novelty": 65,
+    "customer_need": 50,
+    "feasibility": 60,
+    "market": 40,
+    "scalability": 50,
+    "score": 52
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (PNAS 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Reagent distribution; possible therapeutic-research licensing via lead institution",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Clarify Chen lab role and WashU-generated reagents",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Univ. of Michigan; Wang lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Univ. of Michigan; Wang lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-017",
+   "name": "Chemigenetic FRET kinase biosensors (FP donor + HaloTag far-red acceptor)",
+   "description": "High dynamic range FRET kinase sensors escaping the cyan-yellow spectral window.",
+   "investigators": [
+    {
+     "name": "Yao Chen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Zhang lab (UCSD) with Chen",
+   "category": "biological tool (biosensor)",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.02.06.702961"
+   ],
+   "problem_solved": "Low dynamic range of FRET sensors",
+   "technical_advantage": "Larger dynamic range, multiplexable colors",
+   "difference_from_prior": "Chemigenetic acceptor vs. FP-FP pairs",
+   "maturity": "Preprint (2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 75,
+    "reproducibility": 65,
+    "adoption": 70,
+    "score": 71
+   },
+   "commercial_potential": {
+    "novelty": 55,
+    "customer_need": 45,
+    "feasibility": 65,
+    "market": 40,
+    "scalability": 55,
+    "score": 50
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Addgene distribution",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s3 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Ask whether Chen lab will use for FLIM/in vivo PKA imaging",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (UC San Diego; Zhang lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (UC San Diego; Zhang lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-018",
+   "name": "FLIM dead-time correction algorithm",
+   "description": "Statistical correction of detector dead time to improve fluorescence lifetime accuracy.",
+   "investigators": [
+    {
+     "name": "Yao Chen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author (to verify)",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Sorrells et al.",
+   "category": "algorithm",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1364/ntm.2025.nw2c.5"
+   ],
+   "problem_solved": "Dead-time distortions bias FLIM",
+   "technical_advantage": "More accurate lifetimes at high count rates",
+   "difference_from_prior": "Computational correction vs. lowering count rates",
+   "maturity": "Conference abstract (Optica 2025)",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 60,
+    "usefulness": 55,
+    "reproducibility": 55,
+    "adoption": 55,
+    "score": 56
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 35,
+    "feasibility": 70,
+    "market": 30,
+    "scalability": 55,
+    "score": 43
+   },
+   "confidence": "Low",
+   "observations_validated": "Public record: Conference abstract (Optica 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Integrate into open FLIM software",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Verify DoN authorship; low priority",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Sorrells; affiliation to verify)"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "event": "rescored",
+     "field": "scientific_utility.usefulness",
+     "old": 60,
+     "new": 55,
+     "score_old": 58,
+     "score_new": 56,
+     "reason": "DoN authorship not confirmed and evidence is only a conference abstract; brought in line with other abstract-only items"
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Sorrells; affiliation to verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-019",
+   "name": "Bayesian active ML for 2-D working-memory testing",
+   "description": "Gaussian-process active classification controlling spatial and feature-binding load simultaneously in immersive VR testing.",
+   "investigators": [
+    {
+     "name": "Dennis Barbour",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Barbour lab",
+   "category": "algorithm/assessment method",
+   "domain": "digital-health",
+   "source_evidence": [
+    "https://arxiv.org/abs/2510.00375"
+   ],
+   "problem_solved": "Staircases control one factor, scalar summaries",
+   "technical_advantage": "Maps a performance surface quickly with fewer trials",
+   "difference_from_prior": "Multidimensional GP active learning",
+   "maturity": "Preprint (arXiv 2025)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 70,
+    "reproducibility": 65,
+    "adoption": 65,
+    "score": 68
+   },
+   "commercial_potential": {
+    "novelty": 65,
+    "customer_need": 60,
+    "feasibility": 65,
+    "market": 50,
+    "scalability": 55,
+    "score": 59
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (arXiv 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Digital cognitive assessment product (inferred); clinical validation",
+   "recommended_resources": [
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires digital-health/mhealth"
+     ],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    },
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "deadline listed: 2026-09-14 (invited CTRFP applications; verify) (likely past; verify next cycle)"
+     ],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. As of 2026-09-04 the 2026 CTRFP LOI deadline had passed; invited full applic"
+    }
+   ],
+   "status": "identified (not core-led; retained)",
+   "next_action": "Ask Barbour about clinical validation, the mHealth pathway, and how this relates to the lab's earlier active-learning assessment work.",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "affiliate",
+      "Biomedical Engineering"
+     ]
+    }
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biomedical Engineering",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-020",
+   "name": "Refined pFOG algorithm for freezing-of-gait prediction",
+   "description": "Wearable-sensor algorithm refined to detect and predict freezing of gait in PD; evaluates sampling rates and elicitation tasks.",
+   "investigators": [
+    {
+     "name": "Gammon Earhart",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Mazzoni / Earhart",
+   "category": "algorithm/digital health",
+   "domain": "digital-health",
+   "source_evidence": [
+    "https://doi.org/10.3390/s25010124"
+   ],
+   "problem_solved": "FOG is episodic and hard to assess clinically",
+   "technical_advantage": "Prediction (not just detection) of FOG episodes",
+   "difference_from_prior": "Prediction + lower sampling rate validation",
+   "maturity": "Peer-reviewed (Sensors 2024/25)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 60,
+    "usefulness": 70,
+    "reproducibility": 60,
+    "adoption": 60,
+    "score": 63
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 65,
+    "feasibility": 65,
+    "market": 50,
+    "scalability": 50,
+    "score": 59
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (Sensors 2024/25). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Cueing-device partnership (inferred); clinical study",
+   "recommended_resources": [
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires digital-health/mhealth",
+      "stage s4 outside listed states ['s1', 's2', 's3', 's6', 's7']"
+     ],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "deadline listed: 2026-09-14 (invited CTRFP applications; verify) (likely past; verify next cycle)"
+     ],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. As of 2026-09-04 the 2026 CTRFP LOI deadline had passed; invited full applic"
+    }
+   ],
+   "status": "identified",
+   "next_action": "Ask about false-positive reduction and real-time cueing",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Neurology (Mazzoni; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Neurology (Mazzoni; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-021",
+   "name": "PixelPaws low-cost open-source behavior scoring platform",
+   "description": "<$300 NIR enclosure, multi-camera acquisition, bundled pose estimation and eight classifiers in a GUI for pain/itch/withdrawal assays.",
+   "investigators": [
+    {
+     "name": "Robert Gereau",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Gereau lab (Anesthesiology)",
+   "category": "instrument + software",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.09.19.752787"
+   ],
+   "problem_solved": "Manual scoring low-throughput and variable; automated tools costly",
+   "technical_advantage": "Automated, validated scoring without programming expertise",
+   "difference_from_prior": "Integrated cheap hardware + GUI classifiers vs. DIY DeepLabCut pipelines",
+   "maturity": "Preprint (Sep 2026), validated vs. human raters",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 85,
+    "reproducibility": 80,
+    "adoption": 85,
+    "score": 81
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 70,
+    "feasibility": 75,
+    "market": 45,
+    "scalability": 60,
+    "score": 62
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Preprint (Sep 2026), validated vs. human raters. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open-source + kit sales/core service; pharma CRO interest (inferred)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    },
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    }
+   ],
+   "status": "identified (not core-led; retained)",
+   "next_action": "Meet Gereau lab on multi-site adoption and kit distribution; Neurotech Hub to review BOM/manufacturability; OTM to talk through open-source license choice.",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "affiliate",
+      "Anesthesiology"
+     ]
+    }
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Anesthesiology",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-022",
+   "name": "Surface-intrinsic hippocampal unfolding (HippUnfold surface formulation)",
+   "description": "Defines hippocampal coordinates and correspondence on surface manifolds via Laplace equations, avoiding volumetric topological errors.",
+   "investigators": [
+    {
+     "name": "Matthew Glasser",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Khan lab (Western) with Glasser",
+   "category": "software/algorithm",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.07.22.740127",
+    "https://github.com/khanlab/hippunfold"
+   ],
+   "problem_solved": "Volumetric hippocampal alignment error-prone",
+   "technical_advantage": "Topology-preserving alignment, precision morphometry",
+   "difference_from_prior": "Surface-intrinsic vs. volumetric",
+   "maturity": "Preprint (2026); open BIDS app",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 75,
+    "reproducibility": 75,
+    "adoption": 75,
+    "score": 73
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 40,
+    "feasibility": 75,
+    "market": 35,
+    "scalability": 60,
+    "score": 46
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (2026); open BIDS app. Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open source (external lead)",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Low WashU ownership; monitor only",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Western University; Khan lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Western University; Khan lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-023",
+   "name": "EMATA toolbox for image-derived arterial input in FDG PET",
+   "description": "Open MATLAB toolbox automating IDIF extraction with partial-volume correction requiring no blood sampling.",
+   "investigators": [
+    {
+     "name": "Manu Goyal",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Bertoldo (Padova) with Goyal",
+   "category": "software",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1186/s40658-024-00707-2",
+    "https://github.com/FairUnipd/EMATA"
+   ],
+   "problem_solved": "Arterial lines invasive and demanding",
+   "technical_advantage": "Quantitative FDG PET without arterial cannulation",
+   "difference_from_prior": "Blood-free PVE correction",
+   "maturity": "Peer-reviewed (EJNMMI Phys 2024)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 60,
+    "usefulness": 70,
+    "reproducibility": 75,
+    "adoption": 60,
+    "score": 67
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 45,
+    "feasibility": 80,
+    "market": 30,
+    "scalability": 55,
+    "score": 48
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (EJNMMI Phys 2024). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open source; clinical PET quantification",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; potential adoption in WashU PET studies",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Univ. of Padova; Bertoldo lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Univ. of Padova; Bertoldo lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-024",
+   "name": "Two-stage meso-CISS MRI protocol for CSF leak localization",
+   "description": "Total-spine HT2 MR myelography screening followed by mesoscale 3D CISS for targeted dural-defect localization.",
+   "investigators": [
+    {
+     "name": "Manu Goyal",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Nazeri (Radiology) with Goyal",
+   "category": "clinical imaging protocol",
+   "domain": "diagnostic",
+   "source_evidence": [
+    "https://doi.org/10.1101/2025.07.14.25331467",
+    "https://doi.org/10.1111/head.70123"
+   ],
+   "problem_solved": "Leak localization often needs invasive myelography",
+   "technical_advantage": "Noninvasive localization of leak sites",
+   "difference_from_prior": "High-res CISS targeted after screening",
+   "maturity": "Retrospective case series (Headache 2026)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 70,
+    "reproducibility": 65,
+    "adoption": 60,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 55,
+    "feasibility": 75,
+    "market": 35,
+    "scalability": 55,
+    "score": 52
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Retrospective case series (Headache 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Clinical protocol dissemination; scanner-vendor sequence collaboration (inferred)",
+   "recommended_resources": [
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "deadline listed: 2026-09-14 (invited CTRFP applications; verify) (likely past; verify next cycle)",
+      "stage s5 outside listed states ['s1', 's2', 's3', 's4', 's6', 's7']"
+     ],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. As of 2026-09-04 the 2026 CTRFP LOI deadline had passed; invited full applic"
+    },
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Ask about prospective validation",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Radiology (Nazeri; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Radiology (Nazeri; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-025",
+   "name": "Cortisol Sine Score (CSS)",
+   "description": "Model-free scalar metric of daily cortisol exposure using sine-weighted time-of-day sums; validated in 3,006 samples.",
+   "investigators": [
+    {
+     "name": "Erik Herzog",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Mitreva lab with Herzog",
+   "category": "analysis metric",
+   "domain": "diagnostic",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.02.23.26346831"
+   ],
+   "problem_solved": "Cosinor/JTK outputs hard to integrate clinically",
+   "technical_advantage": "Single value for stats/ML pipelines",
+   "difference_from_prior": "Model-free scalar vs. multi-parameter fits",
+   "maturity": "Preprint (medRxiv 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 55,
+    "usefulness": 65,
+    "reproducibility": 80,
+    "adoption": 70,
+    "score": 68
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 40,
+    "feasibility": 85,
+    "market": 30,
+    "scalability": 55,
+    "score": 46
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (medRxiv 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open metric/code",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s3 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Medicine (Mitreva lab; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Medicine (Mitreva lab; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-026",
+   "name": "ADAPT-3D rapid tissue clearing",
+   "description": "3-step clearing with partial lipid removal and aqueous RI matching; whole mouse brain ready for lightsheet in <4 days + 4 h without size change.",
+   "investigators": [
+    {
+     "name": "Jonathan Kipnis",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Randolph lab (Pathology) with Kipnis",
+   "category": "protocol/reagent",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1038/s41598-025-16766-z",
+    "https://doi.org/10.1093/jimmun/vkaf283.1842"
+   ],
+   "problem_solved": "Clearing protocols slow, toxic, distort tissue",
+   "technical_advantage": "Fast, non-toxic, preserves membranes and fluorescence, clinical-compatible",
+   "difference_from_prior": "Partial delipidation vs. full lipid removal",
+   "maturity": "Peer-reviewed (Sci Rep 2025)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 80,
+    "reproducibility": 80,
+    "adoption": 75,
+    "score": 77
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 55,
+    "feasibility": 80,
+    "market": 45,
+    "scalability": 60,
+    "score": 58
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (Sci Rep 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Reagent kit licensing (inferred) or core service",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    },
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified (not core-led; retained)",
+   "next_action": "Ask Randolph/Kipnis about reagent-kit interest and offering ADAPT-3D as a core service alongside the lightsheet protocol (DON-2026-013).",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-013"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Pathology & Immunology (Randolph lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Pathology & Immunology (Randolph lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-027",
+   "name": "Homecage operant social-motivation paradigm",
+   "description": "Homecage operant task measuring social motivation continuously, revealing circadian dynamics.",
+   "investigators": [
+    {
+     "name": "Alexxai Kravitz",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Kravitz lab",
+   "category": "behavioral apparatus/assay",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1101/2025.08.21.671364"
+   ],
+   "problem_solved": "Social motivation tests are brief and handler-dependent",
+   "technical_advantage": "Continuous, low-handling measurement of social reward seeking",
+   "difference_from_prior": "Homecage operant (likely FED3-family open hardware) vs. 3-chamber test",
+   "maturity": "Preprint (2025)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 75,
+    "reproducibility": 70,
+    "adoption": 75,
+    "score": 73
+   },
+   "commercial_potential": {
+    "novelty": 50,
+    "customer_need": 50,
+    "feasibility": 75,
+    "market": 35,
+    "scalability": 60,
+    "score": 52
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open hardware ecosystem",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Confirm hardware basis and open release",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "lead",
+     "new": [
+      "affiliate",
+      "Psychiatry (verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Psychiatry (verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-028",
+   "name": "In vivo corneal nerve calcium imaging by fluorescent stereomicroscopy",
+   "description": "Accessible in vivo calcium imaging of corneal sensory nerves using a stereoscopic fluorescence microscope.",
+   "investigators": [
+    {
+     "name": "Qin Liu",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Huang (Ophthalmology) with Liu",
+   "category": "imaging method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1016/j.jtos.2025.10.001"
+   ],
+   "problem_solved": "Corneal nerve function needs complex two-photon setups",
+   "technical_advantage": "Low-cost functional readout of corneal nerves",
+   "difference_from_prior": "Stereomicroscope-based",
+   "maturity": "Peer-reviewed (Ocular Surface 2026)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 65,
+    "reproducibility": 75,
+    "adoption": 60,
+    "score": 66
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 45,
+    "feasibility": 75,
+    "market": 30,
+    "scalability": 55,
+    "score": 48
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (Ocular Surface 2026). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Dry-eye/ocular pain drug screening collaboration (inferred)",
+   "recommended_resources": [
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Ask about pharma screening interest",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "Ophthalmology (A. Huang; verify)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "Ophthalmology (A. Huang; verify)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-029",
+   "name": "Cyclops reduced-channel IED detection network",
+   "description": "Deep network detecting interictal epileptiform discharges across channel configurations, AUROC .876 with one channel.",
+   "investigators": [
+    {
+     "name": "Liu Lin Thio",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Westover (MGH) consortium",
+   "category": "algorithm/diagnostic",
+   "domain": "diagnostic",
+   "source_evidence": [
+    "https://doi.org/10.1111/epi.18431"
+   ],
+   "problem_solved": "Full EEG not accessible",
+   "technical_advantage": "Enables epilepsy screening with few-electrode EEG",
+   "difference_from_prior": "Channel-agnostic model",
+   "maturity": "Peer-reviewed (Epilepsia 2025)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 80,
+    "reproducibility": 70,
+    "adoption": 70,
+    "score": 73
+   },
+   "commercial_potential": {
+    "novelty": 65,
+    "customer_need": 75,
+    "feasibility": 65,
+    "market": 60,
+    "scalability": 50,
+    "score": 65
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (Epilepsia 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "External-led; WashU data contribution",
+   "recommended_resources": [
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Low WashU ownership; monitor",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (MGH; Westover lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (MGH; Westover lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-030",
+   "name": "Automated mEP detection for DBS capsular side effects",
+   "description": "Signal-processing procedure detecting/quantifying DBS-evoked motor potentials amid stimulation artifacts for objective side-effect mapping.",
+   "investigators": [
+    {
+     "name": "Jon Willie",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Miocinovic lab (Emory) with Willie",
+   "category": "algorithm/clinical tool",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.1088/1741-2552/ae2e8b"
+   ],
+   "problem_solved": "Patients must self-report capsular side effects",
+   "technical_advantage": "Objective side-effect detection during programming/surgery",
+   "difference_from_prior": "Automated EMG mEP vs. subjective report",
+   "maturity": "Peer-reviewed (J Neural Eng 2025)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 70,
+    "reproducibility": 65,
+    "adoption": 60,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 55,
+    "customer_need": 60,
+    "feasibility": 65,
+    "market": 45,
+    "scalability": 50,
+    "score": 55
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (J Neural Eng 2025). Claims as stated in abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "DBS vendor programming software (inferred); external lead",
+   "recommended_resources": [
+    {
+     "resource_id": "ninds-devices",
+     "title": "NINDS Translational Devices + Small Business Program",
+     "url": "https://www.ninds.nih.gov/current-research/research-funded-ninds/translational-research/translational-devices",
+     "needs": [
+      "funding"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "modality-locked: device",
+      "stage s4 outside listed states ['s6', 's7', 's8']"
+     ],
+     "eligibility": "Depends on the specific NOFO. Some routes are academic; others are small-business-only. Inspect the current announcement."
+    },
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Clarify WashU role (Willie moved from Emory)",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (automated pilot)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot"
+    },
+    {
+     "date": "2026-10-24",
+     "event": "retagged",
+     "field": "don_ownership -> lead_don_status/lead_home_department",
+     "old": "contributor",
+     "new": [
+      "external/co-author only",
+      "External (Emory; Miocinovic lab)"
+     ]
+    }
+   ],
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (Emory; Miocinovic lab)",
+   "lead_flags": []
+  },
+  {
+   "innovation_id": "DON-2026-031",
+   "name": "In vivo optical clearing of the living mouse brain (iodixanol-ACSF)",
+   "description": "Biocompatible clearing agent that increases transparency of living neuronal tissue; mice stay motile and behaviorally unimpaired, with circuit physiology preserved.",
+   "investigators": [
+    {
+     "name": "Timothy Holy",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Holy lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "biological tool/reagent + method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.08.18.745591"
+   ],
+   "problem_solved": "Tissue clearing normally requires fixed specimens",
+   "technical_advantage": "Deeper in vivo imaging without fixation",
+   "difference_from_prior": "Clearing in living, behaving animals vs. post-mortem clearing",
+   "maturity": "Preprint (Aug 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 90,
+    "usefulness": 85,
+    "reproducibility": 60,
+    "adoption": 75,
+    "score": 77
+   },
+   "commercial_potential": {
+    "novelty": 85,
+    "customer_need": 65,
+    "feasibility": 55,
+    "market": 50,
+    "scalability": 50,
+    "score": 62
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Preprint (Aug 2026). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination; reagent/kit or imaging partner (inference); OTM conversation for any unpublished formulations",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Meet the Holy lab about the in vivo clearing data; Neurotech Hub to scope imaging rigs; OTM conversation only for undisclosed formulations; DEP check of imaging-vendor interest.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-026"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Preprint (Aug 2026): Deeper in vivo imaging without fixation",
+    "what_is_distinctive": "Clearing in living, behaving animals vs. post-mortem clearing",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open dissemination; reagent/kit or imaging partner (inference); OTM conversation for any unpublished formulations",
+    "suggested_resources": [
+     "neurotech-hub",
+     "otm-core",
+     "dep"
+    ],
+    "next_steps": "Meet the Holy lab about the in vivo clearing data; Neurotech Hub to scope imaging rigs; OTM conversation only for undisclosed formulations; DEP check of imaging-vendor interest.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
+  },
+  {
+   "innovation_id": "DON-2026-032",
+   "name": "GSVD-NMF: recovering missing features in under-complete NMF",
+   "description": "Uses generalized SVD to propose missing components after an under-complete NMF, making rank selection interactive.",
+   "investigators": [
+    {
+     "name": "Timothy Holy",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Holy lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "algorithm/software",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1016/j.isci.2026.114708",
+    "https://doi.org/10.2139/ssrn.5459046"
+   ],
+   "problem_solved": "Choosing NMF rank in advance is error-prone",
+   "technical_advantage": "No need to rerun NMF at many ranks",
+   "difference_from_prior": "GSVD-guided component proposal vs. rank sweeps",
+   "maturity": "Peer-reviewed (iScience 2026)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 70,
+    "reproducibility": 80,
+    "adoption": 65,
+    "score": 71
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 35,
+    "feasibility": 85,
+    "market": 35,
+    "scalability": 65,
+    "score": 48
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (iScience 2026). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open source, bundled with NMFMerge",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-014"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-033",
+   "name": "24-channel 3T receive coil for awake-macaque fMRI",
+   "description": "Phased-array RF coil optimized for accelerated ferumoxytol-weighted resting-state fMRI in awake monkeys, with HCP-style processing and artifact mitigation.",
+   "investigators": [
+    {
+     "name": "Joonas Autio",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Autio (with Hayashi, RIKEN)",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [
+    "Work co-led with RIKEN (Hayashi); may predate WashU appointment, so verify."
+   ],
+   "category": "instrument/hardware",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.1162/imag.a.1354"
+   ],
+   "problem_solved": "Awake NHP fMRI suffers from low SNR and short sessions",
+   "technical_advantage": "Higher sensitivity and acceleration for short awake sessions",
+   "difference_from_prior": "Dedicated awake-NHP parallel-imaging coil vs. generic coils",
+   "maturity": "Peer-reviewed (Imaging Neuroscience 2026)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 75,
+    "reproducibility": 60,
+    "adoption": 55,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 55,
+    "feasibility": 65,
+    "market": 25,
+    "scalability": 45,
+    "score": 50
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (Imaging Neuroscience 2026). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Coil design sharing with NHP imaging centers; vendor collaboration (inference)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "context-gated: requires industry-collaboration/industry-sponsored-research"
+     ],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-034"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-034",
+   "name": "Ferumoxytol-weighted laminar MRI mapping of vascular architecture",
+   "description": "Whole-brain laminar-resolution multi-echo GRE with ferumoxytol to map vascular volume across areas and layers in macaque, validated against histology.",
+   "investigators": [
+    {
+     "name": "Joonas Autio",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Autio (with Hayashi, RIKEN)",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [
+    "Work co-led with RIKEN (Hayashi); may predate WashU appointment, so verify."
+   ],
+   "category": "imaging method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.7554/elife.99940"
+   ],
+   "problem_solved": "Vascular organization across layers is poorly mapped in vivo",
+   "technical_advantage": "Noninvasive laminar vascular maps",
+   "difference_from_prior": "Contrast-enhanced laminar MRI vs. histology-only",
+   "maturity": "Peer-reviewed (eLife VOR 2025)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 70,
+    "reproducibility": 65,
+    "adoption": 55,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 40,
+    "feasibility": 65,
+    "market": 30,
+    "scalability": 45,
+    "score": 44
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (eLife VOR 2025). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination; clinical translation of ferumoxytol MRI (inference)",
+   "recommended_resources": [
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "status: evergreen_program_verify_current_call",
+      "deadline listed: 2026-09-14 (invited CTRFP applications; verify) (has passed; verify the next cycle)",
+      "stage s5 outside listed states ['s1', 's2', 's3', 's4', 's6', 's7']"
+     ],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. As of 2026-09-04 the 2026 CTRFP LOI deadline had passed; invited full applic"
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-033"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-035",
+   "name": "phiC31 recombination-mediated homolog exchange + single-component landing site (C. elegans)",
+   "description": "Methods and strains that convert trans driver/reporter insertions into cis with phiC31, plus a landing site carrying its own recombinase cassette for efficient insertion.",
+   "investigators": [
+    {
+     "name": "Michael Nonet",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/sole",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Nonet lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "biological tool/reagent",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1093/genetics/iyag166",
+    "https://doi.org/10.17912/micropub.biology.001784"
+   ],
+   "problem_solved": "Unlinked bipartite components complicate crosses",
+   "technical_advantage": "Driver and reporter linked on one chromosome; easy single-animal transgenesis",
+   "difference_from_prior": "Recombinase-based cis conversion vs. manual recombination",
+   "maturity": "Peer-reviewed (Genetics 2026; microPublication 2025)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 75,
+    "reproducibility": 80,
+    "adoption": 75,
+    "score": 76
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 30,
+    "feasibility": 85,
+    "market": 20,
+    "scalability": 60,
+    "score": 43
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (Genetics 2026; microPublication 2025). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "CGC strain and Addgene plasmid deposit; open dissemination",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-012"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-036",
+   "name": "Microwave-assisted immunocytochemistry for cell-line characterization",
+   "description": "Time-efficient microwave-assisted ICC protocol that reduces background while preserving protein organization.",
+   "investigators": [
+    {
+     "name": "Eduardo Rosa-Molinar",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Rosa-Molinar lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "protocol",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1002/cpz1.70363"
+   ],
+   "problem_solved": "Conventional ICC is slow and background-prone",
+   "technical_advantage": "Faster labeling with lower background",
+   "difference_from_prior": "Microwave assistance vs. bench incubation",
+   "maturity": "Peer-reviewed protocol (Current Protocols 2026)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 55,
+    "usefulness": 65,
+    "reproducibility": 80,
+    "adoption": 70,
+    "score": 68
+   },
+   "commercial_potential": {
+    "novelty": 50,
+    "customer_need": 50,
+    "feasibility": 80,
+    "market": 35,
+    "scalability": 60,
+    "score": 53
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed protocol (Current Protocols 2026). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Core SOP; instrument-vendor application note (inference)",
+   "recommended_resources": [
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-037",
+   "name": "WSP model: hypothesis testing of functional effects in spatial transcriptomics",
+   "description": "Warped sigmoidal Poisson-process mixed-effects model for testing whether a factor changes a gene's spatial distribution parameters.",
+   "investigators": [
+    {
+     "name": "Hysell Oviedo",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Oviedo lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "algorithm/software",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1093/nar/gkag466"
+   ],
+   "problem_solved": "ST tools focus on exploration, not inference",
+   "technical_advantage": "Formal hypothesis tests without bespoke preprocessing",
+   "difference_from_prior": "Mixed-effects spatial model vs. descriptive clustering",
+   "maturity": "Peer-reviewed (NAR 2026)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 80,
+    "usefulness": 75,
+    "reproducibility": 75,
+    "adoption": 70,
+    "score": 75
+   },
+   "commercial_potential": {
+    "novelty": 45,
+    "customer_need": 40,
+    "feasibility": 80,
+    "market": 30,
+    "scalability": 65,
+    "score": 49
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Peer-reviewed (NAR 2026). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open-source package; ST-vendor ecosystem integration (inference)",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "status": "recommended-for-conversation",
+   "next_action": "Ask Oviedo about packaging WSP for 10x/MERFISH users and making it a DoN-recommended analysis method.",
+   "top10": true,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed (NAR 2026): Formal hypothesis tests without bespoke preprocessing",
+    "what_is_distinctive": "Mixed-effects spatial model vs. descriptive clustering",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open-source package; ST-vendor ecosystem integration (inference)",
+    "suggested_resources": [
+     "washu-innovation",
+     "dep"
+    ],
+    "next_steps": "Ask Oviedo about packaging WSP for 10x/MERFISH users and making it a DoN-recommended analysis method.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
+  },
+  {
+   "innovation_id": "DON-2026-038",
+   "name": "FLiSimBA fluorescence-lifetime simulation framework",
+   "description": "Computational framework simulating realistic FLIM biosensor data, including autofluorescence and photon statistics, to define when lifetime comparisons are valid.",
+   "investigators": [
+    {
+     "name": "Yao Chen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Yao Chen lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "software/analysis framework",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.7554/elife.101559"
+   ],
+   "problem_solved": "FLIM comparisons are confounded by autofluorescence and photon counts",
+   "technical_advantage": "Quantifies the conditions for valid cross-animal FLIM comparison",
+   "difference_from_prior": "Realistic simulation-based design vs. ad hoc assumptions",
+   "maturity": "Peer-reviewed (eLife VOR 2025)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 75,
+    "reproducibility": 80,
+    "adoption": 65,
+    "score": 73
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 35,
+    "feasibility": 85,
+    "market": 25,
+    "scalability": 60,
+    "score": 45
+   },
+   "confidence": "High",
+   "observations_validated": "Public record: Peer-reviewed (eLife VOR 2025). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open source; FLIM-vendor and biosensor-community adoption",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    },
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-018"
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  },
+  {
+   "innovation_id": "DON-2026-039",
+   "name": "Similarity-graph clustering for neural assembly detection",
+   "description": "Methods chapter describing similarity-graph clustering to detect neural assemblies in population recordings.",
+   "investigators": [
+    {
+     "name": "Geoffrey Goodhill",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "senior",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Goodhill lab",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience",
+   "lead_flags": [],
+   "category": "analysis method",
+   "domain": "software",
+   "source_evidence": [
+    "https://doi.org/10.1007/978-1-0716-4208-5_7"
+   ],
+   "problem_solved": "Assembly detection methods are inconsistent",
+   "technical_advantage": "Assembly detection from large calcium-imaging datasets",
+   "difference_from_prior": "Graph-clustering workflow (Methods in Molecular Biology chapter)",
+   "maturity": "Published methods chapter (2024)",
+   "stage_code_estimate": "s5",
+   "scientific_utility": {
+    "novelty": 60,
+    "usefulness": 70,
+    "reproducibility": 75,
+    "adoption": 65,
+    "score": 68
+   },
+   "commercial_potential": {
+    "novelty": 30,
+    "customer_need": 25,
+    "feasibility": 85,
+    "market": 15,
+    "scalability": 60,
+    "score": 38
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Published methods chapter (2024). Claims as stated in the abstract/source.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP-ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination",
+   "recommended_resources": [
+    {
+     "resource_id": "washu-innovation",
+     "title": "WashU Innovation",
+     "url": "https://innovation.washu.edu/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-09-06",
+     "verify_flags": [
+      "stage s5 outside listed states ['s0', 's1']"
+     ],
+     "eligibility": "General WashU ecosystem resource."
+    }
+   ],
+   "status": "identified",
+   "next_action": "Monitor; candidate for monthly reassessment",
+   "top10": false,
+   "discovery_date": "2026-10-24",
+   "last_review_date": "2026-10-24",
+   "reviewed_by": "Innovation Scout (pilot v2)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "event": "created",
+     "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    }
+   ]
+  }
+ ],
+ "changelog": [
+  {
+   "date": "2026-10-24",
+   "version": "1.1",
+   "note": "Replaced don_ownership with lead_don_status and lead_home_department; top 10 restricted to core-led; added 9 core-led records (031-039); consistency rescoring logged in audit_log.jsonl"
+  }
+ ]
+}

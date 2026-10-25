@@ -1,0 +1,156 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/manrope';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-brand: 'Manrope Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Hero navy scale */
+  --color-navy-950: #050a1c;
+  --color-navy-900: #070e26;
+  --color-navy-800: #0b1433;
+  --color-navy-700: #121c45;
+
+  /* Signal accents (match lib/normalize.ts domain colors) */
+  --color-signal-purple: #a78bfa;
+  --color-signal-blue: #60a5fa;
+  --color-signal-orange: #fb923c;
+  --color-signal-pink: #f472b6;
+  --color-signal-teal: #2dd4bf;
+  --color-signal-yellow: #fbbf24;
+
+  --color-ink-950: #0a0f1f;
+  --color-ink-700: #3b4257;
+  --color-ink-500: #6b7286;
+  --color-ink-300: #c3c8d4;
+  --color-ink-100: #eef0f4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-white text-ink-950 font-sans;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Brand mark: "signals" + dot with radiating rings (pure CSS)
+   Sizing is relative to the wordmark font-size via em units.
+--------------------------------------------------------------------------- */
+.signals-mark {
+  position: relative;
+  display: inline-block;
+  width: 0.72em;
+  height: 0.72em;
+  margin-left: 0.08em;
+  flex: none;
+}
+.signals-mark__dot,
+.signals-mark__ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 9999px;
+  translate: -50% -50%;
+}
+.signals-mark__dot {
+  width: 0.22em;
+  height: 0.22em;
+  background: #3b82f6;
+}
+.signals-mark__ring {
+  width: 0.2em;
+  height: 0.2em;
+  border: 0.045em solid currentColor;
+  color: var(--mark-ring-color, #8b5cf6);
+}
+.signals-mark__ring--static {
+  scale: 1.9;
+  opacity: 0.7;
+}
+.signals-mark__ring--static-outer {
+  scale: 3;
+  opacity: 0.35;
+}
+.signals-mark__ring--pulse {
+  opacity: 0;
+  animation: signals-ring-pulse 3s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+}
+.signals-mark__ring--pulse:nth-child(5) {
+  animation-delay: 1.5s;
+}
+@keyframes signals-ring-pulse {
+  0% {
+    scale: 1;
+    opacity: 0.9;
+  }
+  100% {
+    scale: 3.4;
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Hero constellation
+--------------------------------------------------------------------------- */
+.constellation-node {
+  cursor: pointer;
+  outline: none;
+}
+.constellation-node__drift {
+  animation: constellation-drift var(--dur, 9s) ease-in-out infinite alternate;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes constellation-drift {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--dx, 0px), var(--dy, 0px));
+  }
+}
+.constellation-node__body {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.constellation-node:hover .constellation-node__body,
+.constellation-node:focus-visible .constellation-node__body,
+.constellation-node[data-active='true'] .constellation-node__body {
+  transform: scale(1.4);
+}
+.constellation-node__halo {
+  transition: opacity 260ms ease;
+}
+.constellation-node:hover .constellation-node__halo,
+.constellation-node:focus-visible .constellation-node__halo,
+.constellation-node[data-active='true'] .constellation-node__halo {
+  opacity: 0.45;
+}
+.constellation-node:focus-visible .constellation-node__focus {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signals-mark__ring--pulse {
+    animation: none;
+    opacity: 0.35;
+    scale: 1.7;
+  }
+  .constellation-node__drift {
+    animation: none;
+  }
+  .constellation-node__body {
+    transition: none;
+  }
+}
