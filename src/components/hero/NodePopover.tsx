@@ -56,7 +56,7 @@ export function NodePopover({ record, color, groupLabel, anchor, container, onCl
       tabIndex={-1}
       role="dialog"
       aria-label={record.name}
-      className="absolute z-20 w-[320px] max-w-[calc(100%-16px)] rounded-xl border border-white/10 bg-navy-900/95 p-4 text-white shadow-2xl outline-none backdrop-blur-md"
+      className="absolute z-50 w-[320px] max-w-[calc(100%-16px)] rounded-xl border border-white/10 bg-navy-900/95 p-4 text-white shadow-2xl outline-none backdrop-blur-md"
       style={style}
     >
       <div className="mb-2 flex items-start justify-between gap-3">

@@ -17,7 +17,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="hero relative isolate overflow-hidden bg-navy-950 text-white"
+      className="hero relative z-30 bg-navy-950 text-white"
       aria-labelledby="hero-title"
     >
       <div aria-hidden="true" className="hero-atmosphere pointer-events-none absolute inset-0 -z-10" />

@@ -252,8 +252,8 @@ export function Constellation({ records, groupBy = 'domain', decor = true, class
                 <tspan
                   key={i}
                   x={c.labelX}
-                  dy={i === 0 ? 0 : 13}
-                  fontSize={10.5}
+                  dy={i === 0 ? 0 : 15}
+                  fontSize={12.5}
                   fontWeight={500}
                   letterSpacing="0.08em"
                   style={{ textTransform: 'uppercase' }}
@@ -261,7 +261,7 @@ export function Constellation({ records, groupBy = 'domain', decor = true, class
                   {line.toUpperCase()}
                 </tspan>
               ))}
-              <tspan className="constellation-count" x={c.labelX} dy={15} fontSize={10} fontWeight={500} letterSpacing="0.04em" fill="rgba(255,255,255,0.62)">
+              <tspan className="constellation-count" x={c.labelX} dy={17} fontSize={11.5} fontWeight={500} letterSpacing="0.04em" fill="rgba(255,255,255,0.62)">
                 {c.count} {c.count === 1 ? 'innovation' : 'innovations'}
               </tspan>
             </text>
@@ -273,7 +273,7 @@ export function Constellation({ records, groupBy = 'domain', decor = true, class
       {hoverNode && hover && !selected && (
         <div
           role="tooltip"
-          className="pointer-events-none absolute z-10 max-w-[260px] -translate-x-1/2 -translate-y-full rounded-lg border border-white/10 bg-navy-900/95 px-3 py-2 text-xs leading-snug text-white shadow-xl backdrop-blur"
+          className="pointer-events-none absolute z-50 max-w-[260px] -translate-x-1/2 -translate-y-full rounded-lg border border-white/10 bg-navy-900/95 px-3 py-2 text-xs leading-snug text-white shadow-xl backdrop-blur"
           style={{ left: hover.x, top: hover.top - 10 }}
         >
           {hoverNode.record.name}

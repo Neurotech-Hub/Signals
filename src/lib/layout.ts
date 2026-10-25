@@ -109,8 +109,8 @@ export function nodeRadius(record: InnovationRecord): number {
   return Math.min(3 + (evidence - 1) * 1.75, 8);
 }
 
-const LABEL_LINE_H = 13;
-const LABEL_COUNT_H = 15;
+const LABEL_LINE_H = 15;
+const LABEL_COUNT_H = 17;
 
 export function computeLayout(
   records: InnovationRecord[],
@@ -206,10 +206,10 @@ export function computeLayout(
     const len = Math.hypot(dirX, dirY) || 1;
     dirX /= len;
     dirY /= len;
-    const gap = extent + 24;
+    const gap = extent + 34;
     const textH = c.lines.length * LABEL_LINE_H + LABEL_COUNT_H;
-    // Rough width estimate for the uppercase, letter-spaced label (≈7.4px/char).
-    const textW = Math.max(...c.lines.map((l) => l.length), 14) * 7.4;
+    // Rough width estimate for the uppercase, letter-spaced label.
+    const textW = Math.max(...c.lines.map((l) => l.length), 14) * 8.6;
 
     let anchor: ClusterLayout['labelAnchor'] = Math.abs(dirX) < 0.35 ? 'middle' : dirX < 0 ? 'end' : 'start';
     let labelX = sx + dirX * gap;
