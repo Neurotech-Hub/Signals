@@ -57,7 +57,7 @@
   .hero-title {
     font-family: var(--font-sans);
     /* The longer first line sets the size, so both locked lines fill the column. */
-    font-size: clamp(1.75rem, 9.45cqi, 5rem);
+    font-size: clamp(1.35rem, 9.45cqi, 5rem);
     font-weight: 400;
     letter-spacing: -0.045em;
     line-height: 1.06;
