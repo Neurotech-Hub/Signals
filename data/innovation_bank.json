@@ -119,7 +119,8 @@
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
    "lead_flags": [],
-   "publication_date": "2026-06"
+   "publication_date": "2026-06",
+   "image_url": "images/don-2026-001.jpg"
   },
   {
    "innovation_id": "DON-2026-002",
@@ -1296,7 +1297,8 @@
    "lead_flags": [
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
    ],
-   "publication_date": "2026-10-12"
+   "publication_date": "2026-10-12",
+   "image_url": "images/don-2026-011.jpg"
   },
   {
    "innovation_id": "DON-2026-012",
@@ -3951,7 +3953,8 @@
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
-   "publication_date": "2026-05"
+   "publication_date": "2026-05",
+   "image_url": "images/don-2026-037.jpg"
   },
   {
    "innovation_id": "DON-2026-038",
@@ -4144,6 +4147,11 @@
    "date": "2026-10-25",
    "version": "1.2",
    "note": "Signals data contract (docs/grok.md): backfilled publication_date for all 39 records from Crossref/arXiv (peer-reviewed date preferred over preprint; never the run date); maturity rewritten as short provenance lines; technical_advantage normalized to ;-separated clauses; neutral wording in DON-2026-010 description; top10 confirmed on the 10 core-led records. Schema bumped to 1.2 because publication_date is a new record field. No score changes; no image_url added (no verified public image)."
+  },
+  {
+   "date": "2026-10-25",
+   "version": "1.2",
+   "note": "Added image_url for DON-2026-011 (Fig 2, FLEX-DBS bioRxiv preprint, CC BY), DON-2026-001 (graphical abstract, STAR Protocols, CC BY 4.0), DON-2026-037 (graphical abstract, Nucleic Acids Research, CC BY 4.0); images stored locally in the repo."
   }
  ]
 }
