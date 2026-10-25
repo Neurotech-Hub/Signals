@@ -1,6 +1,6 @@
 {
- "schema_version": "1.1",
- "generated": "2026-10-24",
+ "schema_version": "1.2",
+ "generated": "2026-10-25",
  "scope": "DoN pilot",
  "extensible_scopes": [
   "DoN",
@@ -33,7 +33,7 @@
    "problem_solved": "Acute fly preps limit imaging to hours, precluding longitudinal studies of learning, aging, sleep",
    "technical_advantage": "Multi-day longitudinal imaging in the same fly; no saline perfusion",
    "difference_from_prior": "Saline-free, resealed window vs. acute saline-bathed dissections",
-   "maturity": "Peer-reviewed protocol (STAR Protocols 2026) + data on Zenodo",
+   "maturity": "Peer-reviewed protocol (STAR Protocols Jun 2026); preprint (bioRxiv Feb 2026); data on Zenodo",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 70,
@@ -74,7 +74,7 @@
    "next_action": "Feature it in a DoN methods showcase; Neurotech Hub to standardize the mounting fixtures.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -118,7 +118,8 @@
    },
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-06"
   },
   {
    "innovation_id": "DON-2026-002",
@@ -142,7 +143,7 @@
    "problem_solved": "Combining many transgenes requires laborious recombination and crosses",
    "technical_advantage": "Keeps many transgenic components linked so they don't segregate in crosses",
    "difference_from_prior": "Engineered recombination at a single locus vs. sequential transgenesis",
-   "maturity": "Preprint (2025)",
+   "maturity": "Preprint (bioRxiv Apr 2025)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 85,
@@ -181,7 +182,7 @@
    "next_action": "Clarify WashU contribution and whether stocks/reagents will be deposited (Bloomington)",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -218,7 +219,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Stanford; Schnitzer lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-04-15"
   },
   {
    "innovation_id": "DON-2026-003",
@@ -247,9 +249,9 @@
     "https://doi.org/10.64898/2026.09.01.748559"
    ],
    "problem_solved": "Folding-based registration misaligns functional areas across individuals",
-   "technical_advantage": "More precise areal alignment, usable when only structural MRI is available",
+   "technical_advantage": "More precise areal alignment; usable with structural MRI only",
    "difference_from_prior": "Learns where folding is trustworthy; multimodal training vs. MSMAll/FreeSurfer heuristics",
-   "maturity": "Preprint (Sep 2026)",
+   "maturity": "Preprint (bioRxiv Sep 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 85,
@@ -300,7 +302,7 @@
    "next_action": "Talk with Glasser/Van Essen about the DRUMS release plan, license and clinical (presurgical mapping) use; DEP check with neuroimaging software vendors.",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -331,7 +333,8 @@
    "lead_home_department": "Radiology (Glasser; core co-author Van Essen)",
    "lead_flags": [
     "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
-   ]
+   ],
+   "publication_date": "2026-09-06"
   },
   {
    "innovation_id": "DON-2026-004",
@@ -362,7 +365,7 @@
    "problem_solved": "Group parcellations misrepresent individual brains",
    "technical_advantage": "Captures individual areal variability registration cannot reconcile",
    "difference_from_prior": "Semi-supervised learning beyond group labels; RSN feature comparison",
-   "maturity": "Preprint (2025)",
+   "maturity": "Preprint (bioRxiv May 2025)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 75,
@@ -401,7 +404,7 @@
    "next_action": "Bundle with DRUMS conversation",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -432,7 +435,8 @@
    "lead_home_department": "Radiology (Glasser; core co-author Van Essen)",
    "lead_flags": [
     "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
-   ]
+   ],
+   "publication_date": "2025-05-03"
   },
   {
    "innovation_id": "DON-2026-005",
@@ -457,9 +461,9 @@
     "https://doi.org/10.17504/protocols.io.36wgqd3wyvk5/v1"
    ],
    "problem_solved": "Commercial calibration standards limited (fluorescence, volume, aberrations)",
-   "technical_advantage": "Cheap, stable, 3D, autofluorescent/SHG-capable standard",
+   "technical_advantage": "Low cost; stable; 3D; autofluorescent and SHG-capable standard",
    "difference_from_prior": "Natural biological phantom vs. beads/dye slides",
-   "maturity": "Peer-reviewed protocol (Current Protocols 2025)",
+   "maturity": "Peer-reviewed protocol (Current Protocols Jul 2025); protocols.io",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -512,7 +516,7 @@
    "next_action": "Propose the pollen phantom and protocols.io SOPs as a cross-core QC standard; DEP check of the calibration-slide market.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -567,7 +571,8 @@
     "next_steps": "Propose the pollen phantom and protocols.io SOPs as a cross-core QC standard; DEP check of the calibration-slide market.",
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
-   }
+   },
+   "publication_date": "2025-07-29"
   },
   {
    "innovation_id": "DON-2026-006",
@@ -593,7 +598,7 @@
    "problem_solved": "Common cross-validation mistakes inflate reported decoding",
    "technical_advantage": "Prevents inflated decoding accuracy from train/test leakage",
    "difference_from_prior": "Explicit leakage-aware pipeline and benchmarks",
-   "maturity": "Preprint (Jan 2026) + public code (Zenodo/GitHub)",
+   "maturity": "Preprint (bioRxiv Jan 2026); public code (Zenodo, GitHub)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 65,
@@ -633,7 +638,7 @@
    "next_action": "Adopt the leakage-safe decoding checklist as a departmental analysis standard and training module.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -703,7 +708,8 @@
     "next_steps": "Adopt the leakage-safe decoding checklist as a departmental analysis standard and training module.",
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
-   }
+   },
+   "publication_date": "2026-01-27"
   },
   {
    "innovation_id": "DON-2026-007",
@@ -727,7 +733,7 @@
    "problem_solved": "Genetically encoded sensors impossible in many organisms/primary tissues",
    "technical_advantage": "No genetic encoding needed; works in intractable cells/animals",
    "difference_from_prior": "Small-molecule conformational sensor vs. GECIs",
-   "maturity": "Preprint (May 2026)",
+   "maturity": "Preprint (bioRxiv May 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 85,
@@ -780,7 +786,7 @@
    "next_action": "Ask Yi about the WashU contribution and use in Angelman/primary-tissue models; OTM/JROC only if WashU-generated reagents exist.",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -807,7 +813,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (UNC; Hahn lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-05-23"
   },
   {
    "innovation_id": "DON-2026-008",
@@ -872,7 +879,7 @@
    "next_action": "Package flow-chamber build files for other labs",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -899,7 +906,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Otolaryngology (Sheets lab; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025"
   },
   {
    "innovation_id": "DON-2026-009",
@@ -923,7 +931,7 @@
    "problem_solved": "Device designers pick duty cycles ad hoc; data bias unknown",
    "technical_advantage": "Quantifies how sensing policies bias inferred behavior before building hardware",
    "difference_from_prior": "Measurement-process simulation vs. energy-budget-only calculators",
-   "maturity": "Preprint (May 2026)",
+   "maturity": "Preprint (bioRxiv May 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 75,
@@ -962,7 +970,7 @@
    "next_action": "Note: user is the investigator \u2014 self-assessment; confirm code release",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1001,12 +1009,13 @@
    "lead_home_department": "Neuroscience",
    "lead_flags": [
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
-   ]
+   ],
+   "publication_date": "2026-05-20"
   },
   {
    "innovation_id": "DON-2026-010",
    "name": "XR-glasses calibration pipeline for controlled ocular photostimulation",
-   "description": "Validated pipeline linking consumer micro-OLED XR display settings to corneal-plane spectroradiometry and melanopic EDI for dosed light therapy.",
+   "description": "Pipeline, with author-reported validation, linking consumer micro-OLED XR display settings to corneal-plane spectroradiometry and melanopic EDI for dosed light therapy.",
    "investigators": [
     {
      "name": "Matt Gaidica",
@@ -1094,7 +1103,7 @@
    "next_action": "Plan a clinical study through ICTS (verify the next CTRFP cycle); OTM consult only for undisclosed extensions.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1146,7 +1155,8 @@
    "lead_flags": [
     "Core faculty member is first author; senior author is outside DoN (Surgery).",
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
-   ]
+   ],
+   "publication_date": "2026-08-31"
   },
   {
    "innovation_id": "DON-2026-011",
@@ -1168,9 +1178,9 @@
     "https://doi.org/10.64898/2026.10.09.757775"
    ],
    "problem_solved": "Tethers constrain behavior; existing wireless stimulators fixed-parameter, ~3V",
-   "technical_advantage": "Untethered, reprogrammable bilateral DBS with higher compliance voltage",
+   "technical_advantage": "Untethered; reprogrammable bilateral DBS; higher compliance voltage",
    "difference_from_prior": "\u00b15V constant-current, runtime-programmable vs. preset low-voltage devices",
-   "maturity": "Preprint (Oct 2026)",
+   "maturity": "Preprint (bioRxiv Oct 2026)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 75,
@@ -1235,7 +1245,7 @@
    "next_action": "Decide open hardware vs. licensing for FLEX-DBS; DEP session on vendor and lab demand; list adopter labs (e.g., Creed).",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1285,7 +1295,8 @@
    "lead_home_department": "Neuroscience",
    "lead_flags": [
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
-   ]
+   ],
+   "publication_date": "2026-10-12"
   },
   {
    "innovation_id": "DON-2026-012",
@@ -1309,7 +1320,7 @@
    "problem_solved": "Worm bipartite systems lag Drosophila; no design rules",
    "technical_advantage": "Rational design of tissue-specific expression",
    "difference_from_prior": "Quantitative parameter map vs. ad hoc constructs",
-   "maturity": "Peer-reviewed (Genetics 2025); reagents",
+   "maturity": "Peer-reviewed (Genetics May 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 65,
@@ -1349,7 +1360,7 @@
    "next_action": "Joint conversation with DON-2026-035: deposit strains and plasmids (CGC/Addgene) and run a toolkit workshop for worm labs.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1395,7 +1406,8 @@
     "next_steps": "Joint conversation with DON-2026-035: deposit strains and plasmids (CGC/Addgene) and run a toolkit workshop for worm labs.",
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
-   }
+   },
+   "publication_date": "2025-05-09"
   },
   {
    "innovation_id": "DON-2026-013",
@@ -1417,9 +1429,9 @@
     "https://doi.org/10.17504/protocols.io.ewov1r18ylr2/v1"
    ],
    "problem_solved": "Lightsheet staining is lab-specific and hard to reproduce",
-   "technical_advantage": "Shared, reproducible whole-mount staining workflow",
+   "technical_advantage": "Shared whole-mount staining workflow; reproducible",
    "difference_from_prior": "Public protocols.io SOP",
-   "maturity": "Public protocol (2026)",
+   "maturity": "Public protocol (protocols.io Mar 2026)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 45,
@@ -1459,7 +1471,7 @@
    "next_action": "Cross-link with ADAPT-3D for core offerings",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1488,7 +1500,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Medicine (Ding lab; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-03-16"
   },
   {
    "innovation_id": "DON-2026-014",
@@ -1513,7 +1526,7 @@
    "problem_solved": "NMF converges to poor/inconsistent minima",
    "technical_advantage": "Higher-quality, reproducible factorizations",
    "difference_from_prior": "Merge strategy vs. random restarts",
-   "maturity": "Peer-reviewed (IEEE TSP 2025) + Julia package",
+   "maturity": "Peer-reviewed (IEEE Trans Signal Process 2025); Julia package",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 75,
@@ -1553,7 +1566,7 @@
    "next_action": "Bundle NMFMerge and GSVD-NMF (DON-2026-032) as one toolkit; suggest a Python port and outreach to imaging users.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1599,7 +1612,8 @@
    },
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025"
   },
   {
    "innovation_id": "DON-2026-015",
@@ -1626,7 +1640,7 @@
    "problem_solved": "Fragmented DRG datasets, inconsistent annotations",
    "technical_advantage": "Reference for label transfer across injury paradigms",
    "difference_from_prior": "Integrated multi-study reference vs. single-study atlases",
-   "maturity": "Preprints + deposited data (2025\u201326)",
+   "maturity": "Preprint (bioRxiv Jan 2026); related preprint and DMM article; deposited data",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 70,
@@ -1680,7 +1694,7 @@
    "next_action": "Discuss a hosted DRG atlas query portal; JROC only if an industry sponsor emerges.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1725,7 +1739,8 @@
    },
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-01-30"
   },
   {
    "innovation_id": "DON-2026-016",
@@ -1749,7 +1764,7 @@
    "problem_solved": "DREADDs use exogenous receptors; endogenous signaling hard to control cell-specifically",
    "technical_advantage": ">15-fold chemical-dependent control of endogenous receptor",
    "difference_from_prior": "Regulated ligand instead of engineered receptor",
-   "maturity": "Peer-reviewed (PNAS 2026)",
+   "maturity": "Peer-reviewed (PNAS Jan 2026)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 85,
@@ -1788,7 +1803,7 @@
    "next_action": "Clarify Chen lab role and WashU-generated reagents",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1815,7 +1830,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Univ. of Michigan; Wang lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-01-09"
   },
   {
    "innovation_id": "DON-2026-017",
@@ -1837,9 +1853,9 @@
     "https://doi.org/10.64898/2026.02.06.702961"
    ],
    "problem_solved": "Low dynamic range of FRET sensors",
-   "technical_advantage": "Larger dynamic range, multiplexable colors",
+   "technical_advantage": "Larger dynamic range; multiplexable colors",
    "difference_from_prior": "Chemigenetic acceptor vs. FP-FP pairs",
-   "maturity": "Preprint (2026)",
+   "maturity": "Preprint (bioRxiv Feb 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 75,
@@ -1879,7 +1895,7 @@
    "next_action": "Ask whether Chen lab will use for FLIM/in vivo PKA imaging",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1906,7 +1922,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (UC San Diego; Zhang lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-02-09"
   },
   {
    "innovation_id": "DON-2026-018",
@@ -1969,7 +1986,7 @@
    "next_action": "Verify DoN authorship; low priority",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2006,7 +2023,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Sorrells; affiliation to verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025"
   },
   {
    "innovation_id": "DON-2026-019",
@@ -2030,7 +2048,7 @@
    "problem_solved": "Staircases control one factor, scalar summaries",
    "technical_advantage": "Maps a performance surface quickly with fewer trials",
    "difference_from_prior": "Multidimensional GP active learning",
-   "maturity": "Preprint (arXiv 2025)",
+   "maturity": "Preprint (arXiv Oct 2025)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 75,
@@ -2098,7 +2116,7 @@
    "next_action": "Ask Barbour about clinical validation, the mHealth pathway, and how this relates to the lab's earlier active-learning assessment work.",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2125,7 +2143,8 @@
    ],
    "lead_don_status": "affiliate",
    "lead_home_department": "Biomedical Engineering",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-10-01"
   },
   {
    "innovation_id": "DON-2026-020",
@@ -2149,7 +2168,7 @@
    "problem_solved": "FOG is episodic and hard to assess clinically",
    "technical_advantage": "Prediction (not just detection) of FOG episodes",
    "difference_from_prior": "Prediction + lower sampling rate validation",
-   "maturity": "Peer-reviewed (Sensors 2024/25)",
+   "maturity": "Peer-reviewed (Sensors Dec 2024)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 60,
@@ -2206,7 +2225,7 @@
    "next_action": "Ask about false-positive reduction and real-time cueing",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2233,7 +2252,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Neurology (Mazzoni; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2024-12-28"
   },
   {
    "innovation_id": "DON-2026-021",
@@ -2255,9 +2275,9 @@
     "https://doi.org/10.64898/2026.09.19.752787"
    ],
    "problem_solved": "Manual scoring low-throughput and variable; automated tools costly",
-   "technical_advantage": "Automated, validated scoring without programming expertise",
+   "technical_advantage": "Automated scoring; no programming needed; compared with human raters",
    "difference_from_prior": "Integrated cheap hardware + GUI classifiers vs. DIY DeepLabCut pipelines",
-   "maturity": "Preprint (Sep 2026), validated vs. human raters",
+   "maturity": "Preprint (bioRxiv Sep 2026); compared with human raters",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 70,
@@ -2322,7 +2342,7 @@
    "next_action": "Meet Gereau lab on multi-site adoption and kit distribution; Neurotech Hub to review BOM/manufacturability; OTM to talk through open-source license choice.",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2349,7 +2369,8 @@
    ],
    "lead_don_status": "affiliate",
    "lead_home_department": "Anesthesiology",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-09-24"
   },
   {
    "innovation_id": "DON-2026-022",
@@ -2372,9 +2393,9 @@
     "https://github.com/khanlab/hippunfold"
    ],
    "problem_solved": "Volumetric hippocampal alignment error-prone",
-   "technical_advantage": "Topology-preserving alignment, precision morphometry",
+   "technical_advantage": "Topology-preserving alignment; precision morphometry",
    "difference_from_prior": "Surface-intrinsic vs. volumetric",
-   "maturity": "Preprint (2026); open BIDS app",
+   "maturity": "Preprint (bioRxiv Jul 2026); open BIDS app",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -2414,7 +2435,7 @@
    "next_action": "Low WashU ownership; monitor only",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2441,7 +2462,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Western University; Khan lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-07-27"
   },
   {
    "innovation_id": "DON-2026-023",
@@ -2466,7 +2488,7 @@
    "problem_solved": "Arterial lines invasive and demanding",
    "technical_advantage": "Quantitative FDG PET without arterial cannulation",
    "difference_from_prior": "Blood-free PVE correction",
-   "maturity": "Peer-reviewed (EJNMMI Phys 2024)",
+   "maturity": "Peer-reviewed (EJNMMI Physics Dec 2024)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 60,
@@ -2506,7 +2528,7 @@
    "next_action": "Monitor; potential adoption in WashU PET studies",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2533,7 +2555,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Univ. of Padova; Bertoldo lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2024-12-24"
   },
   {
    "innovation_id": "DON-2026-024",
@@ -2558,7 +2581,7 @@
    "problem_solved": "Leak localization often needs invasive myelography",
    "technical_advantage": "Noninvasive localization of leak sites",
    "difference_from_prior": "High-res CISS targeted after screening",
-   "maturity": "Retrospective case series (Headache 2026)",
+   "maturity": "Retrospective case series (Headache May 2026); preprint (medRxiv Jul 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 65,
@@ -2614,7 +2637,7 @@
    "next_action": "Ask about prospective validation",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2641,7 +2664,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Radiology (Nazeri; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-05-06"
   },
   {
    "innovation_id": "DON-2026-025",
@@ -2665,7 +2689,7 @@
    "problem_solved": "Cosinor/JTK outputs hard to integrate clinically",
    "technical_advantage": "Single value for stats/ML pipelines",
    "difference_from_prior": "Model-free scalar vs. multi-parameter fits",
-   "maturity": "Preprint (medRxiv 2026)",
+   "maturity": "Preprint (medRxiv Feb 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 55,
@@ -2705,7 +2729,7 @@
    "next_action": "Monitor",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2732,7 +2756,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Medicine (Mitreva lab; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-02-24"
   },
   {
    "innovation_id": "DON-2026-026",
@@ -2755,9 +2780,9 @@
     "https://doi.org/10.1093/jimmun/vkaf283.1842"
    ],
    "problem_solved": "Clearing protocols slow, toxic, distort tissue",
-   "technical_advantage": "Fast, non-toxic, preserves membranes and fluorescence, clinical-compatible",
+   "technical_advantage": "Fast; non-toxic; preserves membranes and fluorescence; clinic-compatible",
    "difference_from_prior": "Partial delipidation vs. full lipid removal",
-   "maturity": "Peer-reviewed (Sci Rep 2025)",
+   "maturity": "Peer-reviewed (Sci Rep Aug 2025); conference abstract",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -2822,7 +2847,7 @@
    "next_action": "Ask Randolph/Kipnis about reagent-kit interest and offering ADAPT-3D as a core service alongside the lightsheet protocol (DON-2026-013).",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2851,7 +2876,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Pathology & Immunology (Randolph lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-08-29"
   },
   {
    "innovation_id": "DON-2026-027",
@@ -2873,9 +2899,9 @@
     "https://doi.org/10.1101/2025.08.21.671364"
    ],
    "problem_solved": "Social motivation tests are brief and handler-dependent",
-   "technical_advantage": "Continuous, low-handling measurement of social reward seeking",
+   "technical_advantage": "Continuous measurement; low handling; social reward seeking",
    "difference_from_prior": "Homecage operant (likely FED3-family open hardware) vs. 3-chamber test",
-   "maturity": "Preprint (2025)",
+   "maturity": "Preprint (bioRxiv Aug 2025)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 70,
@@ -2916,7 +2942,7 @@
    "next_action": "Confirm hardware basis and open release",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -2943,7 +2969,8 @@
    ],
    "lead_don_status": "affiliate",
    "lead_home_department": "Psychiatry (verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-08-26"
   },
   {
    "innovation_id": "DON-2026-028",
@@ -2967,7 +2994,7 @@
    "problem_solved": "Corneal nerve function needs complex two-photon setups",
    "technical_advantage": "Low-cost functional readout of corneal nerves",
    "difference_from_prior": "Stereomicroscope-based",
-   "maturity": "Peer-reviewed (Ocular Surface 2026)",
+   "maturity": "Peer-reviewed (Ocular Surface Jan 2026)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -3019,7 +3046,7 @@
    "next_action": "Ask about pharma screening interest",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -3046,7 +3073,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Ophthalmology (A. Huang; verify)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2026-01"
   },
   {
    "innovation_id": "DON-2026-029",
@@ -3068,9 +3096,9 @@
     "https://doi.org/10.1111/epi.18431"
    ],
    "problem_solved": "Full EEG not accessible",
-   "technical_advantage": "Enables epilepsy screening with few-electrode EEG",
+   "technical_advantage": "Few-electrode EEG; interictal discharge detection",
    "difference_from_prior": "Channel-agnostic model",
-   "maturity": "Peer-reviewed (Epilepsia 2025)",
+   "maturity": "Peer-reviewed (Epilepsia May 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3110,7 +3138,7 @@
    "next_action": "Low WashU ownership; monitor",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -3137,7 +3165,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (MGH; Westover lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-05-03"
   },
   {
    "innovation_id": "DON-2026-030",
@@ -3161,7 +3190,7 @@
    "problem_solved": "Patients must self-report capsular side effects",
    "technical_advantage": "Objective side-effect detection during programming/surgery",
    "difference_from_prior": "Automated EMG mEP vs. subjective report",
-   "maturity": "Peer-reviewed (J Neural Eng 2025)",
+   "maturity": "Peer-reviewed (J Neural Eng Dec 2025)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -3216,7 +3245,7 @@
    "next_action": "Clarify WashU role (Willie moved from Emory)",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -3243,7 +3272,8 @@
    ],
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Emory; Miocinovic lab)",
-   "lead_flags": []
+   "lead_flags": [],
+   "publication_date": "2025-12"
   },
   {
    "innovation_id": "DON-2026-031",
@@ -3270,7 +3300,7 @@
    "problem_solved": "Tissue clearing normally requires fixed specimens",
    "technical_advantage": "Deeper in vivo imaging without fixation",
    "difference_from_prior": "Clearing in living, behaving animals vs. post-mortem clearing",
-   "maturity": "Preprint (Aug 2026)",
+   "maturity": "Preprint (bioRxiv Aug 2026)",
    "stage_code_estimate": "s3",
    "scientific_utility": {
     "novelty": 90,
@@ -3333,7 +3363,7 @@
    "next_action": "Meet the Holy lab about the in vivo clearing data; Neurotech Hub to scope imaging rigs; OTM conversation only for undisclosed formulations; DEP check of imaging-vendor interest.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3368,7 +3398,8 @@
     "next_steps": "Meet the Holy lab about the in vivo clearing data; Neurotech Hub to scope imaging rigs; OTM conversation only for undisclosed formulations; DEP check of imaging-vendor interest.",
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
-   }
+   },
+   "publication_date": "2026-08-23"
   },
   {
    "innovation_id": "DON-2026-032",
@@ -3396,7 +3427,7 @@
    "problem_solved": "Choosing NMF rank in advance is error-prone",
    "technical_advantage": "No need to rerun NMF at many ranks",
    "difference_from_prior": "GSVD-guided component proposal vs. rank sweeps",
-   "maturity": "Peer-reviewed (iScience 2026)",
+   "maturity": "Peer-reviewed (iScience Mar 2026); preprint (SSRN 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3436,7 +3467,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3452,7 +3483,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2026-03"
   },
   {
    "innovation_id": "DON-2026-033",
@@ -3481,7 +3513,7 @@
    "problem_solved": "Awake NHP fMRI suffers from low SNR and short sessions",
    "technical_advantage": "Higher sensitivity and acceleration for short awake sessions",
    "difference_from_prior": "Dedicated awake-NHP parallel-imaging coil vs. generic coils",
-   "maturity": "Peer-reviewed (Imaging Neuroscience 2026)",
+   "maturity": "Peer-reviewed (Imaging Neuroscience Sep 2026)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3535,7 +3567,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3551,7 +3583,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2026-09-03"
   },
   {
    "innovation_id": "DON-2026-034",
@@ -3580,7 +3613,7 @@
    "problem_solved": "Vascular organization across layers is poorly mapped in vivo",
    "technical_advantage": "Noninvasive laminar vascular maps",
    "difference_from_prior": "Contrast-enhanced laminar MRI vs. histology-only",
-   "maturity": "Peer-reviewed (eLife VOR 2025)",
+   "maturity": "Peer-reviewed (eLife VOR Jun 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3623,7 +3656,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3639,7 +3672,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2025-06-11"
   },
   {
    "innovation_id": "DON-2026-035",
@@ -3667,7 +3701,7 @@
    "problem_solved": "Unlinked bipartite components complicate crosses",
    "technical_advantage": "Driver and reporter linked on one chromosome; easy single-animal transgenesis",
    "difference_from_prior": "Recombinase-based cis conversion vs. manual recombination",
-   "maturity": "Peer-reviewed (Genetics 2026; microPublication 2025)",
+   "maturity": "Peer-reviewed (Genetics Jul 2026); microPublication 2025",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 75,
@@ -3707,7 +3741,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3723,7 +3757,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2026-07-06"
   },
   {
    "innovation_id": "DON-2026-036",
@@ -3750,7 +3785,7 @@
    "problem_solved": "Conventional ICC is slow and background-prone",
    "technical_advantage": "Faster labeling with lower background",
    "difference_from_prior": "Microwave assistance vs. bench incubation",
-   "maturity": "Peer-reviewed protocol (Current Protocols 2026)",
+   "maturity": "Peer-reviewed protocol (Current Protocols Apr 2026)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 55,
@@ -3789,7 +3824,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3803,7 +3838,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2026-04-13"
   },
   {
    "innovation_id": "DON-2026-037",
@@ -3830,7 +3866,7 @@
    "problem_solved": "ST tools focus on exploration, not inference",
    "technical_advantage": "Formal hypothesis tests without bespoke preprocessing",
    "difference_from_prior": "Mixed-effects spatial model vs. descriptive clustering",
-   "maturity": "Peer-reviewed (NAR 2026)",
+   "maturity": "Peer-reviewed (NAR May 2026)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 80,
@@ -3882,7 +3918,7 @@
    "next_action": "Ask Oviedo about packaging WSP for 10x/MERFISH users and making it a DoN-recommended analysis method.",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -3914,7 +3950,8 @@
     "next_steps": "Ask Oviedo about packaging WSP for 10x/MERFISH users and making it a DoN-recommended analysis method.",
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
-   }
+   },
+   "publication_date": "2026-05"
   },
   {
    "innovation_id": "DON-2026-038",
@@ -3941,7 +3978,7 @@
    "problem_solved": "FLIM comparisons are confounded by autofluorescence and photon counts",
    "technical_advantage": "Quantifies the conditions for valid cross-animal FLIM comparison",
    "difference_from_prior": "Realistic simulation-based design vs. ad hoc assumptions",
-   "maturity": "Peer-reviewed (eLife VOR 2025)",
+   "maturity": "Peer-reviewed (eLife VOR Aug 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3995,7 +4032,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -4011,7 +4048,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2025-08-20"
   },
   {
    "innovation_id": "DON-2026-039",
@@ -4038,7 +4076,7 @@
    "problem_solved": "Assembly detection methods are inconsistent",
    "technical_advantage": "Assembly detection from large calcium-imaging datasets",
    "difference_from_prior": "Graph-clustering workflow (Methods in Molecular Biology chapter)",
-   "maturity": "Published methods chapter (2024)",
+   "maturity": "Published methods chapter (Neuromethods Nov 2024)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 60,
@@ -4078,7 +4116,7 @@
    "next_action": "Monitor; candidate for monthly reassessment",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-24",
+   "last_review_date": "2026-10-25",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -4092,7 +4130,8 @@
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
-   ]
+   ],
+   "publication_date": "2024-11-27"
   }
  ],
  "changelog": [
@@ -4100,6 +4139,11 @@
    "date": "2026-10-24",
    "version": "1.1",
    "note": "Replaced don_ownership with lead_don_status and lead_home_department; top 10 restricted to core-led; added 9 core-led records (031-039); consistency rescoring logged in audit_log.jsonl"
+  },
+  {
+   "date": "2026-10-25",
+   "version": "1.2",
+   "note": "Signals data contract (docs/grok.md): backfilled publication_date for all 39 records from Crossref/arXiv (peer-reviewed date preferred over preprint; never the run date); maturity rewritten as short provenance lines; technical_advantage normalized to ;-separated clauses; neutral wording in DON-2026-010 description; top10 confirmed on the 10 core-led records. Schema bumped to 1.2 because publication_date is a new record field. No score changes; no image_url added (no verified public image)."
   }
  ]
 }
