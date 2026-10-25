@@ -1,5 +1,5 @@
 {
- "schema_version": "1.2",
+ "schema_version": "1.3",
  "generated": "2026-10-25",
  "scope": "DoN pilot",
  "extensible_scopes": [
@@ -120,7 +120,13 @@
    "lead_home_department": "Neuroscience",
    "lead_flags": [],
    "publication_date": "2026-06",
-   "image_url": "images/don-2026-001.jpg"
+   "image_url": "images/don-2026-001.jpg",
+   "first_public_date": "2026-02-17",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-002",
@@ -221,7 +227,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Stanford; Schnitzer lab)",
    "lead_flags": [],
-   "publication_date": "2025-04-15"
+   "publication_date": "2025-04-15",
+   "first_public_date": "2025-04-15",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-003",
@@ -335,7 +348,14 @@
    "lead_flags": [
     "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
    ],
-   "publication_date": "2026-09-06"
+   "publication_date": "2026-09-06",
+   "first_public_date": "2026-09-06",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-004",
@@ -437,7 +457,14 @@
    "lead_flags": [
     "Affiliate-led; core faculty member (Van Essen) is a co-author, not a lead."
    ],
-   "publication_date": "2025-05-03"
+   "publication_date": "2025-05-03",
+   "first_public_date": "2025-05-03",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-005",
@@ -459,12 +486,13 @@
     "https://doi.org/10.1002/cpz1.70177",
     "https://doi.org/10.1083/jcb.202601032",
     "https://doi.org/10.17504/protocols.io.5qpvo992bv4o/v2",
-    "https://doi.org/10.17504/protocols.io.36wgqd3wyvk5/v1"
+    "https://doi.org/10.17504/protocols.io.36wgqd3wyvk5/v1",
+    "https://doi.org/10.17504/protocols.io.5qpvo992bv4o/v1"
    ],
    "problem_solved": "Commercial calibration standards limited (fluorescence, volume, aberrations)",
    "technical_advantage": "Low cost; stable; 3D; autofluorescent and SHG-capable standard",
    "difference_from_prior": "Natural biological phantom vs. beads/dye slides",
-   "maturity": "Peer-reviewed protocol (Current Protocols Jul 2025); protocols.io",
+   "maturity": "Peer-reviewed protocol (Current Protocols Jul 2025); protocols.io; protocols.io v1 Dec 2024",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -573,7 +601,13 @@
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
-   "publication_date": "2025-07-29"
+   "publication_date": "2025-07-29",
+   "first_public_date": "2024-12-13",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-006",
@@ -710,7 +744,13 @@
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
-   "publication_date": "2026-01-27"
+   "publication_date": "2026-01-27",
+   "first_public_date": "2026-01-27",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-007",
@@ -815,7 +855,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (UNC; Hahn lab)",
    "lead_flags": [],
-   "publication_date": "2026-05-23"
+   "publication_date": "2026-05-23",
+   "first_public_date": "2026-05-23",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-008",
@@ -908,7 +955,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Otolaryngology (Sheets lab; verify)",
    "lead_flags": [],
-   "publication_date": "2025"
+   "publication_date": "2025",
+   "first_public_date": "2025",
+   "date_precision": "year",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-009",
@@ -1011,7 +1065,13 @@
    "lead_flags": [
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
    ],
-   "publication_date": "2026-05-20"
+   "publication_date": "2026-05-20",
+   "first_public_date": "2026-05-20",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-010",
@@ -1157,7 +1217,13 @@
     "Core faculty member is first author; senior author is outside DoN (Surgery).",
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
    ],
-   "publication_date": "2026-08-31"
+   "publication_date": "2026-08-31",
+   "first_public_date": "2026-08-31",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-011",
@@ -1298,7 +1364,13 @@
     "Investigator is Matt Gaidica (the user), so this is a self-assessment."
    ],
    "publication_date": "2026-10-12",
-   "image_url": "images/don-2026-011.jpg"
+   "image_url": "images/don-2026-011.jpg",
+   "first_public_date": "2026-10-12",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-012",
@@ -1409,7 +1481,13 @@
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
-   "publication_date": "2025-05-09"
+   "publication_date": "2025-05-09",
+   "first_public_date": "2025-05-09",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-013",
@@ -1503,7 +1581,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Medicine (Ding lab; verify)",
    "lead_flags": [],
-   "publication_date": "2026-03-16"
+   "publication_date": "2026-03-16",
+   "first_public_date": "2026-03-16",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-014",
@@ -1523,12 +1608,13 @@
    "domain": "software",
    "source_evidence": [
     "https://doi.org/10.1109/tsp.2025.3585893",
-    "https://github.com/HolyLab/NMFMerge.jl"
+    "https://github.com/HolyLab/NMFMerge.jl",
+    "https://arxiv.org/abs/2408.09013"
    ],
    "problem_solved": "NMF converges to poor/inconsistent minima",
    "technical_advantage": "Higher-quality, reproducible factorizations",
    "difference_from_prior": "Merge strategy vs. random restarts",
-   "maturity": "Peer-reviewed (IEEE Trans Signal Process 2025); Julia package",
+   "maturity": "Peer-reviewed (IEEE Trans Signal Process 2025); Julia package; preprint (arXiv Aug 2024)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 75,
@@ -1615,7 +1701,13 @@
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
    "lead_flags": [],
-   "publication_date": "2025"
+   "publication_date": "2025",
+   "first_public_date": "2024-08-16",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-015",
@@ -1742,7 +1834,13 @@
    "lead_don_status": "core",
    "lead_home_department": "Neuroscience",
    "lead_flags": [],
-   "publication_date": "2026-01-30"
+   "publication_date": "2026-01-30",
+   "first_public_date": "2026-01-30",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-016",
@@ -1833,7 +1931,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Univ. of Michigan; Wang lab)",
    "lead_flags": [],
-   "publication_date": "2026-01-09"
+   "publication_date": "2026-01-09",
+   "first_public_date": "2026-01-09",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-017",
@@ -1925,7 +2030,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (UC San Diego; Zhang lab)",
    "lead_flags": [],
-   "publication_date": "2026-02-09"
+   "publication_date": "2026-02-09",
+   "first_public_date": "2026-02-09",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-018",
@@ -2026,7 +2138,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Sorrells; affiliation to verify)",
    "lead_flags": [],
-   "publication_date": "2025"
+   "publication_date": "2025",
+   "first_public_date": "2025",
+   "date_precision": "year",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-019",
@@ -2146,7 +2265,14 @@
    "lead_don_status": "affiliate",
    "lead_home_department": "Biomedical Engineering",
    "lead_flags": [],
-   "publication_date": "2025-10-01"
+   "publication_date": "2025-10-01",
+   "first_public_date": "2025-10-01",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-020",
@@ -2255,7 +2381,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Neurology (Mazzoni; verify)",
    "lead_flags": [],
-   "publication_date": "2024-12-28"
+   "publication_date": "2024-12-28",
+   "first_public_date": "2024-12-28",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-021",
@@ -2372,7 +2505,14 @@
    "lead_don_status": "affiliate",
    "lead_home_department": "Anesthesiology",
    "lead_flags": [],
-   "publication_date": "2026-09-24"
+   "publication_date": "2026-09-24",
+   "first_public_date": "2026-09-24",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-022",
@@ -2465,7 +2605,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Western University; Khan lab)",
    "lead_flags": [],
-   "publication_date": "2026-07-27"
+   "publication_date": "2026-07-27",
+   "first_public_date": "2026-07-27",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-023",
@@ -2558,7 +2705,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Univ. of Padova; Bertoldo lab)",
    "lead_flags": [],
-   "publication_date": "2024-12-24"
+   "publication_date": "2024-12-24",
+   "first_public_date": "2024-12-24",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-024",
@@ -2667,7 +2821,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Radiology (Nazeri; verify)",
    "lead_flags": [],
-   "publication_date": "2026-05-06"
+   "publication_date": "2026-05-06",
+   "first_public_date": "2025-07-16",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-025",
@@ -2759,7 +2920,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Medicine (Mitreva lab; verify)",
    "lead_flags": [],
-   "publication_date": "2026-02-24"
+   "publication_date": "2026-02-24",
+   "first_public_date": "2026-02-24",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-026",
@@ -2779,12 +2947,13 @@
    "domain": "research-tool",
    "source_evidence": [
     "https://doi.org/10.1038/s41598-025-16766-z",
-    "https://doi.org/10.1093/jimmun/vkaf283.1842"
+    "https://doi.org/10.1093/jimmun/vkaf283.1842",
+    "https://doi.org/10.21203/rs.3.rs-6109657/v1"
    ],
    "problem_solved": "Clearing protocols slow, toxic, distort tissue",
    "technical_advantage": "Fast; non-toxic; preserves membranes and fluorescence; clinic-compatible",
    "difference_from_prior": "Partial delipidation vs. full lipid removal",
-   "maturity": "Peer-reviewed (Sci Rep Aug 2025); conference abstract",
+   "maturity": "Peer-reviewed (Sci Rep Aug 2025); conference abstract; preprint (Research Square Mar 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -2879,7 +3048,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Pathology & Immunology (Randolph lab)",
    "lead_flags": [],
-   "publication_date": "2025-08-29"
+   "publication_date": "2025-08-29",
+   "first_public_date": "2025-03-24",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-027",
@@ -2972,7 +3148,14 @@
    "lead_don_status": "affiliate",
    "lead_home_department": "Psychiatry (verify)",
    "lead_flags": [],
-   "publication_date": "2025-08-26"
+   "publication_date": "2025-08-26",
+   "first_public_date": "2025-08-26",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-028",
@@ -3076,7 +3259,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "Ophthalmology (A. Huang; verify)",
    "lead_flags": [],
-   "publication_date": "2026-01"
+   "publication_date": "2026-01",
+   "first_public_date": "2026-01",
+   "date_precision": "month",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-029",
@@ -3168,7 +3358,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (MGH; Westover lab)",
    "lead_flags": [],
-   "publication_date": "2025-05-03"
+   "publication_date": "2025-05-03",
+   "first_public_date": "2025-05-03",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-030",
@@ -3187,12 +3384,13 @@
    "category": "algorithm/clinical tool",
    "domain": "device",
    "source_evidence": [
-    "https://doi.org/10.1088/1741-2552/ae2e8b"
+    "https://doi.org/10.1088/1741-2552/ae2e8b",
+    "https://doi.org/10.1101/2025.08.26.25334489"
    ],
    "problem_solved": "Patients must self-report capsular side effects",
    "technical_advantage": "Objective side-effect detection during programming/surgery",
    "difference_from_prior": "Automated EMG mEP vs. subjective report",
-   "maturity": "Peer-reviewed (J Neural Eng Dec 2025)",
+   "maturity": "Peer-reviewed (J Neural Eng Dec 2025); preprint (medRxiv Aug 2025)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 65,
@@ -3275,7 +3473,14 @@
    "lead_don_status": "external/co-author only",
    "lead_home_department": "External (Emory; Miocinovic lab)",
    "lead_flags": [],
-   "publication_date": "2025-12"
+   "publication_date": "2025-12",
+   "first_public_date": "2025-08-28",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-031",
@@ -3401,7 +3606,13 @@
     "flags": [],
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
-   "publication_date": "2026-08-23"
+   "publication_date": "2026-08-23",
+   "first_public_date": "2026-08-23",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-032",
@@ -3424,7 +3635,8 @@
    "domain": "software",
    "source_evidence": [
     "https://doi.org/10.1016/j.isci.2026.114708",
-    "https://doi.org/10.2139/ssrn.5459046"
+    "https://doi.org/10.2139/ssrn.5459046",
+    "https://arxiv.org/abs/2408.08260"
    ],
    "problem_solved": "Choosing NMF rank in advance is error-prone",
    "technical_advantage": "No need to rerun NMF at many ranks",
@@ -3486,7 +3698,13 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2026-03"
+   "publication_date": "2026-03",
+   "first_public_date": "2024-08-15",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-033",
@@ -3502,20 +3720,21 @@
     }
    ],
    "originating_lab": "Autio (with Hayashi, RIKEN)",
-   "lead_don_status": "core",
-   "lead_home_department": "Neuroscience",
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (RIKEN; Hayashi lab); DoN co-authors Van Essen, Glasser",
    "lead_flags": [
     "Work co-led with RIKEN (Hayashi); may predate WashU appointment, so verify."
    ],
    "category": "instrument/hardware",
    "domain": "device",
    "source_evidence": [
-    "https://doi.org/10.1162/imag.a.1354"
+    "https://doi.org/10.1162/imag.a.1354",
+    "https://doi.org/10.1101/2025.04.15.648822"
    ],
    "problem_solved": "Awake NHP fMRI suffers from low SNR and short sessions",
    "technical_advantage": "Higher sensitivity and acceleration for short awake sessions",
    "difference_from_prior": "Dedicated awake-NHP parallel-imaging coil vs. generic coils",
-   "maturity": "Peer-reviewed (Imaging Neuroscience Sep 2026)",
+   "maturity": "Peer-reviewed (Imaging Neuroscience Sep 2026); preprint (bioRxiv Apr 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3586,7 +3805,14 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2026-09-03"
+   "publication_date": "2026-09-03",
+   "first_public_date": "2025-04-20",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-034",
@@ -3602,20 +3828,21 @@
     }
    ],
    "originating_lab": "Autio (with Hayashi, RIKEN)",
-   "lead_don_status": "core",
-   "lead_home_department": "Neuroscience",
+   "lead_don_status": "external/co-author only",
+   "lead_home_department": "External (RIKEN; Hayashi lab); DoN co-authors Van Essen, Glasser",
    "lead_flags": [
     "Work co-led with RIKEN (Hayashi); may predate WashU appointment, so verify."
    ],
    "category": "imaging method",
    "domain": "research-tool",
    "source_evidence": [
-    "https://doi.org/10.7554/elife.99940"
+    "https://doi.org/10.7554/elife.99940",
+    "https://doi.org/10.1101/2024.05.16.594068"
    ],
    "problem_solved": "Vascular organization across layers is poorly mapped in vivo",
    "technical_advantage": "Noninvasive laminar vascular maps",
    "difference_from_prior": "Contrast-enhanced laminar MRI vs. histology-only",
-   "maturity": "Peer-reviewed (eLife VOR Jun 2025)",
+   "maturity": "Peer-reviewed (eLife VOR Jun 2025); preprint (bioRxiv May 2024)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -3675,7 +3902,14 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2025-06-11"
+   "publication_date": "2025-06-11",
+   "first_public_date": "2024-05-17",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "participating_department_ids": [
+    "don"
+   ]
   },
   {
    "innovation_id": "DON-2026-035",
@@ -3698,12 +3932,13 @@
    "domain": "research-tool",
    "source_evidence": [
     "https://doi.org/10.1093/genetics/iyag166",
-    "https://doi.org/10.17912/micropub.biology.001784"
+    "https://doi.org/10.17912/micropub.biology.001784",
+    "https://doi.org/10.1101/2024.03.01.583017"
    ],
    "problem_solved": "Unlinked bipartite components complicate crosses",
    "technical_advantage": "Driver and reporter linked on one chromosome; easy single-animal transgenesis",
    "difference_from_prior": "Recombinase-based cis conversion vs. manual recombination",
-   "maturity": "Peer-reviewed (Genetics Jul 2026); microPublication 2025",
+   "maturity": "Peer-reviewed (Genetics Jul 2026); microPublication 2025; preprint (bioRxiv Mar 2024)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 75,
@@ -3760,7 +3995,13 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2026-07-06"
+   "publication_date": "2026-07-06",
+   "first_public_date": "2024-03-03",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-036",
@@ -3841,7 +4082,13 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2026-04-13"
+   "publication_date": "2026-04-13",
+   "first_public_date": "2026-04-13",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-037",
@@ -3863,12 +4110,13 @@
    "category": "algorithm/software",
    "domain": "software",
    "source_evidence": [
-    "https://doi.org/10.1093/nar/gkag466"
+    "https://doi.org/10.1093/nar/gkag466",
+    "https://doi.org/10.1101/2025.06.11.659209"
    ],
    "problem_solved": "ST tools focus on exploration, not inference",
    "technical_advantage": "Formal hypothesis tests without bespoke preprocessing",
    "difference_from_prior": "Mixed-effects spatial model vs. descriptive clustering",
-   "maturity": "Peer-reviewed (NAR May 2026)",
+   "maturity": "Peer-reviewed (NAR May 2026); preprint (bioRxiv Jun 2025)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 80,
@@ -3954,7 +4202,13 @@
     "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
    },
    "publication_date": "2026-05",
-   "image_url": "images/don-2026-037.jpg"
+   "image_url": "images/don-2026-037.jpg",
+   "first_public_date": "2025-06-17",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-038",
@@ -3976,12 +4230,13 @@
    "category": "software/analysis framework",
    "domain": "software",
    "source_evidence": [
-    "https://doi.org/10.7554/elife.101559"
+    "https://doi.org/10.7554/elife.101559",
+    "https://doi.org/10.1101/2023.12.20.572686"
    ],
    "problem_solved": "FLIM comparisons are confounded by autofluorescence and photon counts",
    "technical_advantage": "Quantifies the conditions for valid cross-animal FLIM comparison",
    "difference_from_prior": "Realistic simulation-based design vs. ad hoc assumptions",
-   "maturity": "Peer-reviewed (eLife VOR Aug 2025)",
+   "maturity": "Peer-reviewed (eLife VOR Aug 2025); preprint (bioRxiv Dec 2023)",
    "stage_code_estimate": "s5",
    "scientific_utility": {
     "novelty": 70,
@@ -4052,7 +4307,13 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2025-08-20"
+   "publication_date": "2025-08-20",
+   "first_public_date": "2023-12-21",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   },
   {
    "innovation_id": "DON-2026-039",
@@ -4134,7 +4395,13 @@
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
     }
    ],
-   "publication_date": "2024-11-27"
+   "publication_date": "2024-11-27",
+   "first_public_date": "2024-11-27",
+   "date_precision": "day",
+   "first_seen_at": "2026-10-24",
+   "last_checked_at": "2026-10-25",
+   "lead_department_id": "don",
+   "participating_department_ids": []
   }
  ],
  "changelog": [
@@ -4152,6 +4419,11 @@
    "date": "2026-10-25",
    "version": "1.2",
    "note": "Added image_url for DON-2026-011 (Fig 2, FLEX-DBS bioRxiv preprint, CC BY), DON-2026-001 (graphical abstract, STAR Protocols, CC BY 4.0), DON-2026-037 (graphical abstract, Nucleic Acids Research, CC BY 4.0); images stored locally in the repo."
+  },
+  {
+   "date": "2026-10-25",
+   "version": "1.3",
+   "note": "Schema 1.3 migration: added first_public_date, date_precision, first_seen_at (=discovery_date 2026-10-24), last_checked_at (2026-10-25), lead_department_id (don on core-led records), participating_department_ids ([\"don\"] on affiliate/co-author records) to all 39 records. first_public_date differs from publication_date on: DON-2026-001 (2026-06 -> 2026-02-17), DON-2026-005 (2025-07-29 -> 2024-12-13), DON-2026-014 (2025 -> 2024-08-16), DON-2026-024 (2026-05-06 -> 2025-07-16), DON-2026-026 (2025-08-29 -> 2025-03-24), DON-2026-030 (2025-12 -> 2025-08-28), DON-2026-032 (2026-03 -> 2024-08-15), DON-2026-033 (2026-09-03 -> 2025-04-20), DON-2026-034 (2025-06-11 -> 2024-05-17), DON-2026-035 (2026-07-06 -> 2024-03-03), DON-2026-037 (2026-05 -> 2025-06-17), DON-2026-038 (2025-08-20 -> 2023-12-21). DON-2026-033/034 retagged external/co-author only (work predates Autio WashU appointment 2025-04-01). DON-2026-015 DMM article confirmed a separate work."
   }
  ]
 }
