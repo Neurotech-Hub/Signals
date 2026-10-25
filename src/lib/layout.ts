@@ -2,8 +2,12 @@
  * Deterministic cluster layout for the hero constellation.
  *
  * Every node is a real record. Clusters are real groups (domain by default).
- * Node radius encodes the number of public source-evidence links (1–4+).
- * No links/edges are drawn — the dataset does not contain relationships.
+ * Node core radius encodes the number of public source-evidence links (1–4+).
+ *
+ * Lines and particles are texture, not data: lines join a node to its nearest
+ * neighbours inside the same domain cluster (a grouping the dataset really
+ * has) and never cross clusters, so they cannot read as collaborations. The
+ * dataset contains no relationships and none are drawn.
  */
 
 import { forceSimulation, forceX, forceY, forceCollide, forceManyBody } from 'd3-force';
@@ -15,10 +19,14 @@ export interface ClusterLayout extends GroupMeta {
   /** Target center used by the force. */
   cx: number;
   cy: number;
-  /** Post-simulation centroid and extent, used for labels and ambient glow. */
+  /** Post-simulation centroid and extent, used for labels and ambient haze. */
   centroidX: number;
   centroidY: number;
   extent: number;
+  /** Haze ellipse radii — slightly irregular so clusters do not look stamped. */
+  hazeRx: number;
+  hazeRy: number;
+  hazeRotate: number;
   label: string;
   labelX: number;
   labelY: number;
@@ -29,14 +37,36 @@ export interface NodeLayout {
   id: string;
   record: InnovationRecord;
   group: string;
+  /** Core radius. Glow layers are multiples of this. */
   r: number;
   x: number;
   y: number;
-  /** Drift parameters for the gentle CSS motion. */
+  /** Drift parameters for the gentle CSS motion (1–3px). */
   dx: number;
   dy: number;
   dur: number;
   delay: number;
+  /** Pulse timing so nodes breathe out of phase. */
+  pulseDur: number;
+  pulseDelay: number;
+}
+
+export interface LinkLayout {
+  a: string;
+  b: string;
+  group: string;
+  /** Quadratic bezier path in SVG coordinates. */
+  d: string;
+}
+
+export interface Particle {
+  x: number;
+  y: number;
+  r: number;
+  o: number;
+  color: string;
+  /** Twinkle timing; null means static. */
+  twinkle: { dur: number; delay: number } | null;
 }
 
 export interface ConstellationLayout {
@@ -44,7 +74,11 @@ export interface ConstellationLayout {
   height: number;
   clusters: ClusterLayout[];
   nodes: NodeLayout[];
-  dust: Array<{ x: number; y: number; r: number; o: number }>;
+  links: LinkLayout[];
+  /** Colored particles around clusters. Decorative. */
+  particles: Particle[];
+  /** Faint white background stars. Decorative. */
+  dust: Particle[];
 }
 
 interface SimNode {
@@ -69,9 +103,10 @@ function mulberry32(seed: number) {
   };
 }
 
+/** Core radius, 3–8px: a bright point, not a ball. */
 export function nodeRadius(record: InnovationRecord): number {
   const evidence = Math.max(1, record.source_evidence?.length ?? 1);
-  return Math.min(6 + (evidence - 1) * 2.5, 14);
+  return Math.min(3 + (evidence - 1) * 1.75, 8);
 }
 
 const LABEL_LINE_H = 13;
@@ -104,9 +139,9 @@ export function computeLayout(
 
   const clusters: ClusterLayout[] = ordered.map(([key, list], i) => {
     const meta = groupMetaFor(key, groupBy, i);
-    const angle = startAngle + (i * 2 * Math.PI) / Math.max(n, 1);
-    const cx = cxMid + rx * Math.cos(angle);
-    const cy = cyMid + ry * Math.sin(angle);
+    const angle = n === 1 ? 0 : startAngle + (i * 2 * Math.PI) / Math.max(n, 1);
+    const cx = n === 1 ? cxMid : cxMid + rx * Math.cos(angle);
+    const cy = n === 1 ? cyMid : cyMid + ry * Math.sin(angle);
     return {
       ...meta,
       count: list.length,
@@ -115,6 +150,9 @@ export function computeLayout(
       centroidX: cx,
       centroidY: cy,
       extent: 0,
+      hazeRx: 0,
+      hazeRy: 0,
+      hazeRotate: 0,
       labelX: cx,
       labelY: cy,
       labelAnchor: 'middle',
@@ -141,7 +179,8 @@ export function computeLayout(
   const sim = forceSimulation<SimNode>(simNodes)
     .force('x', forceX<SimNode>((d) => clusterByKey.get(d.group)!.cx).strength(0.06))
     .force('y', forceY<SimNode>((d) => clusterByKey.get(d.group)!.cy).strength(0.06))
-    .force('collide', forceCollide<SimNode>((d) => d.r + 9).iterations(2))
+    // Keep room for the inner halo (~2.6× core) plus breathing space.
+    .force('collide', forceCollide<SimNode>((d) => d.r * 2.6 + 7).iterations(2))
     .force('charge', forceManyBody<SimNode>().strength(-18).distanceMax(140))
     .stop();
   sim.tick(300);
@@ -155,6 +194,11 @@ export function computeLayout(
     c.centroidX = sx;
     c.centroidY = sy;
     c.extent = extent;
+    // Haze: 1.5–2× the cluster, mildly elliptical and tilted.
+    const base = Math.max(extent, 18);
+    c.hazeRx = base * (1.55 + rand() * 0.35) + 26;
+    c.hazeRy = base * (1.35 + rand() * 0.35) + 22;
+    c.hazeRotate = (rand() - 0.5) * 50;
 
     // Label sits just outside the cluster on the side facing away from center.
     let dirX = sx - cxMid;
@@ -199,19 +243,77 @@ export function computeLayout(
     r: d.r,
     x: d.x,
     y: d.y,
-    dx: (rand() - 0.5) * 8,
-    dy: (rand() - 0.5) * 8,
-    dur: 7 + rand() * 6,
-    delay: -rand() * 10,
+    dx: (rand() - 0.5) * 5,
+    dy: (rand() - 0.5) * 5,
+    dur: 8 + rand() * 6,
+    delay: -rand() * 12,
+    pulseDur: 3.5 + rand() * 3.5,
+    pulseDelay: -rand() * 7,
   }));
 
-  // Purely decorative background specks (not data). Kept tiny and neutral.
-  const dust = Array.from({ length: 70 }, () => ({
+  // Texture lines: each node to its nearest one or two neighbours in the same
+  // cluster, capped by distance, de-duplicated. Sparse by construction.
+  const links: LinkLayout[] = [];
+  const seen = new Set<string>();
+  for (const c of clusters) {
+    const members = simNodes.filter((d) => d.group === c.key);
+    const maxDist = Math.max(60, c.extent * 0.9);
+    for (const a of members) {
+      const near = members
+        .filter((b) => b !== a)
+        .map((b) => ({ b, dist: Math.hypot(a.x - b.x, a.y - b.y) }))
+        .sort((p, q) => p.dist - q.dist)
+        .slice(0, members.length > 6 ? 2 : 1)
+        .filter((p) => p.dist <= maxDist);
+      for (const { b } of near) {
+        const key = a.id < b.id ? `${a.id}|${b.id}` : `${b.id}|${a.id}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        // Gentle curve: control point offset perpendicular to the chord.
+        const mx = (a.x + b.x) / 2;
+        const my = (a.y + b.y) / 2;
+        const vx = b.x - a.x;
+        const vy = b.y - a.y;
+        const L = Math.hypot(vx, vy) || 1;
+        const bend = (rand() - 0.5) * Math.min(18, L * 0.35);
+        const qx = mx + (-vy / L) * bend;
+        const qy = my + (vx / L) * bend;
+        links.push({ a: a.id, b: b.id, group: c.key, d: `M${a.x.toFixed(1)} ${a.y.toFixed(1)} Q${qx.toFixed(1)} ${qy.toFixed(1)} ${b.x.toFixed(1)} ${b.y.toFixed(1)}` });
+      }
+    }
+  }
+
+  // Colored particles scattered around each cluster. Decorative only.
+  const particles: Particle[] = [];
+  for (const c of clusters) {
+    const count = 8 + Math.round(Math.sqrt(c.count) * 4);
+    const reach = c.extent * 1.5 + 36;
+    for (let i = 0; i < count; i++) {
+      const a = rand() * Math.PI * 2;
+      // Bias outward so particles ring the cluster rather than crowd the nodes.
+      const d = (0.45 + 0.55 * Math.sqrt(rand())) * reach;
+      const white = rand() < 0.22;
+      const twinkle = rand() < 0.35 ? { dur: 4 + rand() * 5, delay: -rand() * 9 } : null;
+      particles.push({
+        x: c.centroidX + Math.cos(a) * d,
+        y: c.centroidY + Math.sin(a) * d * 0.85,
+        r: 0.5 + rand() * 1.4,
+        o: 0.25 + rand() * 0.5,
+        color: white ? '#ffffff' : c.color,
+        twinkle,
+      });
+    }
+  }
+
+  // Sparse white background stars.
+  const dust: Particle[] = Array.from({ length: 60 }, () => ({
     x: rand() * width,
     y: rand() * height,
-    r: 0.5 + rand() * 0.9,
-    o: 0.12 + rand() * 0.3,
+    r: 0.4 + rand() * 0.8,
+    o: 0.1 + rand() * 0.28,
+    color: '#ffffff',
+    twinkle: rand() < 0.2 ? { dur: 5 + rand() * 6, delay: -rand() * 11 } : null,
   }));
 
-  return { width, height, clusters, nodes, dust };
+  return { width, height, clusters, nodes, links, particles, dust };
 }

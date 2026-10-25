@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { InnovationRecord } from '@/types/innovation';
-import { formatDate } from '@/lib/data';
-import { LEAD_LABELS, leadBucket, sourceLabel } from '@/lib/normalize';
+import { sourceLabel } from '@/lib/normalize';
+import { publicationDate } from '@/lib/publication';
 
 interface NodePopoverProps {
   record: InnovationRecord;
@@ -16,8 +16,8 @@ const WIDTH = 320;
 
 /**
  * Detail card for a selected node. Renders only public-safe fields
- * (see data/README.md): name, description, investigators, lab, category,
- * source links, discovery date.
+ * (see docs/grok.md): name, description, investigators, lab, category,
+ * source links, public date. Leadership status stays internal.
  */
 export function NodePopover({ record, color, groupLabel, anchor, container, onClose }: NodePopoverProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -48,7 +48,7 @@ export function NodePopover({ record, color, groupLabel, anchor, container, onCl
     ? { left, top: anchor.bottom + 12 }
     : { left, bottom: ch - anchor.top + 12 };
 
-  const lead = leadBucket(record.lead_don_status);
+  const pub = publicationDate(record);
 
   return (
     <div
@@ -67,9 +67,9 @@ export function NodePopover({ record, color, groupLabel, anchor, container, onCl
           >
             {groupLabel}
           </span>
-          <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-white/70">
-            {LEAD_LABELS[lead]}
-          </span>
+          {pub && (
+            <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-white/70">{pub.label}</span>
+          )}
         </div>
         <button
           type="button"
@@ -98,10 +98,6 @@ export function NodePopover({ record, color, groupLabel, anchor, container, onCl
         <div className="flex gap-2">
           <dt className="w-20 shrink-0 text-white/45">Category</dt>
           <dd className="text-white/85">{record.category}</dd>
-        </div>
-        <div className="flex gap-2">
-          <dt className="w-20 shrink-0 text-white/45">Identified</dt>
-          <dd className="text-white/85">{formatDate(record.discovery_date)} by the Scout</dd>
         </div>
       </dl>
 

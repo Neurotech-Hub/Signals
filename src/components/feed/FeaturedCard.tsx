@@ -1,5 +1,5 @@
 import type { InnovationRecord } from '@/types/innovation';
-import { domainChip, domainMeta, LEAD_LABELS, leadBucket, sourceLabel } from '@/lib/normalize';
+import { domainChip, domainMeta, sourceLabel } from '@/lib/normalize';
 import { insightPhrases, publicationDate } from '@/lib/publication';
 
 interface FeaturedCardProps {
@@ -13,7 +13,6 @@ export function FeaturedCard({ record, selected, onSelect }: FeaturedCardProps) 
   const pub = publicationDate(record);
   const phrases = insightPhrases(record.technical_advantage);
   const image = typeof record.image_url === 'string' && record.image_url ? record.image_url : null;
-  const lead = leadBucket(record.lead_don_status);
   const names = record.investigators.map((p) => p.name);
   const affiliation = record.investigators[0]?.affiliation;
 
@@ -40,9 +39,6 @@ export function FeaturedCard({ record, selected, onSelect }: FeaturedCardProps) 
           <div className="flex items-start justify-between gap-3">
             <div className="flex flex-wrap items-center gap-1.5">
               <Chip color={meta.color}>{domainChip(record.domain)}</Chip>
-              <span className="rounded-full bg-ink-100 px-2 py-0.5 text-[11px] font-medium text-ink-700">
-                {LEAD_LABELS[lead]}
-              </span>
             </div>
             {pub && <time className="shrink-0 text-xs text-ink-500">{pub.label}</time>}
           </div>

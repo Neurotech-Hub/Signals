@@ -1,14 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type MouseEvent } from 'react';
 import type { InnovationRecord } from '@/types/innovation';
 import { computeLayout, type NodeLayout } from '@/lib/layout';
-import { leadBucket } from '@/lib/normalize';
 import { NodePopover } from './NodePopover';
 
 interface ConstellationProps {
   records: InnovationRecord[];
   groupBy?: 'domain' | 'category';
-  /** Decorative background specks. Not data. */
-  dust?: boolean;
+  /** Decorative particles and texture lines. Never data. */
+  decor?: boolean;
   className?: string;
 }
 
@@ -20,19 +19,29 @@ interface Anchor {
   bottom: number;
 }
 
-const LEAD_OPACITY = { core: 1, affiliate: 0.9, external: 0.62 } as const;
-
 /**
  * Interactive cluster map of the archive. One node per record, grouped by
  * domain (default). Hover → title; click/Enter → detail popover.
+ *
+ * Rendering follows "render light, not objects": each node is a small bright
+ * core with soft gradient glow layers; clusters sit in a feathered haze; faint
+ * curved lines and particles add texture. Glows are radial gradients, not
+ * blur filters, so the scene stays cheap on mobile.
  */
-export function Constellation({ records, groupBy = 'domain', dust = true, className = '' }: ConstellationProps) {
+export function Constellation({ records, groupBy = 'domain', decor = true, className = '' }: ConstellationProps) {
   const layout = useMemo(() => computeLayout(records, groupBy), [records, groupBy]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [hover, setHover] = useState<Anchor | null>(null);
   const [selected, setSelected] = useState<Anchor | null>(null);
 
   const nodeById = useMemo(() => new Map(layout.nodes.map((n) => [n.id, n])), [layout]);
+  const clusterByKey = useMemo(() => new Map(layout.clusters.map((c) => [c.key, c])), [layout]);
+
+  // Drop a selection whose node left the layout (scope change).
+  useEffect(() => {
+    if (selected && !nodeById.has(selected.id)) setSelected(null);
+    if (hover && !nodeById.has(hover.id)) setHover(null);
+  }, [nodeById, selected, hover]);
 
   const anchorFor = useCallback((el: Element, id: string): Anchor => {
     const c = containerRef.current!.getBoundingClientRect();
@@ -65,9 +74,10 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
     };
   }, [selected]);
 
-  const { width, height, clusters, nodes } = layout;
+  const { width, height, clusters, nodes, links, particles, dust } = layout;
   const hoverNode = hover ? nodeById.get(hover.id) : undefined;
   const selectedNode = selected ? nodeById.get(selected.id) : undefined;
+  const hotId = hover?.id ?? selected?.id ?? null;
 
   return (
     <div ref={containerRef} className={`relative ${className}`}>
@@ -81,72 +91,122 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
         }}
       >
         <defs>
-          <filter id="c-glow" x="-120%" y="-120%" width="340%" height="340%">
-            <feGaussianBlur stdDeviation="4.5" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-          <filter id="c-soft" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="18" />
-          </filter>
-          {clusters.map((c) => (
-            <g key={c.key}>
-              <radialGradient id={`c-ambient-${c.key}`}>
-                <stop offset="0%" stopColor={c.color} stopOpacity="0.42" />
-                <stop offset="45%" stopColor={c.color} stopOpacity="0.14" />
-                <stop offset="100%" stopColor={c.color} stopOpacity="0" />
-              </radialGradient>
-              <radialGradient id={`c-node-${c.key}`} cx="38%" cy="35%" r="70%">
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.95" />
-                <stop offset="38%" stopColor={c.color} />
-                <stop offset="100%" stopColor={c.color} stopOpacity="0.85" />
-              </radialGradient>
-            </g>
-          ))}
+          {clusters.map((c) => {
+            const tint = mix(c.color, '#ffffff', 0.55);
+            return (
+              <g key={c.key}>
+                {/* Cluster haze: a large feathered region of colored light. */}
+                <radialGradient id={`c-haze-${c.key}`}>
+                  <stop offset="0%" stopColor={c.color} stopOpacity="0.2" />
+                  <stop offset="45%" stopColor={c.color} stopOpacity="0.085" />
+                  <stop offset="100%" stopColor={c.color} stopOpacity="0" />
+                </radialGradient>
+                {/* Outer bloom: diffuse, fades fully to transparent. */}
+                <radialGradient id={`c-bloom-${c.key}`}>
+                  <stop offset="0%" stopColor={c.color} stopOpacity="0.52" />
+                  <stop offset="38%" stopColor={c.color} stopOpacity="0.17" />
+                  <stop offset="100%" stopColor={c.color} stopOpacity="0" />
+                </radialGradient>
+                {/* Inner halo: saturated glow hugging the core. */}
+                <radialGradient id={`c-halo-${c.key}`}>
+                  <stop offset="0%" stopColor={tint} stopOpacity="0.75" />
+                  <stop offset="35%" stopColor={c.color} stopOpacity="0.55" />
+                  <stop offset="100%" stopColor={c.color} stopOpacity="0" />
+                </radialGradient>
+                {/* Core: nearly white center, tinted toward the edge. */}
+                <radialGradient id={`c-core-${c.key}`}>
+                  <stop offset="0%" stopColor="#ffffff" />
+                  <stop offset="55%" stopColor={tint} />
+                  <stop offset="100%" stopColor={c.color} />
+                </radialGradient>
+              </g>
+            );
+          })}
         </defs>
 
-        {/* Decorative specks (not data) */}
-        {dust && (
-          <g className="constellation-dust" pointerEvents="none" aria-hidden="true">
-            {layout.dust.map((d, i) => (
-              <circle key={i} cx={d.x} cy={d.y} r={d.r} fill="#fff" opacity={d.o} />
-            ))}
-          </g>
-        )}
-
-        {/* Ambient glow per cluster */}
-        <g pointerEvents="none" aria-hidden="true">
-          {clusters.map((c) => (
-            <circle
+        {/* Atmospheric haze behind each cluster (additive). */}
+        <g className="constellation-decor" pointerEvents="none" aria-hidden="true" style={{ mixBlendMode: 'screen' }}>
+          {clusters.map((c, i) => (
+            <ellipse
               key={c.key}
+              className="constellation-haze"
               cx={c.centroidX}
               cy={c.centroidY}
-              r={c.extent * 1.6 + 40}
-              fill={`url(#c-ambient-${c.key})`}
-              filter="url(#c-soft)"
+              rx={c.hazeRx}
+              ry={c.hazeRy}
+              transform={`rotate(${c.hazeRotate.toFixed(1)} ${c.centroidX.toFixed(1)} ${c.centroidY.toFixed(1)})`}
+              fill={`url(#c-haze-${c.key})`}
+              style={{ '--delay': `${-i * 4.3}s` } as CSSProperties}
             />
           ))}
         </g>
 
+        {/* Background stars and cluster particles (decorative, not data). */}
+        {decor && (
+          <g className="constellation-dust constellation-decor" pointerEvents="none" aria-hidden="true">
+            {dust.map((p, i) => (
+              <circle
+                key={`d${i}`}
+                className={p.twinkle ? 'constellation-twinkle' : undefined}
+                cx={p.x}
+                cy={p.y}
+                r={p.r}
+                fill={p.color}
+                opacity={p.o}
+                style={p.twinkle ? ({ '--dur': `${p.twinkle.dur}s`, '--delay': `${p.twinkle.delay}s`, '--o': p.o } as CSSProperties) : undefined}
+              />
+            ))}
+            {particles.map((p, i) => (
+              <circle
+                key={`p${i}`}
+                className={p.twinkle ? 'constellation-twinkle' : undefined}
+                cx={p.x}
+                cy={p.y}
+                r={p.r}
+                fill={p.color}
+                opacity={p.o}
+                style={p.twinkle ? ({ '--dur': `${p.twinkle.dur}s`, '--delay': `${p.twinkle.delay}s`, '--o': p.o } as CSSProperties) : undefined}
+              />
+            ))}
+          </g>
+        )}
+
+        {/* Texture lines inside each cluster. Not relationships. */}
+        {decor && (
+          <g className="constellation-decor" pointerEvents="none" aria-hidden="true" fill="none" strokeLinecap="round">
+            {links.map((l) => {
+              const hot = hotId !== null && (l.a === hotId || l.b === hotId);
+              return (
+                <path
+                  key={`${l.a}|${l.b}`}
+                  className="constellation-link"
+                  data-hot={hot ? 'true' : undefined}
+                  d={l.d}
+                  stroke={clusterByKey.get(l.group)!.color}
+                />
+              );
+            })}
+          </g>
+        )}
+
         {/* Nodes */}
         <g>
           {nodes.map((n) => {
-            const cluster = clusters.find((c) => c.key === n.group)!;
-            const lead = leadBucket(n.record.lead_don_status);
+            const cluster = clusterByKey.get(n.group)!;
             const driftStyle = {
               '--dx': `${n.dx}px`,
               '--dy': `${n.dy}px`,
               '--dur': `${n.dur}s`,
               '--delay': `${n.delay}s`,
             } as CSSProperties;
+            const pulseStyle = { '--pdur': `${n.pulseDur}s`, '--pdelay': `${n.pulseDelay}s` } as CSSProperties;
             const active = selected?.id === n.id;
+            const major = n.r >= 5.5;
             return (
               <g key={n.id} transform={`translate(${n.x} ${n.y})`}>
                 <g className="constellation-node__drift" style={driftStyle}>
                   <g
-                    className="constellation-node"
+                    className="signal-node"
                     data-active={active ? 'true' : undefined}
                     role="button"
                     tabIndex={0}
@@ -163,20 +223,20 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
                     onKeyDown={(e) => onKey(e, n)}
                   >
                     {/* Generous hit area */}
-                    <circle r={Math.max(n.r * 2.2, 14)} fill="transparent" />
-                    <circle className="constellation-node__halo" r={n.r * 2.6} fill={cluster.color} opacity={0.2} />
-                    <g className="constellation-node__body">
-                      <circle
-                        r={n.r}
-                        fill={`url(#c-node-${n.group})`}
-                        opacity={LEAD_OPACITY[lead]}
-                        filter="url(#c-glow)"
-                        stroke={lead === 'external' ? cluster.color : 'none'}
-                        strokeOpacity={0.9}
-                        strokeWidth={1}
-                      />
+                    <circle r={Math.max(n.r * 3.2, 14)} fill="transparent" />
+                    {/* Emitted light, outside in. */}
+                    <g style={{ mixBlendMode: 'screen' }}>
+                      <circle className="signal-bloom" r={n.r * 6.5} fill={`url(#c-bloom-${n.group})`} style={pulseStyle} />
+                      <circle className="signal-halo" r={n.r * 2.7} fill={`url(#c-halo-${n.group})`} />
+                      {major && (
+                        <g className="signal-burst" stroke="#ffffff" strokeWidth={0.6} strokeLinecap="round">
+                          <line x1={-n.r * 4.2} x2={n.r * 4.2} y1={0} y2={0} />
+                          <line x1={0} x2={0} y1={-n.r * 4.2} y2={n.r * 4.2} />
+                        </g>
+                      )}
                     </g>
-                    <circle className="constellation-node__focus" r={n.r + 5} fill="none" stroke="#fff" strokeWidth={1.5} opacity={0} />
+                    <circle className="signal-core" r={n.r} fill={`url(#c-core-${n.group})`} />
+                    <circle className="signal-focus" r={n.r + 5} fill="none" stroke="#fff" strokeWidth={1.2} opacity={0} />
                   </g>
                 </g>
               </g>
@@ -202,7 +262,7 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
                 </tspan>
               ))}
               <tspan className="constellation-count" x={c.labelX} dy={15} fontSize={11} fontWeight={400} fill="rgba(255,255,255,0.62)">
-                {c.count} {c.count === 1 ? 'discovery' : 'discoveries'}
+                {c.count} {c.count === 1 ? 'innovation' : 'innovations'}
               </tspan>
             </text>
           ))}
@@ -224,8 +284,8 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
       {selectedNode && selected && (
         <NodePopover
           record={selectedNode.record}
-          color={clusters.find((c) => c.key === selectedNode.group)!.color}
-          groupLabel={clusters.find((c) => c.key === selectedNode.group)!.label}
+          color={clusterByKey.get(selectedNode.group)!.color}
+          groupLabel={clusterByKey.get(selectedNode.group)!.label}
           anchor={selected}
           container={containerRef.current!}
           onClose={() => setSelected(null)}
@@ -233,4 +293,19 @@ export function Constellation({ records, groupBy = 'domain', dust = true, classN
       )}
     </div>
   );
+}
+
+/** Linear mix of two hex colors; `t` = 0 keeps `a`, 1 gives `b`. */
+function mix(a: string, b: string, t: number): string {
+  const pa = hex(a);
+  const pb = hex(b);
+  const ch = (i: number) => Math.round(pa[i] + (pb[i] - pa[i]) * t);
+  return `rgb(${ch(0)} ${ch(1)} ${ch(2)})`;
+}
+
+function hex(c: string): [number, number, number] {
+  const s = c.replace('#', '');
+  const full = s.length === 3 ? s.split('').map((x) => x + x).join('') : s;
+  const n = parseInt(full, 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }

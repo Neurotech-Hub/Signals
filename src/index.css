@@ -7,18 +7,18 @@
   --font-brand: 'Manrope Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
   /* Hero navy scale */
-  --color-navy-950: #050a1c;
-  --color-navy-900: #070e26;
-  --color-navy-800: #0b1433;
-  --color-navy-700: #121c45;
+  --color-navy-950: #061225;
+  --color-navy-900: #0a1830;
+  --color-navy-800: #0f1f3d;
+  --color-navy-700: #162a4f;
 
   /* Signal accents (match lib/normalize.ts domain colors) */
-  --color-signal-purple: #a78bfa;
-  --color-signal-blue: #60a5fa;
-  --color-signal-orange: #fb923c;
-  --color-signal-pink: #f472b6;
-  --color-signal-teal: #2dd4bf;
-  --color-signal-yellow: #fbbf24;
+  --color-signal-purple: #9565ff;
+  --color-signal-blue: #3b91ff;
+  --color-signal-orange: #ff9d32;
+  --color-signal-pink: #ff5f9c;
+  --color-signal-teal: #25d9c5;
+  --color-signal-yellow: #f5c34d;
 
   --color-ink-950: #0a0f1f;
   --color-ink-700: #3b4257;
@@ -96,14 +96,34 @@
 }
 
 /* ---------------------------------------------------------------------------
-   Hero constellation
+   Hero atmosphere
+   Layered gradients on deep navy, a soft vignette, no repeating pattern.
 --------------------------------------------------------------------------- */
-.constellation-node {
+.hero-atmosphere {
+  background:
+    radial-gradient(ellipse 62% 70% at 65% 45%, rgba(24, 68, 150, 0.2), transparent 60%),
+    radial-gradient(ellipse 45% 55% at 90% 80%, rgba(96, 35, 130, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 20% 100%, rgba(37, 217, 197, 0.05), transparent 60%),
+    #061225;
+}
+.hero-atmosphere::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 85% 80% at 50% 45%, transparent 55%, rgba(3, 8, 20, 0.55) 100%);
+}
+
+/* ---------------------------------------------------------------------------
+   Hero constellation — "render light, not objects"
+   Each node: bright core + gradient halo + gradient bloom. Hover brightens the
+   core and widens the halo ~15%; nothing scales into a ball.
+--------------------------------------------------------------------------- */
+.signal-node {
   cursor: pointer;
   outline: none;
 }
 .constellation-node__drift {
-  animation: constellation-drift var(--dur, 9s) ease-in-out infinite alternate;
+  animation: constellation-drift var(--dur, 10s) ease-in-out infinite alternate;
   animation-delay: var(--delay, 0s);
 }
 @keyframes constellation-drift {
@@ -114,26 +134,100 @@
     transform: translate(var(--dx, 0px), var(--dy, 0px));
   }
 }
-.constellation-node__body {
+
+.signal-bloom {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0.85;
+  animation: signal-pulse var(--pdur, 5s) ease-in-out infinite;
+  animation-delay: var(--pdelay, 0s);
 }
-.constellation-node:hover .constellation-node__body,
-.constellation-node:focus-visible .constellation-node__body,
-.constellation-node[data-active='true'] .constellation-node__body {
-  transform: scale(1.4);
+@keyframes signal-pulse {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
 }
-.constellation-node__halo {
+
+.signal-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 260ms ease;
+}
+.signal-core {
+  opacity: 0.95;
+  transition: filter 200ms ease, opacity 200ms ease;
+}
+.signal-burst {
+  opacity: 0.22;
   transition: opacity 260ms ease;
 }
-.constellation-node:hover .constellation-node__halo,
-.constellation-node:focus-visible .constellation-node__halo,
-.constellation-node[data-active='true'] .constellation-node__halo {
+.signal-node:hover .signal-halo,
+.signal-node:focus-visible .signal-halo,
+.signal-node[data-active='true'] .signal-halo {
+  transform: scale(1.15);
+}
+.signal-node:hover .signal-core,
+.signal-node:focus-visible .signal-core,
+.signal-node[data-active='true'] .signal-core {
+  opacity: 1;
+  filter: brightness(1.3) drop-shadow(0 0 3px rgba(255, 255, 255, 0.6));
+}
+.signal-node:hover .signal-burst,
+.signal-node:focus-visible .signal-burst,
+.signal-node[data-active='true'] .signal-burst {
   opacity: 0.45;
 }
-.constellation-node:focus-visible .constellation-node__focus {
+.signal-node:focus-visible .signal-focus {
   opacity: 1;
+}
+
+/* Cluster haze: very slow brightness drift, no movement. */
+.constellation-haze {
+  animation: haze-breathe 16s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes haze-breathe {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Texture lines inside a cluster. Brighten near the hovered node. */
+.constellation-link {
+  stroke-width: 0.6;
+  opacity: 0.11;
+  transition: opacity 220ms ease, stroke-width 220ms ease;
+}
+.constellation-link[data-hot='true'] {
+  opacity: 0.38;
+  stroke-width: 0.9;
+  filter: drop-shadow(0 0 2px currentColor);
+}
+
+/* Occasional twinkle on a subset of particles. */
+.constellation-twinkle {
+  animation: twinkle var(--dur, 6s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes twinkle {
+  0%,
+  78%,
+  100% {
+    opacity: var(--o, 0.35);
+  }
+  86% {
+    opacity: 0.95;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -145,10 +239,16 @@
   .signals-mark__wave--late {
     opacity: 0;
   }
-  .constellation-node__drift {
+  .constellation-node__drift,
+  .signal-bloom,
+  .constellation-haze,
+  .constellation-twinkle {
     animation: none;
   }
-  .constellation-node__body {
+  .signal-halo,
+  .signal-core,
+  .signal-burst,
+  .constellation-link {
     transition: none;
   }
 }

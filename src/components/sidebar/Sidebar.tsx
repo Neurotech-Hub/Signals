@@ -24,7 +24,8 @@ export function Sidebar(props: SidebarProps) {
 
       <div className="rounded-xl border border-ink-100 p-5">
         <h2 className="text-sm font-semibold text-ink-950">Archive by domain</h2>
-        <p className="screen-only mt-0.5 text-[11px] text-ink-500">Filter the discoveries.</p>
+        <p className="screen-only mt-0.5 text-[11px] text-ink-500">Filter the innovations.</p>
+        {byDomain.length === 0 && <p className="mt-3 text-xs text-ink-500">Nothing indexed in this scope and period.</p>}
         <ul className="mt-3 space-y-1">
           {byDomain.map(([key, count], i) => {
             const meta = domainMeta(key, i);

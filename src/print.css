@@ -16,6 +16,7 @@
 .screen-only,
 .hero-atmosphere,
 .constellation-dust,
+.constellation-decor,
 [role='tooltip'],
 [role='dialog'] {
   display: none !important;
@@ -59,8 +60,8 @@ aside {
   position: static !important;
 }
 
-#discoveries .truncate,
-#discoveries .line-clamp-1 {
+#innovations .truncate,
+#innovations .line-clamp-1 {
   overflow: visible;
   text-overflow: unset;
   white-space: normal;
@@ -70,7 +71,7 @@ aside {
 }
 
 article,
-#discoveries li,
+#innovations li,
 aside > * {
   break-inside: avoid;
   page-break-inside: avoid;

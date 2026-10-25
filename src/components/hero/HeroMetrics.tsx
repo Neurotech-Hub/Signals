@@ -4,23 +4,26 @@ interface HeroMetricsProps {
   metrics: ArchiveMetrics;
 }
 
-/** Archive counts derived from lead_don_status; all values come from the dataset. */
+/**
+ * Headline counts for the current lens. All three are computed from the
+ * filtered records (see lib/data.ts) — nothing here is hardcoded, and the
+ * wording stays with what the Scout surfaced rather than institutional totals.
+ */
 export function HeroMetrics({ metrics }: HeroMetricsProps) {
   const items = [
-    { value: metrics.total, label: 'innovations\nin archive' },
-    { value: metrics.byLead.core, label: 'core-led' },
-    { value: metrics.byLead.affiliate, label: 'affiliate-led' },
-    { value: metrics.byLead.external, label: 'external / joint' },
+    { value: metrics.surfaced, label: 'signals\nsurfaced' },
+    { value: metrics.researchers, label: 'researchers\nrepresented' },
+    { value: metrics.sources, label: 'public\nsources' },
   ];
 
   return (
-    <dl className="grid grid-cols-2 gap-x-3 gap-y-6 @min-[22rem]:grid-cols-4 @min-[22rem]:gap-x-4">
+    <dl className="grid grid-cols-3 gap-x-3 @min-[22rem]:gap-x-4">
       {items.map((m) => (
-        <div key={m.label} className="@min-[22rem]:border-l @min-[22rem]:border-white/15 @min-[22rem]:pl-3 @min-[22rem]:first:border-l-0 @min-[22rem]:first:pl-0">
-          <dd className="font-brand text-4xl font-semibold leading-none tabular-nums tracking-tight text-white @min-[28rem]:text-5xl">
+        <div key={m.label} className="border-l border-white/15 pl-3 first:border-l-0 first:pl-0 @min-[22rem]:pl-4">
+          <dd className="font-brand text-[2rem] font-semibold leading-none tabular-nums tracking-tight text-white @min-[22rem]:text-4xl @min-[28rem]:text-5xl">
             {m.value}
           </dd>
-          <dt className="mt-2 whitespace-pre-line text-[13px] leading-tight text-white/60">{m.label}</dt>
+          <dt className="mt-2 whitespace-pre-line text-[12px] leading-tight text-white/60 @min-[22rem]:text-[13px]">{m.label}</dt>
         </div>
       ))}
     </dl>

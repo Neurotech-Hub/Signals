@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import type { InnovationRecord } from '@/types/innovation';
-import { domainChip, domainMeta, LEAD_LABELS, leadBucket, sourceLabel } from '@/lib/normalize';
+import { domainChip, domainMeta, sourceLabel } from '@/lib/normalize';
 import { byPublicationDesc, publicationDate } from '@/lib/publication';
 import { FeaturedCard } from './FeaturedCard';
 
-interface LatestDiscoveriesProps {
+interface LatestInnovationsProps {
+  /** Already filtered by scope and window. */
   records: InnovationRecord[];
   featured?: InnovationRecord;
   domain: string | null;
@@ -16,9 +17,11 @@ interface LatestDiscoveriesProps {
   onSelect: (id: string) => void;
   onHover: (id: string | null) => void;
   onClearDomain: () => void;
+  /** Shown in the empty state when the window is the reason nothing matches. */
+  onWidenWindow?: () => void;
 }
 
-export function LatestDiscoveries({
+export function LatestInnovations({
   records,
   featured,
   domain,
@@ -29,7 +32,8 @@ export function LatestDiscoveries({
   onSelect,
   onHover,
   onClearDomain,
-}: LatestDiscoveriesProps) {
+  onWidenWindow,
+}: LatestInnovationsProps) {
   const featuredVisible = featured && (!domain || featured.domain === domain) ? featured : undefined;
   const list = records
     .filter((r) => r.innovation_id !== featuredVisible?.innovation_id)
@@ -45,11 +49,13 @@ export function LatestDiscoveries({
     });
   }, [selectedId, selectionFrom]);
 
+  const nothing = !featuredVisible && list.length === 0;
+
   return (
-    <section id="discoveries" aria-labelledby="discoveries-title">
+    <section id="innovations" aria-labelledby="innovations-title">
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
-        <h2 id="discoveries-title" className="font-brand text-xl font-semibold tracking-tight text-ink-950">
-          Latest discoveries
+        <h2 id="innovations-title" className="font-brand text-xl font-semibold tracking-tight text-ink-950">
+          Latest innovations
         </h2>
         {domain && (
           <p className="flex items-center gap-2 text-xs text-ink-700">
@@ -73,12 +79,38 @@ export function LatestDiscoveries({
         />
       )}
 
-      {list.length === 0 ? (
-        <p className="mt-6 text-sm text-ink-500">No discoveries in this domain.</p>
-      ) : (
+      {nothing ? (
+        <div className="rounded-xl border border-dashed border-ink-300 px-6 py-10 text-center">
+          <p className="text-sm text-ink-700">
+            {domain
+              ? `No indexed innovations in ${domainLabel ?? domain} for this scope and period.`
+              : 'No indexed innovations match this scope and period.'}
+          </p>
+          <div className="screen-only mt-4 flex flex-wrap justify-center gap-2 text-xs">
+            {domain && (
+              <button
+                type="button"
+                onClick={onClearDomain}
+                className="rounded-full border border-ink-300 px-3 py-1 font-medium text-ink-950 hover:border-ink-950"
+              >
+                Clear domain
+              </button>
+            )}
+            {onWidenWindow && (
+              <button
+                type="button"
+                onClick={onWidenWindow}
+                className="rounded-full border border-ink-300 px-3 py-1 font-medium text-ink-950 hover:border-ink-950"
+              >
+                Show all indexed dates
+              </button>
+            )}
+          </div>
+        </div>
+      ) : list.length === 0 ? null : (
         <ol className={`${featuredVisible ? 'mt-4' : ''} divide-y divide-ink-100 overflow-hidden rounded-xl border border-ink-100`}>
           {list.map((record) => (
-            <DiscoveryRow
+            <InnovationRow
               key={record.innovation_id}
               record={record}
               open={selectedId === record.innovation_id}
@@ -93,7 +125,7 @@ export function LatestDiscoveries({
   );
 }
 
-function DiscoveryRow({
+function InnovationRow({
   record,
   open,
   hot,
@@ -170,8 +202,8 @@ function DiscoveryRow({
               </dd>
             </div>
             <div>
-              <dt className="text-ink-500">Lead</dt>
-              <dd className="text-ink-950">{LEAD_LABELS[leadBucket(record.lead_don_status)]}</dd>
+              <dt className="text-ink-500">Published</dt>
+              <dd className="text-ink-950">{pub ? pub.label : 'Date not yet documented'}</dd>
             </div>
           </dl>
           {record.technical_advantage && (

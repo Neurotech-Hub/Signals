@@ -5,7 +5,9 @@ Files
 - innovation_bank.csv: flat view of the same records
 - audit_log.jsonl: one JSON event per line (discoveries, retags, score changes, top-10 changes)
 
-The public site imports `innovation_bank.json` only. What it reads, and how to fill it, is specified in `docs/grok.md`. In particular the site plots `scientific_utility.score` and `commercial_potential.score` (labeled as Scout estimates) and sorts on `publication_date`, not `discovery_date`.
+The public site imports `innovation_bank.json` only. What it reads, and how to fill it, is specified in `docs/grok.md`. In particular the site plots `scientific_utility.score` and `commercial_potential.score` (labeled as Scout estimates), filters its observation window on `first_public_date` (falling back to `publication_date`), and scopes by department with `lead_department_id` (falling back to `lead_don_status === "core"` for DoN). `discovery_date` is never shown as a publication date.
+
+Schema 1.3 migration (owned by the Scout, see `docs/grok.md`): add `first_public_date`, `date_precision`, `first_seen_at`, `last_checked_at`, `lead_department_id`, `participating_department_ids`. The site degrades gracefully until then.
 
 Notes
 - Public-source data only (OpenAlex abstracts, WashU pages, GitHub). Nothing confidential.

@@ -20,35 +20,36 @@ export interface GroupMeta {
   color: string;
 }
 
+/** Approved domain palette (see docs/dashboard-revision.md, "Atmospheric Cluster Glows"). */
 const DOMAIN_META: Record<string, Omit<GroupMeta, 'key'>> = {
   'research-tool': {
     label: 'Research tools & reagents',
     lines: ['Research tools', '& reagents'],
-    color: '#a78bfa',
+    color: '#9565ff',
   },
   software: {
     label: 'Software & algorithms',
     lines: ['Software', '& algorithms'],
-    color: '#60a5fa',
+    color: '#3b91ff',
   },
   device: {
     label: 'Devices & instruments',
     lines: ['Devices', '& instruments'],
-    color: '#fb923c',
+    color: '#ff9d32',
   },
   diagnostic: {
     label: 'Diagnostics & clinical methods',
     lines: ['Diagnostics', '& clinical methods'],
-    color: '#f472b6',
+    color: '#ff5f9c',
   },
   'digital-health': {
     label: 'Digital health',
     lines: ['Digital', 'health'],
-    color: '#2dd4bf',
+    color: '#25d9c5',
   },
 };
 
-const FALLBACK_COLORS = ['#fbbf24', '#34d399', '#c084fc', '#f87171', '#38bdf8'];
+const FALLBACK_COLORS = ['#f5c34d', '#34d399', '#c084fc', '#f87171', '#38bdf8'];
 
 const DOMAIN_CHIP: Record<string, string> = {
   'research-tool': 'Research tool',
@@ -95,18 +96,16 @@ export function normalizeCategory(raw: string): string {
 
 export type LeadBucket = 'core' | 'affiliate' | 'external';
 
+/**
+ * Pilot-era leadership bucket. Used internally to identify DoN-led records
+ * (see lib/scope.ts). Not shown in the general interface.
+ */
 export function leadBucket(status: string): LeadBucket {
   const s = status.toLowerCase();
   if (s.startsWith('core')) return 'core';
   if (s.startsWith('affiliate')) return 'affiliate';
   return 'external';
 }
-
-export const LEAD_LABELS: Record<LeadBucket, string> = {
-  core: 'Core-led',
-  affiliate: 'Affiliate-led',
-  external: 'External / joint',
-};
 
 export function groupKeyFor(record: InnovationRecord, groupBy: 'domain' | 'category'): string {
   return groupBy === 'domain' ? record.domain : normalizeCategory(record.category);
