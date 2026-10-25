@@ -40,7 +40,7 @@ export function Sidebar(props: SidebarProps) {
                 >
                   <span className="flex items-center justify-between text-ink-700">
                     <span className={pressed ? 'font-semibold text-ink-950' : undefined}>{meta.label}</span>
-                    <span className="tabular-nums text-ink-500">{count}</span>
+                    <span className="font-mono text-[11px] font-medium tabular-nums tracking-normal text-ink-500">{count}</span>
                   </span>
                   <span className="mt-1 block h-1.5 overflow-hidden rounded-full bg-ink-100">
                     <span

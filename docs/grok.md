@@ -88,7 +88,7 @@ Missing any required field breaks the page for that record. Keep the names exact
 | `originating_lab` | yes | Shown on the card and on every row. |
 | `category` | yes | Free text, shown as-is (`protocol/method`, `instrument/device`). Keep it short. |
 | `domain` | yes | Controlled value. Drives color, the hero clusters, and the domain filter. See below. |
-| `source_evidence` | yes | Array of absolute `http(s)` URLs. Shown as links. **Public sources** counts unique URLs across the visible records, and the hero node's core grows with the count, so link the real sources and do not pad or duplicate. |
+| `source_evidence` | yes | Array of absolute `http(s)` URLs. Shown as links. **Public sources** counts unique URLs across the visible records, and the hero node's core grows with the count, so link the real sources and do not pad or duplicate. The Data sources page lists every one of these URLs, grouped by website. There is no separate sources file to edit: add or remove a URL on the record and the page follows. |
 | `first_public_date` | expected (1.3) | Shown, sorted on, and used by the observation window. See above. |
 | `date_precision` | expected (1.3) | Interprets `first_public_date`. |
 | `publication_date` | yes | Peer-reviewed date when one exists; the fallback when `first_public_date` is absent. |

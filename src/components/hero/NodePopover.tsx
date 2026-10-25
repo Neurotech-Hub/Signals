@@ -62,13 +62,13 @@ export function NodePopover({ record, color, groupLabel, anchor, container, onCl
       <div className="mb-2 flex items-start justify-between gap-3">
         <div className="flex flex-wrap items-center gap-1.5">
           <span
-            className="rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider"
+            className="data-label rounded-full px-2 py-0.5 text-[10px]"
             style={{ backgroundColor: `${color}22`, color }}
           >
             {groupLabel}
           </span>
           {pub && (
-            <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-white/70">{pub.label}</span>
+            <span className="data-label rounded-full bg-white/10 px-2 py-0.5 text-[10px] text-white/70">{pub.label}</span>
           )}
         </div>
         <button

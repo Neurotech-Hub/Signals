@@ -30,8 +30,8 @@ export function FeaturedCard({ record, selected, onSelect }: FeaturedCardProps) 
           ) : (
             <FeatureArt color={meta.color} />
           )}
-          <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-semibold tracking-[0.14em] text-ink-950">
-            FEATURED
+          <span className="data-label absolute left-3 top-3 rounded-full bg-white/90 px-2 py-0.5 text-[10px] text-ink-950">
+            Featured
           </span>
         </div>
 
@@ -40,7 +40,7 @@ export function FeaturedCard({ record, selected, onSelect }: FeaturedCardProps) 
             <div className="flex flex-wrap items-center gap-1.5">
               <Chip color={meta.color}>{domainChip(record.domain)}</Chip>
             </div>
-            {pub && <time className="shrink-0 text-xs text-ink-500">{pub.label}</time>}
+            {pub && <time className="data-label shrink-0 text-ink-500">{pub.label}</time>}
           </div>
 
           <h3 className="mt-3 font-brand text-lg font-semibold leading-snug tracking-tight text-ink-950">

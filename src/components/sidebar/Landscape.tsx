@@ -123,7 +123,7 @@ export function Landscape({
         </p>
       ) : (
         <div className="relative mt-3">
-          <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full min-w-0 max-w-full" role="img" aria-label="Scientific utility versus commercial potential">
+          <svg viewBox={`0 0 ${W} ${H}`} className="chart-label block h-auto w-full min-w-0 max-w-full" role="img" aria-label="Scientific utility versus commercial potential">
             {xAxis.ticks.map((t) => {
               const x = xPos(t);
               return (
@@ -146,15 +146,16 @@ export function Landscape({
                 </g>
               );
             })}
-            <text x={PAD.l + innerW / 2} y={H - 2} textAnchor="middle" fontSize="9" fill="#3b4257">
+            <text x={PAD.l + innerW / 2} y={H - 2} textAnchor="middle" fontSize="8" fill="#3b4257" style={{ textTransform: 'uppercase' }}>
               Scientific utility
             </text>
             <text
               x={12}
               y={PAD.t + innerH / 2}
               textAnchor="middle"
-              fontSize="9"
+              fontSize="8"
               fill="#3b4257"
+              style={{ textTransform: 'uppercase' }}
               transform={`rotate(-90 12 ${PAD.t + innerH / 2})`}
             >
               Commercial potential

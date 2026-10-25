@@ -1,10 +1,16 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/inter';
+/* Width axis (75–100%) stays available; default stretch is the standard cut. */
+@import '@fontsource-variable/instrument-sans/wdth.css';
+@import '@fontsource/ibm-plex-mono/latin-400.css';
+@import '@fontsource/ibm-plex-mono/latin-500.css';
+/* Wordmark only. Compared against Instrument Sans before the logo changes. */
 @import '@fontsource-variable/manrope';
 
 @theme {
-  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-brand: 'Manrope Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-logo: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
 
   /* Hero navy scale */
   --color-navy-950: #061225;
@@ -40,6 +46,46 @@
     html {
       scroll-behavior: auto;
     }
+  }
+}
+
+/* Publication display, large figures, and sparse technical labels. */
+@layer components {
+  .hero-copy {
+    container-type: inline-size;
+  }
+  .hero-title {
+    font-family: var(--font-sans);
+    /* The longer first line sets the size, so both locked lines fill the column. */
+    font-size: clamp(1.75rem, 9.45cqi, 5rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    line-height: 1.06;
+  }
+  .hero-title__line {
+    display: block;
+    white-space: nowrap;
+  }
+  .hero-title strong {
+    font-weight: 650;
+  }
+  .data-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .metric-value {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.04em;
+  }
+  .chart-label {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    letter-spacing: 0.06em;
   }
 }
 

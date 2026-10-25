@@ -27,7 +27,7 @@ export function Logo({ size = 'md', tone = 'light', className = '', href = '#top
     <a
       href={href}
       aria-label="Signals — home"
-      className={`inline-flex items-center font-brand font-semibold tracking-[-0.03em] leading-none ${SIZE_CLASS[size]} ${color} ${className}`}
+      className={`inline-flex items-center font-logo font-semibold tracking-[-0.03em] leading-none ${SIZE_CLASS[size]} ${color} ${className}`}
       style={style}
     >
       <span>signals</span>

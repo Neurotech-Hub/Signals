@@ -245,7 +245,7 @@ export function Constellation({ records, groupBy = 'domain', decor = true, class
         </g>
 
         {/* Cluster labels */}
-        <g pointerEvents="none" aria-hidden="true" className="font-sans">
+        <g pointerEvents="none" aria-hidden="true" className="font-mono">
           {clusters.map((c) => (
             <text key={c.key} x={c.labelX} y={c.labelY} textAnchor={c.labelAnchor} fill={c.color}>
               {c.lines.map((line, i) => (
@@ -254,14 +254,14 @@ export function Constellation({ records, groupBy = 'domain', decor = true, class
                   x={c.labelX}
                   dy={i === 0 ? 0 : 13}
                   fontSize={10.5}
-                  fontWeight={600}
-                  letterSpacing="0.14em"
+                  fontWeight={500}
+                  letterSpacing="0.08em"
                   style={{ textTransform: 'uppercase' }}
                 >
                   {line.toUpperCase()}
                 </tspan>
               ))}
-              <tspan className="constellation-count" x={c.labelX} dy={15} fontSize={11} fontWeight={400} fill="rgba(255,255,255,0.62)">
+              <tspan className="constellation-count" x={c.labelX} dy={15} fontSize={10} fontWeight={500} letterSpacing="0.04em" fill="rgba(255,255,255,0.62)">
                 {c.count} {c.count === 1 ? 'innovation' : 'innovations'}
               </tspan>
             </text>

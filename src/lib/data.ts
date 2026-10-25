@@ -38,7 +38,7 @@ export function computeMetrics(list: InnovationRecord[]): ArchiveMetrics {
       if (key) people.add(key);
     }
     for (const u of r.source_evidence ?? []) {
-      const key = normalizeUrl(u);
+      const key = evidenceKey(u);
       if (key) urls.add(key);
     }
   }
@@ -49,7 +49,8 @@ function normalizeName(name: string): string {
   return (name ?? '').trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
-function normalizeUrl(url: string): string {
+/** Identity of an evidence URL: host without www, path without a trailing slash. */
+export function evidenceKey(url: string): string {
   try {
     const u = new URL(url.trim());
     u.hash = '';

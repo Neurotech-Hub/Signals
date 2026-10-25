@@ -36,12 +36,13 @@ export function Hero() {
       </header>
 
       <div className="hero-layout mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 px-6 pb-16 pt-10 lg:min-h-[560px] lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-10 lg:pb-14 lg:pt-8">
-        <div className="min-w-0 lg:col-span-5">
+        <div className="hero-copy min-w-0 lg:col-span-5">
           <h1
             id="hero-title"
-            className="font-brand text-[2.1rem] font-semibold leading-[1.1] tracking-[-0.025em] text-white sm:text-[2.5rem]"
+            className="hero-title text-white"
           >
-            Exploring neuroscience innovation in St.&nbsp;Louis.
+            <span className="hero-title__line">Exploring <strong>neuroscience</strong></span>
+            <span className="hero-title__line">innovation in St.&nbsp;Louis</span>
           </h1>
           <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/65">
             AI-driven research scouting, featuring publicly disclosed work involving Washington
@@ -50,7 +51,7 @@ export function Hero() {
 
           <div className="@container mt-9 border-t border-white/15 pt-7">
             <HeroMetrics metrics={metrics} />
-            <p className="mt-4 text-[11px] text-white/40">
+            <p className="data-label mt-4 text-white/40">
               Last scanned {formatDate(lastScanned)}
             </p>
           </div>

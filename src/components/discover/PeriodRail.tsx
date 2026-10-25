@@ -40,7 +40,7 @@ export function PeriodRail() {
     <section aria-label="Observation window" className="period-rail border-b border-ink-100 bg-white">
       <div className="mx-auto max-w-7xl px-6 py-6 lg:px-10">
         <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-500">
+          <p className="data-label text-ink-500">
             Public research · <span className="text-ink-950">{periodLabel(range)}</span>
           </p>
           <Segmented<WindowId>
@@ -74,8 +74,8 @@ export function PeriodRail() {
             />
           ))}
           {/* Extent labels */}
-          <span className="absolute left-0 top-[24px] text-[10px] leading-none text-ink-500">{monthLabel(extent.start)}</span>
-          <span className="absolute right-0 top-[24px] text-[10px] leading-none text-ink-500">{monthLabel(extent.end)}</span>
+          <span className="data-label absolute left-0 top-[24px] text-[10px] leading-none text-ink-500">{monthLabel(extent.start)}</span>
+          <span className="data-label absolute right-0 top-[24px] text-[10px] leading-none text-ink-500">{monthLabel(extent.end)}</span>
         </div>
 
         {hiddenUndated > 0 && (

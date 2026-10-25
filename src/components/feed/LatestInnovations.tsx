@@ -173,7 +173,7 @@ function InnovationRow({
         </span>
         <span className="discovery-aside hidden shrink-0 text-right text-xs text-ink-500 sm:block">
           <span className="block text-ink-700">{record.originating_lab}</span>
-          {pub && <span className="block">{pub.label}</span>}
+          {pub && <span className="data-label mt-1 block text-ink-500">{pub.label}</span>}
         </span>
         <span
           aria-hidden="true"
@@ -203,7 +203,7 @@ function InnovationRow({
             </div>
             <div>
               <dt className="text-ink-500">Published</dt>
-              <dd className="text-ink-950">{pub ? pub.label : 'Date not yet documented'}</dd>
+              <dd className="text-ink-950">{pub ? <span className="data-label text-ink-700">{pub.label}</span> : 'Date not yet documented'}</dd>
             </div>
           </dl>
           {record.technical_advantage && (

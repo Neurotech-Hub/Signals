@@ -20,7 +20,7 @@ export function HeroMetrics({ metrics }: HeroMetricsProps) {
     <dl className="grid grid-cols-3 gap-x-3 @min-[22rem]:gap-x-4">
       {items.map((m) => (
         <div key={m.label} className="border-l border-white/15 pl-3 first:border-l-0 first:pl-0 @min-[22rem]:pl-4">
-          <dd className="font-brand text-[2rem] font-semibold leading-none tabular-nums tracking-tight text-white @min-[22rem]:text-4xl @min-[28rem]:text-5xl">
+          <dd className="metric-value text-[2rem] leading-none text-white @min-[22rem]:text-4xl @min-[28rem]:text-5xl">
             {m.value}
           </dd>
           <dt className="mt-2 whitespace-pre-line text-[12px] leading-tight text-white/60 @min-[22rem]:text-[13px]">{m.label}</dt>

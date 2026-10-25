@@ -10,6 +10,16 @@ const base = process.env.BASE_PATH ?? '/';
 export default defineConfig({
   base,
   plugins: [react(), tailwindcss()],
+  // sources/index.html is the same app, so /sources/ resolves on GitHub Pages
+  // without a client-side redirect. The page itself is rendered from the bank.
+  build: {
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        sources: fileURLToPath(new URL('./sources/index.html', import.meta.url)),
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
