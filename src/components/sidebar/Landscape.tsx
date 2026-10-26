@@ -113,7 +113,7 @@ export function Landscape({
     <div className="min-w-0 rounded-xl border border-ink-100 p-5">
       <h2 className="text-sm font-semibold text-ink-950">The innovation landscape</h2>
       <p className="mt-0.5 text-[11px] leading-snug text-ink-500">
-        Scout estimates on a 0–100 scale, not validated assessments. Axes fit the current selection.
+        Scout estimates on a 0–100 scale.
         <span className="screen-only"> Selecting a point opens that innovation.</span>
       </p>
 

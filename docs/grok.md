@@ -105,7 +105,7 @@ Missing any required field breaks the page for that record. Keep the names exact
 | `commercial_potential.score` | yes | Number 0–100. Vertical axis of the landscape. |
 | `image_url` | no | A real public image URL (a figure or a lab page). The featured card and the row use it. Omit the field when you do not have one. Do not invent, generate, or hotlink a decorative photo. The site draws a stand-in. |
 
-`scientific_utility` and `commercial_potential` may keep their component subscores. The site plots only `.score`, and it labels both axes as Scout estimates on a 0–100 scale, not validated assessments. Do not drop these two objects.
+`scientific_utility` and `commercial_potential` may keep their component subscores. The site plots only `.score`, and it labels both axes as Scout estimates on a 0–100 scale. Do not drop these two objects.
 
 ### What the three headline metrics mean
 
