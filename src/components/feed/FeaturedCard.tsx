@@ -30,6 +30,9 @@ export function FeaturedCard({ record, selected, onSelect }: FeaturedCardProps) 
           ) : (
             <FeatureArt color={meta.color} />
           )}
+          {image && (
+            <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[3px]" style={{ backgroundColor: meta.color }} />
+          )}
           <span className="data-label absolute left-3 top-3 rounded-full bg-white/90 px-2 py-0.5 text-[10px] text-ink-950">
             Featured
           </span>

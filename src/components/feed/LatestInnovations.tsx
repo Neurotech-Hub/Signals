@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import type { InnovationRecord } from '@/types/innovation';
 import { domainChip, domainMeta, sourceLabel } from '@/lib/normalize';
 import { byPublicationDesc, publicationDate } from '@/lib/publication';
+import { leadDepartmentId } from '@/lib/scope';
 import { FeaturedCard } from './FeaturedCard';
 
 interface LatestInnovationsProps {
@@ -10,6 +11,8 @@ interface LatestInnovationsProps {
   featured?: InnovationRecord;
   domain: string | null;
   domainLabel?: string;
+  department: string | null;
+  departmentLabel?: string;
   selectedId: string | null;
   hoveredId: string | null;
   /** Scroll the selected row into view only when the selection came from the chart. */
@@ -17,6 +20,7 @@ interface LatestInnovationsProps {
   onSelect: (id: string) => void;
   onHover: (id: string | null) => void;
   onClearDomain: () => void;
+  onClearDepartment: () => void;
   /** Shown in the empty state when the window is the reason nothing matches. */
   onWidenWindow?: () => void;
 }
@@ -26,19 +30,25 @@ export function LatestInnovations({
   featured,
   domain,
   domainLabel,
+  department,
+  departmentLabel,
   selectedId,
   hoveredId,
   selectionFrom,
   onSelect,
   onHover,
   onClearDomain,
+  onClearDepartment,
   onWidenWindow,
 }: LatestInnovationsProps) {
-  const featuredVisible = featured && (!domain || featured.domain === domain) ? featured : undefined;
+  const matches = (r: InnovationRecord) =>
+    (!domain || r.domain === domain) && (!department || leadDepartmentId(r) === department);
+  const featuredVisible = featured && matches(featured) ? featured : undefined;
   const list = records
     .filter((r) => r.innovation_id !== featuredVisible?.innovation_id)
-    .filter((r) => !domain || r.domain === domain)
+    .filter(matches)
     .sort(byPublicationDesc);
+  const showing = [domain ? (domainLabel ?? domain) : null, department ? (departmentLabel ?? department) : null].filter(Boolean);
 
   useEffect(() => {
     if (!selectedId || selectionFrom !== 'chart') return;
@@ -57,12 +67,15 @@ export function LatestInnovations({
         <h2 id="innovations-title" className="font-brand text-xl font-semibold tracking-tight text-ink-950">
           Latest innovations
         </h2>
-        {domain && (
+        {showing.length > 0 && (
           <p className="flex items-center gap-2 text-xs text-ink-700">
-            Showing {domainLabel ?? domain}
+            Showing {showing.join(' · ')}
             <button
               type="button"
-              onClick={onClearDomain}
+              onClick={() => {
+                onClearDomain();
+                onClearDepartment();
+              }}
               className="screen-only rounded-full border border-ink-300 px-2 py-0.5 font-medium text-ink-950 hover:border-ink-950"
             >
               Clear
@@ -82,8 +95,8 @@ export function LatestInnovations({
       {nothing ? (
         <div className="rounded-xl border border-dashed border-ink-300 px-6 py-10 text-center">
           <p className="text-sm text-ink-700">
-            {domain
-              ? `No indexed innovations in ${domainLabel ?? domain} for this scope and period.`
+            {showing.length
+              ? `No indexed innovations in ${showing.join(' · ')} for this scope and period.`
               : 'No indexed innovations match this scope and period.'}
           </p>
           <div className="screen-only mt-4 flex flex-wrap justify-center gap-2 text-xs">
@@ -94,6 +107,15 @@ export function LatestInnovations({
                 className="rounded-full border border-ink-300 px-3 py-1 font-medium text-ink-950 hover:border-ink-950"
               >
                 Clear domain
+              </button>
+            )}
+            {department && (
+              <button
+                type="button"
+                onClick={onClearDepartment}
+                className="rounded-full border border-ink-300 px-3 py-1 font-medium text-ink-950 hover:border-ink-950"
+              >
+                Clear department
               </button>
             )}
             {onWidenWindow && (
@@ -157,7 +179,10 @@ function InnovationRow({
         className="flex w-full items-center gap-3 px-3 py-3 text-left hover:bg-ink-100/40"
       >
         {image ? (
-          <img src={image} alt="" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
+          <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg">
+            <img src={image} alt="" className="h-full w-full object-cover" />
+            <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[3px]" style={{ backgroundColor: meta.color }} />
+          </span>
         ) : (
           <span
             aria-hidden="true"

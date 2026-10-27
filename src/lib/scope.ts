@@ -29,6 +29,38 @@ export const DEPARTMENTS: Department[] = [
   { id: 'don', label: 'Department of Neuroscience', short: 'Neuroscience' },
 ];
 
+/**
+ * Display names for every id the Scout may write. The header toggle stays the
+ * short DEPARTMENTS list; the archive card uses this so a newly classified
+ * lead still has a label before it is offered as a page-wide scope.
+ */
+const DEPARTMENT_LABELS: Record<string, string> = {
+  don: 'Neuroscience',
+  radiology: 'Radiology',
+  neurology: 'Neurology',
+  neurosurgery: 'Neurosurgery',
+  psychiatry: 'Psychiatry',
+  anesthesiology: 'Anesthesiology',
+  otolaryngology: 'Otolaryngology',
+  ophthalmology: 'Ophthalmology',
+  bme: 'Biomedical Engineering',
+  medicine: 'Medicine',
+  pathology: 'Pathology & Immunology',
+};
+
+export function departmentLabel(id: string): string {
+  return DEPARTMENT_LABELS[id] ?? id.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/** The department that leads this record, or null when the lead is external or unset. */
+export function leadDepartmentId(record: InnovationRecord): string | null {
+  if (typeof record.lead_department_id === 'string' && record.lead_department_id.trim()) {
+    return record.lead_department_id.trim().toLowerCase();
+  }
+  if (leadBucket(record.lead_don_status ?? '') === 'core') return 'don';
+  return null;
+}
+
 export const ALL_DEPARTMENTS = { id: null, label: 'All indexed', short: 'All indexed' } as const;
 
 export function departmentById(id: string | null): Department | undefined {
@@ -44,11 +76,7 @@ export function departmentById(id: string | null): Department | undefined {
  * and do not count.
  */
 export function ledByDepartment(record: InnovationRecord, deptId: string): boolean {
-  if (typeof record.lead_department_id === 'string' && record.lead_department_id) {
-    return record.lead_department_id.toLowerCase() === deptId;
-  }
-  if (deptId === 'don') return leadBucket(record.lead_don_status ?? '') === 'core';
-  return false;
+  return leadDepartmentId(record) === deptId.toLowerCase();
 }
 
 // ---------------------------------------------------------------------------
@@ -71,7 +99,7 @@ export const WINDOWS: WindowOption[] = [
   { id: 'all', label: 'All indexed dates', short: 'All', months: null },
 ];
 
-export const DEFAULT_WINDOW: WindowId = '24m';
+export const DEFAULT_WINDOW: WindowId = 'all';
 
 export function isWindowId(v: string | null): v is WindowId {
   return WINDOWS.some((w) => w.id === v);

@@ -1,15 +1,16 @@
 import { useMemo, useState } from 'react';
 import type { InnovationRecord } from '@/types/innovation';
 import { domainMeta } from '@/lib/normalize';
+import { leadDepartmentId } from '@/lib/scope';
 
 interface LandscapeProps {
   records: InnovationRecord[];
   domain: string | null;
+  department: string | null;
   selectedId: string | null;
   hoveredId: string | null;
   onSelect: (id: string) => void;
   onHover: (id: string | null) => void;
-  onToggleDomain: (domain: string) => void;
 }
 
 const W = 360;
@@ -20,6 +21,7 @@ interface Point {
   id: string;
   name: string;
   domain: string;
+  department: string | null;
   color: string;
   x: number;
   y: number;
@@ -66,24 +68,19 @@ function niceStep(raw: number): number {
 export function Landscape({
   records,
   domain,
+  department,
   selectedId,
   hoveredId,
   onSelect,
   onHover,
-  onToggleDomain,
 }: LandscapeProps) {
   const [tip, setTip] = useState<string | null>(null);
 
-  const { points, domains, xAxis, yAxis } = useMemo(() => {
+  const { points, xAxis, yAxis } = useMemo(() => {
     const innerW = W - PAD.l - PAD.r;
     const innerH = H - PAD.t - PAD.b;
     const scored: Array<{ r: InnovationRecord; su: number; cp: number }> = [];
-    const seen = new Map<string, { color: string; label: string; count: number }>();
     for (const r of records) {
-      const meta = domainMeta(r.domain);
-      const entry = seen.get(r.domain) ?? { color: meta.color, label: meta.label, count: 0 };
-      entry.count += 1;
-      seen.set(r.domain, entry);
       const su = r.scientific_utility?.score;
       const cp = r.commercial_potential?.score;
       if (typeof su === 'number' && typeof cp === 'number') scored.push({ r, su, cp });
@@ -96,11 +93,12 @@ export function Landscape({
       id: r.innovation_id,
       name: r.name,
       domain: r.domain,
+      department: leadDepartmentId(r),
       color: domainMeta(r.domain).color,
       x: xOf(su),
       y: yOf(cp),
     }));
-    return { points: pts, domains: [...seen.entries()], xAxis, yAxis };
+    return { points: pts, xAxis, yAxis };
   }, [records]);
 
   const active = points.find((p) => p.id === (tip ?? hoveredId ?? selectedId));
@@ -111,11 +109,8 @@ export function Landscape({
 
   return (
     <div className="min-w-0 rounded-xl border border-ink-100 p-5">
-      <h2 className="text-sm font-semibold text-ink-950">The innovation landscape</h2>
-      <p className="mt-0.5 text-[11px] leading-snug text-ink-500">
-        Scout estimates on a 0–100 scale.
-        <span className="screen-only"> Selecting a point opens that innovation.</span>
-      </p>
+      <h3 className="text-sm font-semibold text-ink-950">The innovation landscape</h3>
+      <p className="mt-0.5 text-[11px] leading-snug text-ink-500">Scout estimates on a 0–100 scale.</p>
 
       {points.length === 0 ? (
         <p className="mt-4 rounded-lg border border-dashed border-ink-300 px-4 py-8 text-center text-xs text-ink-500">
@@ -162,7 +157,9 @@ export function Landscape({
             </text>
 
             {points.map((p) => {
-              const dim = domain !== null && p.domain !== domain;
+              const dim =
+                (domain !== null && p.domain !== domain) ||
+                (department !== null && p.department !== department);
               const on = p.id === selectedId || p.id === hoveredId;
               return (
                 <g key={p.id}>
@@ -209,28 +206,16 @@ export function Landscape({
         </div>
       )}
 
-      <p className={`mt-1 min-h-8 text-xs leading-snug text-ink-700 ${active ? '' : 'screen-only'}`}>
-        {active ? active.name : points.length ? 'Hover or select a point.' : ''}
+      <p className={`mt-1 flex min-h-8 items-start gap-1.5 text-xs leading-snug text-ink-700 ${active ? '' : 'screen-only'}`}>
+        {active ? (
+          <>
+            <span aria-hidden="true" className="mt-[3px] h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: active.color }} />
+            <span>{active.name}</span>
+          </>
+        ) : points.length ? (
+          'Hover or select a point.'
+        ) : null}
       </p>
-
-      <ul className="mt-2 flex min-w-0 flex-wrap gap-x-3 gap-y-1.5">
-        {domains.map(([key, meta]) => {
-          const pressed = domain === key;
-          return (
-            <li key={key}>
-              <button
-                type="button"
-                aria-pressed={pressed}
-                onClick={() => onToggleDomain(key)}
-                className={`inline-flex max-w-full items-center gap-1.5 text-left text-[11px] ${pressed ? 'font-semibold text-ink-950' : 'text-ink-500 hover:text-ink-950'}`}
-              >
-                <span className="h-2 w-2 rounded-full" style={{ backgroundColor: meta.color, opacity: pressed || domain === null ? 1 : 0.35 }} />
-                {meta.label}
-              </button>
-            </li>
-          );
-        })}
-      </ul>
     </div>
   );
 }

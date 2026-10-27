@@ -11,7 +11,7 @@ The site imports only `innovation_bank.json`. It does not read `innovation_bank.
 The site now shows the archive through two lenses, both driven by record fields you own:
 
 1. **Department scope** — `All indexed` or one leading department. The URL carries `?dept=<id>` (today the page offers `don`; other registered ids appear once they are added to the site).
-2. **Observation window** — past 12 / 24 / 36 months or all indexed dates, anchored to your last run (`generated`). The URL carries `?window=12m|24m|36m|all`; 24 months is the default.
+2. **Observation window** — past 12 / 24 / 36 months or all indexed dates, anchored to your last run (`generated`). The URL carries `?window=12m|24m|36m|all`; all indexed dates is the default.
 
 Every number on the page is computed from the records that survive both lenses. Nothing is hardcoded. Three things follow for you:
 
