@@ -10,16 +10,16 @@ The site imports only `innovation_bank.json`. It does not read `innovation_bank.
 
 The site now shows the archive through two lenses, both driven by record fields you own:
 
-1. **Department scope** — `All indexed` or one department (currently only `Department of Neuroscience`, id `don`). The URL carries `?dept=don`.
+1. **Department scope** — `All indexed` or one leading department. The URL carries `?dept=<id>` (today the page offers `don`; other registered ids appear once they are added to the site).
 2. **Observation window** — past 12 / 24 / 36 months or all indexed dates, anchored to your last run (`generated`). The URL carries `?window=12m|24m|36m|all`; 24 months is the default.
 
 Every number on the page is computed from the records that survive both lenses. Nothing is hardcoded. Three things follow for you:
 
 - **Dates decide visibility.** A record with no usable public date is invisible in every bounded window and only appears under "All indexed dates". Backfilling dates is now the highest-value work after discovery itself.
-- **Leadership decides department scope.** `?dept=don` shows records a department *leads*, not records it touches. See "Department fields".
-- **The pilot's core / affiliate / external labels are no longer shown.** Keep filling `lead_don_status` for now (it is still how the site identifies DoN-led work until you migrate to `lead_department_id`), but the public page does not print it anywhere.
+- **Leadership decides department scope.** A department's view shows records that department *leads*, not records it touches. See "Department fields".
+- **The pilot's core / affiliate / external labels are no longer shown.** Keep `lead_don_status` in step with whether `don` leads or participates. The public page does not print it.
 
-The site runs with the current 1.2 data today by falling back to older fields. It will look partially wrong (undated records hidden, department filter leaning on a pilot flag) until you complete the migration below. That is expected; finish the migration rather than editing the site.
+The bank is schema 1.3. This pass is department classification. Do not renumber ids, do not rewrite dates, and do not edit the website source. A record with no `lead_department_id` still falls back to `lead_don_status === "core"` for the Neuroscience scope only.
 
 ## Migration you own (schema 1.3)
 
@@ -31,17 +31,15 @@ Add these fields to every record. Do not renumber ids, do not rewrite history, d
 | `date_precision` | `day` \| `month` \| `year` \| `unknown` | How precise `first_public_date` is. Matches the format you wrote: day for `YYYY-MM-DD`, month for `YYYY-MM`, year for `YYYY`. Use `unknown` only when you also omit `first_public_date`. |
 | `first_seen_at` | `YYYY-MM-DD` | The day you first identified the record. For the pilot import this is `2026-10-24` for every row. It is **never** a publication date and the site never shows it as one. |
 | `last_checked_at` | `YYYY-MM-DD` | Your most recent review of this record. Update it every time you re-verify the record. |
-| `lead_department_id` | lowercase id | The department that **leads** the work. Use `don` for the Department of Neuroscience. Leave absent (not empty string) when the lead is external or not a registered department. |
-| `participating_department_ids` | array of ids | Departments that participate without leading. Participation is not leadership; a DoN co-author on an external paper goes here, not in `lead_department_id`. May be `[]`. |
+| `lead_department_id` | lowercase id | The one department that **leads** the work. Use an id from the registry below. Omit the field (do not write `""`) when the lead is outside Washington University or not on the registry. |
+| `participating_department_ids` | array of ids | Departments that participate without leading. A Neuroscience co-author on a Radiology-led paper is `["don"]` here, not in `lead_department_id`. May be `[]`. |
 
-Registered department ids today: `don`. Ask before inventing a new id; the site has to know the id to offer it as a scope.
+Date fields from steps 1–2 are already on the bank. Do not redo them. This pass is step 3.
 
-Do the migration in this order so the site degrades gracefully in between:
-
-1. Copy `publication_date` → `first_public_date` and set `date_precision` on all 39 records. Re-verify any record where a preprint predates the peer-reviewed date; `first_public_date` is the *earliest* public date, whereas `publication_date` prefers peer review. Keep both fields.
-2. Set `first_seen_at` from `discovery_date` and `last_checked_at` from your run date.
-3. Set `lead_department_id: "don"` on every record whose `lead_don_status` is `core`. Put affiliate / co-author DoN involvement into `participating_department_ids: ["don"]` and leave `lead_department_id` absent for those.
-4. Bump `schema_version` to `1.3`, set `generated`, append a changelog line saying which fields you added and whether any `first_public_date` differs from `publication_date`.
+1. Copy `publication_date` → `first_public_date` and set `date_precision`. Done. On a new record, `first_public_date` is the earliest public date and `publication_date` prefers peer review. Keep both.
+2. Set `first_seen_at` from `discovery_date` and `last_checked_at` from the run date. Done for the pilot import. On a later review, update `last_checked_at` only.
+3. Classify `lead_department_id` and `participating_department_ids` on every record using the registry in "Department fields". Do not leave a WashU-led record on the old `lead_don_status` flag alone.
+4. Schema `1.3` is already in place. Set `generated`, and append a changelog line that lists each `lead_department_id` you used and how many records carry it.
 
 Do not guess dates. If a source states no date, omit `first_public_date`, set `date_precision: "unknown"`, and leave the clue in `maturity`. An undated record hidden from the default view is correct; an invented date is not.
 
@@ -69,9 +67,37 @@ Partial dates are handled honestly: a `2025` record is treated as a range (Jan 1
 
 ## Department fields
 
-`lead_department_id` answers one question: which department leads this work? Only that department's scope shows the record. `participating_department_ids` records everyone else involved; it is kept internally and does not put a record into a department's scope.
+`lead_department_id` is the filter. It answers one question: which department leads this work? Only that department's scope shows the record. `lead_home_department` is a note for humans. The site does not filter on it.
 
-Until `lead_department_id` is populated, the site identifies DoN-led records by `lead_don_status === "core"`. Once a record carries `lead_department_id`, that field wins and `lead_don_status` is ignored for scoping. Keep `lead_don_status` and `lead_home_department` filled during the transition; they are internal.
+**One lead.** Set `lead_department_id` to the department of the senior or corresponding author whose lab produced the work. Use exactly one id. When the lead is outside Washington University, or you cannot tell which WashU department leads, omit `lead_department_id`. Do not write `""`.
+
+**Everyone else participates.** Other WashU departments on the paper go in `participating_department_ids`. A Neuroscience co-author on a Radiology-led paper is `lead_department_id: "radiology"` and `participating_department_ids: ["don"]`. Participation never goes in `lead_department_id`.
+
+**Use only these ids.** Lowercase, no spaces. Do not invent another id in this pass. When a real WashU department is missing from the list, omit `lead_department_id`, write the appointment in `lead_home_department`, and name the department in the changelog so it can be registered. The page offers a department as a scope only after that id is registered in the site; classify the records now anyway.
+
+| id | Department |
+|---|---|
+| `don` | Department of Neuroscience |
+| `radiology` | Radiology |
+| `neurology` | Neurology |
+| `neurosurgery` | Neurosurgery |
+| `psychiatry` | Psychiatry |
+| `anesthesiology` | Anesthesiology |
+| `otolaryngology` | Otolaryngology |
+| `ophthalmology` | Ophthalmology |
+| `bme` | Biomedical Engineering |
+| `medicine` | Medicine |
+| `pathology` | Pathology & Immunology |
+
+**Keep `lead_don_status` in step with `don`.**
+
+- `lead_department_id: "don"` means `lead_don_status: "core"`.
+- `don` only in `participating_department_ids` means `lead_don_status: "affiliate"`.
+- No `don` on the record means `lead_don_status: "external/co-author only"`.
+
+Until a record carries `lead_department_id`, the site still treats `lead_don_status === "core"` as DoN-led. Once `lead_department_id` is set, that field wins.
+
+Write `lead_home_department` as the appointment you actually used, for example `Radiology` or `External (Stanford; Schnitzer lab)`. Do not put "verify", lab parentheticals, or co-author lists in that field. Uncertainty belongs in the changelog, and an uncertain lead stays unset.
 
 "All indexed" means every record in the bank, whatever leads it. It does not claim coverage of every WashU department. Keep that distinction in any text you write.
 
@@ -94,9 +120,9 @@ Missing any required field breaks the page for that record. Keep the names exact
 | `publication_date` | yes | Peer-reviewed date when one exists; the fallback when `first_public_date` is absent. |
 | `first_seen_at` | expected (1.3) | Stored. May later mark recently surfaced records; never shown as a publication date. |
 | `last_checked_at` | expected (1.3) | Stored. |
-| `lead_department_id` | expected (1.3) | Department scope. |
-| `participating_department_ids` | expected (1.3) | Stored, internal. |
-| `lead_don_status` | yes (transitional) | `core`, `affiliate`, or `external/co-author only`. Internal; identifies DoN-led work until `lead_department_id` exists on the record. Not displayed. |
+| `lead_department_id` | expected (1.3) | Department scope. One id from the registry above. The department that leads. |
+| `participating_department_ids` | expected (1.3) | Stored, internal. Does not put a record into a department's scope. |
+| `lead_don_status` | yes (transitional) | `core`, `affiliate`, or `external/co-author only`, kept in step with whether `don` leads or participates. Not displayed. |
 | `discovery_date` | yes | The day you first recorded it. Stored, not shown. |
 | `technical_advantage` | expected | Shown as a Scout note. On the featured card, text split on `;` becomes up to three chips, so write two or three short clauses separated by semicolons when there is more than one advantage. |
 | `maturity` | expected | Provenance line, and the last-resort date fallback. |
@@ -184,9 +210,9 @@ New record, minimum:
 - `first_public_date` matches a date stated by the source, or the field is absent with `date_precision: "unknown"`. It is never the day you ran and never the bulk-import date.
 - `date_precision` matches the format of `first_public_date`.
 - `publication_date` is the peer-reviewed date when one exists; otherwise it equals `first_public_date`.
-- `lead_department_id` is set only on records the department leads; co-author involvement is in `participating_department_ids`.
+- `lead_department_id` is one id from the registry, and only on records that department leads. Omit it for an external or uncertain lead. Co-author departments are in `participating_department_ids`.
+- `lead_don_status` matches the `don` rule: `core` when `don` leads, `affiliate` when `don` only participates, `external/co-author only` otherwise.
 - `domain` is one of the five values unless you deliberately added a new one.
-- `lead_don_status` is `core`, `affiliate`, or `external/co-author only` (transitional).
 - Both scores are numbers from 0 to 100.
 - `top10` is a boolean you decided, not a placeholder left for a person.
 - Investigator names are spelled consistently across records.
