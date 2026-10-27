@@ -3083,12 +3083,13 @@
    "category": "behavioral apparatus/assay",
    "domain": "research-tool",
    "source_evidence": [
-    "https://doi.org/10.1101/2025.08.21.671364"
+    "https://doi.org/10.1101/2025.08.21.671364",
+    "https://doi.org/10.1016/j.crmeth.2026.101374"
    ],
    "problem_solved": "Social motivation tests are brief and handler-dependent",
    "technical_advantage": "Continuous measurement; low handling; social reward seeking",
    "difference_from_prior": "Homecage operant (likely FED3-family open hardware) vs. 3-chamber test",
-   "maturity": "Preprint (bioRxiv Aug 2025)",
+   "maturity": "Peer-reviewed (Cell Reports Methods Mar 2026); preprint (bioRxiv Aug 2025)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 70,
@@ -3106,7 +3107,7 @@
     "score": 52
    },
    "confidence": "Medium",
-   "observations_validated": "Public record: Preprint (2025). Claims as stated in abstract/source.",
+   "observations_validated": "Public record: bioRxiv preprint posted 2025-08-26; peer-reviewed Cell Reports Methods article published 2026-03-30 (CC BY-NC; Chen, Maloney, Kravitz). Claims as stated in abstract/source.",
    "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
    "translational_pathway": "Open hardware ecosystem",
    "recommended_resources": [
@@ -3129,7 +3130,7 @@
    "next_action": "Confirm hardware basis and open release",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-10-27",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -3152,12 +3153,20 @@
       "affiliate",
       "Psychiatry (verify)"
      ]
+    },
+    {
+     "date": "2026-10-27",
+     "event": "updated",
+     "field": "publication_date",
+     "old": "2025-08-26",
+     "new": "2026-03-30",
+     "note": "peer-reviewed version added"
     }
    ],
    "lead_don_status": "affiliate",
    "lead_home_department": "Psychiatry",
    "lead_flags": [],
-   "publication_date": "2025-08-26",
+   "publication_date": "2026-03-30",
    "first_public_date": "2025-08-26",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
@@ -4414,6 +4423,595 @@
    "last_checked_at": "2026-10-25",
    "lead_department_id": "don",
    "participating_department_ids": []
+  },
+  {
+   "discovery_date": "2026-10-27",
+   "last_review_date": "2026-10-27",
+   "reviewed_by": "Innovation Scout (QC missed-item pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-10-27",
+   "last_checked_at": "2026-10-27",
+   "history": [
+    {
+     "date": "2026-10-27",
+     "event": "created",
+     "by": "Innovation Scout QC (missed-item pass)"
+    }
+   ],
+   "lead_flags": [
+    "co-author is pipeline owner (self-assessment)"
+   ],
+   "innovation_id": "DON-2026-040",
+   "name": "Tumbly open-source home-cage time-restricted feeding device",
+   "description": "Battery-powered, programmable servo-driven food hopper that gates diet access at user-set times in standard mouse home-cages, with a swappable faceplate for different cage types; validated in two labs with no device failures over >1000 h.",
+   "investigators": [
+    {
+     "name": "Alexxai Kravitz",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Mason Barrett",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Kravitz lab)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Erik Musiek",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Neurology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Kravitz lab",
+   "category": "instrument/device",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.10.19.760239",
+    "https://github.com/KravitzLabDevices/Tumbly"
+   ],
+   "problem_solved": "Time-restricted feeding studies need labor-intensive manual food swaps or costly automated systems",
+   "technical_advantage": "Battery-powered, runs in standard home-cages; open hardware and firmware (GPL-3.0); validated at two sites with no device failures over >1000 h",
+   "difference_from_prior": "Open, cage-agnostic battery TRF hopper (based on the Kravitz Tumble Feeder) vs. manual food removal or commercial feeding systems",
+   "maturity": "Preprint (bioRxiv Oct 2026); open hardware/firmware on GitHub (GPL-3.0)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 80,
+    "reproducibility": 85,
+    "adoption": 80,
+    "score": 78
+   },
+   "commercial_potential": {
+    "novelty": 50,
+    "customer_need": 60,
+    "feasibility": 80,
+    "market": 40,
+    "scalability": 65,
+    "score": 58
+   },
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+   ],
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2026-10-24 (CC BY 4.0), 8 authors incl. WashU Psychiatry (Kravitz, corresponding), DoN (Gaidica), Neurology (Musiek); public GitHub repo (GPL-3.0). Claims as stated in abstract. Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open hardware ecosystem (FED3 family); possible kit builds via Neurotech Hub (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [
+      "stage s4 outside listed states ['s0', 's1', 's2', 's3']"
+     ],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Pair with FED3/homecage records; consider Neurotech Hub build support for adopting labs.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-027"
+   ],
+   "investigator_brief": {
+    "why_identified": "Preprint + open repo: battery home-cage TRF hopper validated at two sites",
+    "what_is_distinctive": "Open, cage-agnostic TRF hopper vs. manual food swaps or commercial feeding systems",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open dissemination; kit builds via core (hypothesis)",
+    "suggested_resources": [
+     "neurotech-hub",
+     "hope-center"
+    ],
+    "next_steps": "Pair with FED3/homecage records.",
+    "flags": [
+     "self-assessment: pipeline owner is a co-author"
+    ],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Psychiatry",
+   "publication_date": "2026-10-24",
+   "first_public_date": "2026-10-24",
+   "date_precision": "day",
+   "lead_department_id": "psychiatry",
+   "participating_department_ids": [
+    "don",
+    "neurology"
+   ]
+  },
+  {
+   "discovery_date": "2026-10-27",
+   "last_review_date": "2026-10-27",
+   "reviewed_by": "Innovation Scout (QC missed-item pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-10-27",
+   "last_checked_at": "2026-10-27",
+   "history": [
+    {
+     "date": "2026-10-27",
+     "event": "created",
+     "by": "Innovation Scout QC (missed-item pass)"
+    }
+   ],
+   "lead_flags": [
+    "lead external; WashU co-corresponding Gereau (Anesthesiology)"
+   ],
+   "innovation_id": "DON-2026-041",
+   "name": "Autonomous implantable device that detects and reverses opioid overdose",
+   "description": "Fully implantable closed-loop system that senses respiratory depression from opioid overdose and automatically releases naloxone; prevented death in most animals in a preclinical (rat/pig) study.",
+   "investigators": [
+    {
+     "name": "John A. Rogers",
+     "affiliation": "Northwestern University",
+     "don_role": "external",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Robert Gereau",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Jose Moron",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Anesthesiology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Joanna Ciatti",
+     "affiliation": "Northwestern University",
+     "don_role": "external",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Rogers lab (Northwestern) with Gereau lab (WashU Anesthesiology)",
+   "category": "instrument/device",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.1126/sciadv.adr3567",
+    "https://doi.org/10.1101/2024.06.27.600919",
+    "https://pubmed.ncbi.nlm.nih.gov/39441938"
+   ],
+   "problem_solved": "Opioid overdose deaths often occur when no bystander is present to give naloxone",
+   "technical_advantage": "Closed-loop detection of respiratory depression; autonomous naloxone delivery without a bystander; fully implantable, wireless",
+   "difference_from_prior": "Autonomous implanted sense-and-rescue vs. bystander-administered naloxone or wearable alerts",
+   "maturity": "Peer-reviewed (Science Advances Oct 2024); preprint (bioRxiv Jul 2024)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 85,
+    "usefulness": 70,
+    "reproducibility": 55,
+    "adoption": 40,
+    "score": 62
+   },
+   "commercial_potential": {
+    "novelty": 85,
+    "customer_need": 85,
+    "feasibility": 45,
+    "market": 70,
+    "scalability": 45,
+    "score": 70
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2024-07-02 (CC BY-NC-ND); Science Advances article 2024-10-23 (CC BY). Corresponding authors Rogers (Northwestern) and Gereau (WashU). Preclinical animal data only, as stated in the abstract.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Human use and clinical pathway are hypotheses.",
+   "translational_pathway": "Preclinical device; clinical translation would need regulatory development (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "ninds-devices",
+     "title": "NINDS Translational Devices + Small Business Program",
+     "url": "https://www.ninds.nih.gov/current-research/research-funded-ninds/translational-research/translational-devices",
+     "needs": [
+      "funding"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [
+      "stage s3 outside listed states ['s6', 's7', 's8']"
+     ],
+     "eligibility": "Depends on the specific NOFO. Some routes are academic; others are small-business-only. Inspect the current announcement."
+    },
+    {
+     "resource_id": "dep",
+     "title": "Domain Expert Program (DEP)",
+     "url": "https://otm.wustl.edu/items/domain-expert-program-dep/",
+     "needs": [
+      "expertise-mentorship",
+      "industry-connections"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "OTM-mediated selection and referral. Complete researcher-facing public eligibility criteria are unspecified."
+    }
+   ],
+   "next_action": "Track follow-on publications; note in opioid/pain device cluster with DON-2026-021.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-021"
+   ],
+   "investigator_brief": {
+    "why_identified": "Peer-reviewed closed-loop implant preventing overdose death in animals",
+    "what_is_distinctive": "Autonomous sense-and-rescue implant vs. bystander naloxone",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Preclinical; regulatory pathway (hypothesis)",
+    "suggested_resources": [
+     "otm-core",
+     "ninds-devices",
+     "dep"
+    ],
+    "next_steps": "Track follow-on work.",
+    "flags": [
+     "lead lab external (Northwestern)"
+    ],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "affiliate",
+   "lead_home_department": "External (Northwestern University; Rogers lab)",
+   "publication_date": "2024-10-23",
+   "first_public_date": "2024-07-02",
+   "date_precision": "day",
+   "participating_department_ids": [
+    "anesthesiology",
+    "don"
+   ]
+  },
+  {
+   "discovery_date": "2026-10-27",
+   "last_review_date": "2026-10-27",
+   "reviewed_by": "Innovation Scout (QC missed-item pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-10-27",
+   "last_checked_at": "2026-10-27",
+   "history": [
+    {
+     "date": "2026-10-27",
+     "event": "created",
+     "by": "Innovation Scout QC (missed-item pass)"
+    }
+   ],
+   "lead_flags": [
+    "co-author is pipeline owner (self-assessment)"
+   ],
+   "innovation_id": "DON-2026-042",
+   "name": "Wrist-worn laser speckle imaging device for early postpartum hemorrhage detection",
+   "description": "Wearable wrist-worn laser speckle imaging device that records high-fidelity pulsatile blood-flow signals, developed toward early detection of postpartum hemorrhage.",
+   "investigators": [
+    {
+     "name": "Christine O'Brien",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Biomedical Engineering)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Francesca Bonetta-Misteli",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (O'Brien lab)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Matt Gaidica",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "O'Brien lab (Biomedical Engineering)",
+   "category": "instrument/device",
+   "domain": "device",
+   "source_evidence": [
+    "https://doi.org/10.1117/12.3091952"
+   ],
+   "problem_solved": "Postpartum hemorrhage is often recognized late from vital signs and visual blood-loss estimates",
+   "technical_advantage": "Wearable wrist form factor; high-fidelity pulsatile perfusion signal; continuous monitoring",
+   "difference_from_prior": "Wrist-worn speckle perfusion sensing vs. intermittent vitals and visual blood-loss estimation",
+   "maturity": "Conference proceeding (SPIE Mar 2026)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 65,
+    "reproducibility": 45,
+    "adoption": 35,
+    "score": 54
+   },
+   "commercial_potential": {
+    "novelty": 70,
+    "customer_need": 80,
+    "feasibility": 60,
+    "market": 65,
+    "scalability": 55,
+    "score": 68
+   },
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+   ],
+   "confidence": "Low",
+   "observations_validated": "Public record: SPIE proceedings paper published 2026-03-05; authors WashU BME (O'Brien, last author), OB/GYN, DoN (Gaidica). Only the title and metadata were verified; claims limited to the title. Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Clinical performance is a hypothesis; conference-level evidence only.",
+   "translational_pathway": "Clinical validation studies in obstetric settings (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. The 2026 CTRFP cycle closed (invited full applications were due September 14, 2026); the next cycle has not been posted as of 2026-10-25. JIT has separate rolling processes and limits."
+    },
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    }
+   ],
+   "next_action": "Watch for a full journal paper or clinical validation study.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "investigator_brief": {
+    "why_identified": "SPIE proceeding: wearable speckle imaging for postpartum hemorrhage",
+    "what_is_distinctive": "Wrist-worn perfusion sensing vs. intermittent vitals",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Clinical validation (hypothesis)",
+    "suggested_resources": [
+     "neurotech-hub",
+     "icts",
+     "mhealth-research-core"
+    ],
+    "next_steps": "Watch for journal version.",
+    "flags": [
+     "self-assessment: pipeline owner is a co-author",
+     "conference-level evidence"
+    ],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biomedical Engineering",
+   "publication_date": "2026-03-05",
+   "first_public_date": "2026-03-05",
+   "date_precision": "day",
+   "lead_department_id": "bme",
+   "participating_department_ids": [
+    "don"
+   ]
+  },
+  {
+   "discovery_date": "2026-10-27",
+   "last_review_date": "2026-10-27",
+   "reviewed_by": "Innovation Scout (QC missed-item pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-10-27",
+   "last_checked_at": "2026-10-27",
+   "history": [
+    {
+     "date": "2026-10-27",
+     "event": "created",
+     "by": "Innovation Scout QC (missed-item pass)"
+    }
+   ],
+   "lead_flags": [],
+   "innovation_id": "DON-2026-043",
+   "name": "OptiPrep gradient nuclei extraction protocol for 10X Multiome",
+   "description": "Step-by-step protocol for extracting nuclei by OptiPrep gradient centrifugation for the 10X Genomics Multiome (snRNA + snATAC) assay.",
+   "investigators": [
+    {
+     "name": "Robert Gereau",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior",
+     "atlas_verified": false
+    },
+    {
+     "name": "Valeria Cavalli",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN core faculty",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Lite Yang",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Gereau lab)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Gereau lab (Anesthesiology)",
+   "category": "protocol/method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.17504/protocols.io.5jyl8q4y8l2w/v1"
+   ],
+   "problem_solved": "Multiome assays need clean, intact nuclei from tissue such as dorsal root ganglia",
+   "technical_advantage": "Gradient cleanup of nuclei; written for the 10X Multiome workflow; openly licensed (CC BY 4.0)",
+   "difference_from_prior": "Gradient-purified nuclei prep vs. crude lysis preparations",
+   "maturity": "Protocol (protocols.io Nov 2024)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 35,
+    "usefulness": 60,
+    "reproducibility": 70,
+    "adoption": 45,
+    "score": 54
+   },
+   "commercial_potential": {
+    "novelty": 20,
+    "customer_need": 30,
+    "feasibility": 80,
+    "market": 20,
+    "scalability": 30,
+    "score": 34
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: protocols.io protocol published 2024-11-11 (CC BY 4.0); authors Yang, Meriau, Cavalli, Gereau (last).",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open dissemination",
+   "recommended_resources": [
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Link to DRG atlas records if used there.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "investigator_brief": {
+    "why_identified": "Open protocols.io method for Multiome nuclei prep",
+    "what_is_distinctive": "Gradient-purified nuclei for 10X Multiome",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "Open dissemination",
+    "suggested_resources": [
+     "hope-center"
+    ],
+    "next_steps": "Link to DRG atlas work.",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   },
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Anesthesiology",
+   "publication_date": "2024-11-11",
+   "first_public_date": "2024-11-11",
+   "date_precision": "day",
+   "lead_department_id": "anesthesiology",
+   "participating_department_ids": [
+    "don"
+   ]
   }
  ],
  "changelog": [
@@ -4441,6 +5039,11 @@
    "date": "2026-10-27",
    "version": "1.3",
    "note": "Step 3 department classification per docs/grok.md. lead_department_id counts: anesthesiology=1, bme=1, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=1, radiology=3; omitted on 14 records (external, unregistered, or uncertain lead). lead_don_status re-synced to the don rule (don only participating -> affiliate), so 15 core, 24 affiliate. DON-2026-010 lead moved from don to unset: senior author Rosengart is Surgery. Unregistered WashU departments seen as lead (register to enable scope): Surgery (010), Electrical and Systems Engineering (018, Sorrells), Program in Physical Therapy (020, Earhart). Uncertain lead left unset: 013 (Ding lab department unconfirmed). 003/004 Glasser classified Radiology (paper also lists his BME affiliation)."
+  },
+  {
+   "date": "2026-10-27",
+   "version": "1.3",
+   "note": "QC missed-item pass: added DON-2026-040 Tumbly (lead psychiatry; self-assessed, Gaidica co-author), DON-2026-041 autonomous opioid-overdose implant (lead external, Northwestern; anesthesiology+don participate; first_public_date = bioRxiv 2024-07-02), DON-2026-042 wrist-worn speckle imaging for postpartum hemorrhage (lead bme; self-assessed), DON-2026-043 OptiPrep nuclei protocol for 10X Multiome (lead anesthesiology). DON-2026-027 publication_date set to Cell Reports Methods 2026-03-30; first_public_date unchanged. Skipped: Willie J Neurosurg 2025 (outcomes study of an existing commercial MRI-compatible platform, not a WashU-originated tool). Unregistered departments seen as participants: Obstetrics & Gynecology, Dermatology, Plastic Surgery. lead_department_id counts now: anesthesiology=2, bme=2, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=3; omitted on 15."
   }
  ]
 }
