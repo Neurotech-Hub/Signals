@@ -3085,7 +3085,9 @@
    "first_seen_at": "2026-10-24",
    "last_checked_at": "2026-11-01",
    "participating_department_ids": [
-    "don"
+    "biology",
+    "don",
+    "pbs"
    ],
    "lead_department_id": "medicine"
   },
@@ -5507,6 +5509,589 @@
     "neurology"
    ],
    "image_url": "images/don-2026-045.jpg"
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (Biology department pass 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Biology (neuroscience-related); Herzog is a DoN affiliate"
+   ],
+   "innovation_id": "DON-2026-046",
+   "name": "Daily locomotor-activity monitoring as a progression readout in glioblastoma (wheel-running and wrist actigraphy)",
+   "description": "Continuous activity tracking as a progression assay for glioblastoma: wheel-running in GBM-bearing mice declined with tumor growth before weight loss or circadian breakdown, and in a 6-patient pilot, wrist actigraphy declined 19 and 55 days before MRI detected progression.",
+   "investigators": [
+    {
+     "name": "Erik D. Herzog",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate (Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Maria F. Gonzalez-Aponte",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Herzog lab, Biology)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Omar H. Butt",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Medicine, Oncology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Joshua B. Rubin",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Pediatrics)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Olivia J. Walch",
+     "affiliation": "Arcascope Inc.",
+     "don_role": "external",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Herzog lab (Biology)",
+   "category": "assay",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1172/jci.insight.194582",
+    "https://insight.jci.org/articles/view/194582",
+    "https://doi.org/10.1093/neuonc/noaf201.0253"
+   ],
+   "problem_solved": "Glioblastoma progression is detected by MRI scheduled every 2-3 months, leaving long unmonitored gaps",
+   "technical_advantage": "Continuous 1-minute-resolution activity readout; consumer-grade wearable in patients; in mice, decline precedes weight loss and circadian breakdown by over a week",
+   "difference_from_prior": "Continuous behavioral monitoring between scans vs. periodic MRI and symptom reports",
+   "maturity": "Peer-reviewed (JCI Insight Nov 2025); conference abstract (Neuro-Oncology Nov 2025); human data is a 6-patient pilot",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 75,
+    "reproducibility": 65,
+    "adoption": 50,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 65,
+    "customer_need": 70,
+    "feasibility": 70,
+    "market": 45,
+    "scalability": 60,
+    "score": 62
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: JCI Insight article published 2025-11-25 (CC BY 4.0); SNO abstract in Neuro-Oncology 2025-11-11. Correspondence: Erik D. Herzog (Department of Biology, WashU). WashU co-authors from Biology, Medicine (Oncology), Public Health Sciences and Pediatrics. Pilot size and lead times as stated in the abstract. No code or data repository was found on the article page.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Clinical utility needs larger prospective studies.",
+   "translational_pathway": "Research assay; any clinical monitoring use would need prospective validation (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. The 2026 CTRFP cycle closed (invited full applications were due September 14, 2026); the next cycle has not been posted as of 2026-10-25. JIT has separate rolling processes and limits."
+    }
+   ],
+   "next_action": "Link with circadian/chronotherapy records (DON-2026-025); watch for a larger prospective actigraphy study.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-025"
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biology",
+   "publication_date": "2025-11-25",
+   "first_public_date": "2025-11-11",
+   "date_precision": "day",
+   "lead_department_id": "biology",
+   "participating_department_ids": [
+    "medicine"
+   ],
+   "image_url": "images/don-2026-046.jpg"
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (Biology department pass 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Biology (neuroscience-related); Herzog is a DoN affiliate",
+    "participant Electrical and Systems Engineering is not a registered department id"
+   ],
+   "innovation_id": "DON-2026-047",
+   "name": "MITE: inferring directed functional connectomes from long-term live-cell imaging (SCN)",
+   "description": "Mutual Information & Transfer Entropy (MITE), an information-theoretic framework that infers directed cell-to-cell connections from long-term clock-gene imaging; applied to 8,261 SCN neurons from 17 mice to map a sparse two-module network and five functional cell types.",
+   "investigators": [
+    {
+     "name": "Erik D. Herzog",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate (Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "K. L. Nikhil",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Herzog lab, Biology)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Jr-Shin Li",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Electrical and Systems Engineering)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Istvan Z. Kiss",
+     "affiliation": "Saint Louis University",
+     "don_role": "external",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Herzog lab (Biology)",
+   "category": "software/analysis method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1073/pnas.2520674122",
+    "https://doi.org/10.1101/2024.12.06.627294"
+   ],
+   "problem_solved": "Functional connectivity among circuit neurons is hard to infer from fixed tissue",
+   "technical_advantage": "Directed connections inferred from 3,290 h of single-cell recordings; validated by simulations that reproduce emergent SCN dynamics; classifies cells by connectivity role independent of neurochemistry",
+   "difference_from_prior": "Directed, activity-based connectome from live imaging vs. anatomical or correlation-only maps",
+   "maturity": "Peer-reviewed (PNAS Dec 2025); preprint (bioRxiv Dec 2024)",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 65,
+    "reproducibility": 60,
+    "adoption": 45,
+    "score": 61
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 30,
+    "feasibility": 60,
+    "market": 20,
+    "scalability": 40,
+    "score": 36
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2024-12-11 (CC BY-NC-ND); PNAS article 2025-12-11 (CC BY-NC-ND). Corresponding: Erik D. Herzog (Department of Biology, WashU). Co-authors from WashU Electrical and Systems Engineering and Saint Louis University. Dataset size as stated in the abstract. A public code repository was not confirmed.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Generalization beyond SCN imaging is untested.",
+   "translational_pathway": "Open research method (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Check whether MITE code is released; relate to network-analysis records.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biology",
+   "publication_date": "2025-12-11",
+   "first_public_date": "2024-12-11",
+   "date_precision": "day",
+   "lead_department_id": "biology",
+   "participating_department_ids": []
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (Biology department pass 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Biology; neuroscience link is circadian clock biology",
+    "participant Obstetrics and Gynecology is not a registered department id"
+   ],
+   "innovation_id": "DON-2026-048",
+   "name": "Longitudinal in utero recording of fetoplacental circadian (PER2::LUC) rhythms in freely moving mice",
+   "description": "Method for monitoring fetal-derived PER2 bioluminescence in utero from E8.5 to E17.5 in freely moving pregnant mice, by restricting PER2::LUC to the fetoplacental unit (WT dam x P2L sire) and recording with photomultiplier tubes; showed fetoplacental rhythms develop and then synchronize to the mother.",
+   "investigators": [
+    {
+     "name": "Erik D. Herzog",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate (Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "K. L. Nikhil",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Herzog lab, Biology)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Sarah K. England",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Obstetrics and Gynecology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Herzog lab (Biology)",
+   "category": "assay",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1177/07487304261435435",
+    "https://doi.org/10.64898/2025.12.17.695051"
+   ],
+   "problem_solved": "Developmental origin of circadian rhythms in utero could not be followed longitudinally in the same pregnancy",
+   "technical_advantage": "Fetal-only reporter via breeding scheme; non-invasive recording in freely moving dams; longitudinal across gestation",
+   "difference_from_prior": "Continuous in utero fetoplacental clock readout vs. terminal ex vivo tissue sampling",
+   "maturity": "Peer-reviewed (J Biol Rhythms Apr 2026); preprint (bioRxiv Dec 2025)",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 55,
+    "reproducibility": 60,
+    "adoption": 35,
+    "score": 54
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 30,
+    "feasibility": 60,
+    "market": 20,
+    "scalability": 30,
+    "score": 34
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2025-12-20 (CC BY 4.0); J Biol Rhythms article 2026-04-10. Corresponding: Erik D. Herzog (Department of Biology, WashU); co-authors from Obstetrics and Gynecology. Method description from the abstract and Figure 1 legend. No code or data repository found.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open research method (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Note as a circadian development assay; link with DON-2026-046/047.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-047"
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biology",
+   "publication_date": "2026-04-10",
+   "first_public_date": "2025-12-20",
+   "date_precision": "day",
+   "lead_department_id": "biology",
+   "participating_department_ids": []
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (Biology department pass 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Biology (neuroscience-related); Hengen is a DoN affiliate",
+    "merged record: two preprints"
+   ],
+   "innovation_id": "DON-2026-049",
+   "name": "Variable-difficulty mouse prey-capture paradigm (temperature-controlled prey speed and object-cluttered arenas)",
+   "description": "Ethological prey-capture paradigm in which mice hunt live cockroaches whose speed is set by ambient temperature, and arenas with occluding objects reveal memory- and value-guided search; built from inexpensive materials with open-source analyses. Merges two related Hengen-lab preprints.",
+   "investigators": [
+    {
+     "name": "Keith B. Hengen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate (Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Aidan M. Schneider",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Hengen lab, Biology)",
+     "authorship_role": "first author (complex-arena preprint)",
+     "atlas_verified": false
+    },
+    {
+     "name": "Jacob L. Amme",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Hengen lab, Biology)",
+     "authorship_role": "first author (variable-difficulty preprint)",
+     "atlas_verified": false
+    },
+    {
+     "name": "Anthony I. Dell",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Biology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Hengen lab (Biology)",
+   "category": "assay",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.64898/2026.06.28.735138",
+    "https://doi.org/10.64898/2026.09.03.749200"
+   ],
+   "problem_solved": "Standard lab tasks are too simple to recruit perception, memory and decision-making together",
+   "technical_advantage": "Parametric control of prey difficulty via temperature; cluttered arenas expose search learning; inexpensive materials; open-source analyses (per authors)",
+   "difference_from_prior": "Graded, cognitively demanding prey capture vs. fixed-difficulty bare-arena assays",
+   "maturity": "Preprints (bioRxiv Jul 2026 and Sep 2026)",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 65,
+    "reproducibility": 60,
+    "adoption": 40,
+    "score": 58
+   },
+   "commercial_potential": {
+    "novelty": 30,
+    "customer_need": 30,
+    "feasibility": 70,
+    "market": 20,
+    "scalability": 40,
+    "score": 36
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprints posted 2026-07-02 (10.64898/2026.06.28.735138; no CC license) and 2026-09-08 (10.64898/2026.09.03.749200; CC BY-NC-ND). Corresponding: Keith B. Hengen (Department of Biology, WashU) on both. Open-source analyses are stated in the abstract, but a repository URL was not confirmed.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open research paradigm (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    },
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Confirm analysis repository; consider Neurotech Hub arena build support.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biology",
+   "publication_date": "2026-09-08",
+   "first_public_date": "2026-07-02",
+   "date_precision": "day",
+   "lead_department_id": "biology",
+   "participating_department_ids": []
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (Biology department pass 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead external; WashU co-author Hengen (Biology)"
+   ],
+   "innovation_id": "DON-2026-050",
+   "name": "Temporal renormalization-group metric of proximity to criticality from univariate time series",
+   "description": "Temporal renormalization group theory and an information-theoretic measure that quantify how close a system is to criticality from a single time series, without known control parameters; applied to neural data.",
+   "investigators": [
+    {
+     "name": "Woodrow L. Shew",
+     "affiliation": "University of Arkansas",
+     "don_role": "external",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "J. Samuel Sooter",
+     "affiliation": "University of Arkansas",
+     "don_role": "external",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Keith B. Hengen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate (Biology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Shew lab (University of Arkansas)",
+   "category": "software/analysis method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1073/pnas.2526984123",
+    "https://doi.org/10.1101/2025.08.03.668332"
+   ],
+   "problem_solved": "Claims of near-critical brain dynamics are hard to test when control parameters are unknown and only one or a few signals are recorded",
+   "technical_advantage": "Works on univariate time series; no control-parameter manipulation needed; rigorous RG-based definition",
+   "difference_from_prior": "Quantitative distance-to-criticality from single signals vs. avalanche statistics needing many channels",
+   "maturity": "Peer-reviewed (PNAS Oct 2026); preprint (bioRxiv Aug 2025)",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 65,
+    "reproducibility": 60,
+    "adoption": 40,
+    "score": 60
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 25,
+    "feasibility": 65,
+    "market": 15,
+    "scalability": 40,
+    "score": 33
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2025-08-03 (CC BY-NC); PNAS article 2026-10-28 (CC BY 4.0). Corresponding: Woodrow Shew (University of Arkansas). Keith B. Hengen (Department of Biology, WashU) is the only WashU author. A public code repository was not confirmed.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open analysis method (hypothesis)",
+   "recommended_resources": [],
+   "next_action": "Track code release; relate to Hengen lab criticality work.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "lead_don_status": "external",
+   "lead_home_department": "External (University of Arkansas; Shew lab)",
+   "publication_date": "2026-10-28",
+   "first_public_date": "2025-08-03",
+   "date_precision": "day",
+   "participating_department_ids": [
+    "biology"
+   ]
   }
  ],
  "changelog": [
@@ -5549,6 +6134,16 @@
    "date": "2026-11-01",
    "version": "1.3",
    "note": "Weekly run 2026-11-01 (window 2026-10-13..2026-11-01) with monthly reassessment. Added DON-2026-044 DLVM + DALE adaptive executive-function testing (Barbour, Behavior Research Methods 2026-10-05; first public arXiv 2025-10-01; lead bme, don participates) and DON-2026-045 KARI multimodal neuroimaging dataset (Benzinger, Nature Communications 2026-10-20; first public Research Square 2025-11-07; lead radiology; don and neurology participate). Both have CC BY figures. Reassessment: no new journal versions for preprint records; 010 noted medRxiv v2 (2026-10-13), added senior author Rosengart, and removed it from the top 10 because it is no longer core-led (lead_don_status became affiliate on 2026-10-27); 035 (phiC31, core-led) took the slot. Self-assessment flags made consistent on 008-011. last_checked_at set to 2026-11-01 on all records. Unregistered departments seen as participants: Occupational Therapy, Psychological & Brain Sciences, Computer Science and Engineering. lead_department_id counts now: anesthesiology=2, bme=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 15."
+  },
+  {
+   "date": "2026-11-01",
+   "version": "1.3",
+   "note": "Department pass for newly registered pbs and biology. Changed DON-2026-025 participating_department_ids ['don'] -> ['biology','don','pbs'] (Erik Herzog, Department of Biology; Deanna Barch, Department of Psychological & Brain Sciences, per paper affiliations); lead stays medicine. No record is led by pbs or biology faculty. DON-2026-045: Hassenstab and Raichle list PBS only as a secondary affiliation (primary Neurology/Radiology) and Gordon is Radiology, so pbs not added. Developmental Biology and Cell Biology & Physiology (School of Medicine) are not the biology id. lead_department_id counts: anesthesiology=2, bme=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 15. Remaining unregistered departments: Occupational Therapy, Computer Science and Engineering, Surgery, Electrical and Systems Engineering, Program in Physical Therapy."
+  },
+  {
+   "date": "2026-11-01",
+   "version": "1.3",
+   "note": "Biology department pass: added DON-2026-046 glioblastoma locomotor-activity monitoring (lead biology, Herzog; image JCI Insight graphical abstract, CC BY 4.0), DON-2026-047 MITE SCN functional connectome (lead biology; no image, CC BY-NC-ND), DON-2026-048 in utero fetoplacental PER2 recording (lead biology; no image, figure has third-party-style mouse illustrations), DON-2026-049 variable-difficulty prey-capture paradigm (lead biology; two Hengen preprints merged; no image, no CC / NC-ND), DON-2026-050 temporal RG criticality metric (lead external, University of Arkansas; biology participates; first_public_date = bioRxiv 2025-08-03; PNAS is CC BY 4.0 but the figure could not be fetched). Unregistered participants: Electrical and Systems Engineering, Obstetrics and Gynecology, Pediatrics, Public Health Sciences. lead_department_id counts now: anesthesiology=2, biology=4, bme=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 16."
   }
  ]
 }
