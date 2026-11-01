@@ -1,6 +1,6 @@
 {
  "schema_version": "1.3",
- "generated": "2026-10-27",
+ "generated": "2026-11-01",
  "scope": "DoN pilot",
  "extensible_scopes": [
   "DoN",
@@ -124,7 +124,7 @@
    "first_public_date": "2026-02-17",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -232,7 +232,7 @@
    "first_public_date": "2025-04-15",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -353,7 +353,7 @@
    "first_public_date": "2026-09-06",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -463,7 +463,7 @@
    "first_public_date": "2025-05-03",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -608,7 +608,7 @@
    "first_public_date": "2024-12-13",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -752,7 +752,7 @@
    "first_public_date": "2026-01-27",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -863,7 +863,7 @@
    "first_public_date": "2026-05-23",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -931,7 +931,7 @@
    "next_action": "Package flow-chamber build files for other labs",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -954,21 +954,46 @@
       "external/co-author only",
       "Otolaryngology (Sheets lab; verify)"
      ]
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "score_flags",
+     "old": null,
+     "new": [
+      "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+     ],
+     "note": "Matt Gaidica is a co-author; self-assessment flag was missing"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "lead_flags",
+     "old": [],
+     "new": [
+      "co-author is pipeline owner (self-assessment)"
+     ],
+     "note": "Matt Gaidica is a co-author"
     }
    ],
    "lead_don_status": "affiliate",
    "lead_home_department": "Otolaryngology",
-   "lead_flags": [],
+   "lead_flags": [
+    "co-author is pipeline owner (self-assessment)"
+   ],
    "publication_date": "2025",
    "image_url": "images/don-2026-008.jpg",
    "first_public_date": "2025",
    "date_precision": "year",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
-   "lead_department_id": "otolaryngology"
+   "lead_department_id": "otolaryngology",
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+   ]
   },
   {
    "innovation_id": "DON-2026-009",
@@ -1031,7 +1056,7 @@
    "next_action": "Note: user is the investigator \u2014 self-assessment; confirm code release",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1064,6 +1089,16 @@
      "score_old": 64,
      "score_new": 63,
      "reason": "Single-author preprint with no confirmed code release; consistency with other unreleased tools"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "score_flags",
+     "old": null,
+     "new": [
+      "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+     ],
+     "note": "Matt Gaidica is a co-author; self-assessment flag was missing"
     }
    ],
    "lead_don_status": "core",
@@ -1076,9 +1111,12 @@
    "first_public_date": "2026-05-20",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
-   "participating_department_ids": []
+   "participating_department_ids": [],
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+   ]
   },
   {
    "innovation_id": "DON-2026-010",
@@ -1091,6 +1129,13 @@
      "don_role": "DoN core faculty",
      "authorship_role": "first author",
      "atlas_verified": false
+    },
+    {
+     "name": "Matthew Rosengart",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Surgery)",
+     "authorship_role": "senior",
+     "atlas_verified": false
     }
    ],
    "originating_lab": "Gaidica with Rosengart (Surgery)",
@@ -1102,7 +1147,7 @@
    "problem_solved": "Light-therapy studies lack calibrated, wearable, controllable exposure",
    "technical_advantage": "Turns consumer XR glasses into dose-specified light delivery",
    "difference_from_prior": "Settings-to-exposure model for see-through XR vs. light boxes",
-   "maturity": "Preprint (medRxiv Aug 2026)",
+   "maturity": "Preprint (medRxiv Aug 2026; v2 Oct 2026)",
    "stage_code_estimate": "s4",
    "scientific_utility": {
     "novelty": 75,
@@ -1120,7 +1165,7 @@
     "score": 63
    },
    "confidence": "Medium",
-   "observations_validated": "Public record: Preprint (medRxiv Aug 2026). Claims as stated in abstract/source.",
+   "observations_validated": "Public record: medRxiv preprint v1 posted 2026-08-31, v2 posted 2026-10-13 and retitled 'A calibration pipeline for controlled ocular photostimulation with consumer see-through extended-reality glasses' (CC BY-NC-ND; Gaidica, Rosengart). No journal version as of 2026-11-01. Claims as stated in abstract/source. Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed.",
    "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
    "translational_pathway": "Clinical research tool; digital therapeutic partnership (inferred); OTM conversation if unpublished extensions",
    "recommended_resources": [
@@ -1167,11 +1212,11 @@
      "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
     }
    ],
-   "status": "recommended-for-conversation",
+   "status": "identified (not core-led; retained)",
    "next_action": "Plan a clinical study through ICTS (verify the next CTRFP cycle); OTM consult only for undisclosed extensions.",
-   "top10": true,
+   "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1194,6 +1239,79 @@
       "core",
       "Neuroscience (first author; senior author Rosengart, Surgery)"
      ]
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "maturity",
+     "old": "Preprint (medRxiv Aug 2026)",
+     "new": "Preprint (medRxiv Aug 2026; v2 Oct 2026)",
+     "note": "medRxiv v2 posted 2026-10-13 (retitled); first_public_date stays 2026-08-31 (v1)"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "observations_validated",
+     "old": "Public record: Preprint (medRxiv Aug 2026). Claims as stated in abstract/source.",
+     "new": "Public record: medRxiv preprint v1 posted 2026-08-31, v2 posted 2026-10-13 and retitled 'A calibration pipeline for controlled ocular photostimulation with consumer see-through extended-reality glasses' (CC BY-NC-ND; Gaidica, Rosengart). No journal version as of 2026-11-01. Claims as stated in abstract/source. Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed.",
+     "note": "v2 noted; self-assessment note added"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "investigators",
+     "old": [
+      {
+       "name": "Matt Gaidica",
+       "affiliation": "Washington University in St. Louis",
+       "don_role": "DoN core faculty",
+       "authorship_role": "first author",
+       "atlas_verified": false
+      }
+     ],
+     "new": [
+      {
+       "name": "Matt Gaidica",
+       "affiliation": "Washington University in St. Louis",
+       "don_role": "DoN core faculty",
+       "authorship_role": "first author",
+       "atlas_verified": false
+      },
+      {
+       "name": "Matthew Rosengart",
+       "affiliation": "Washington University in St. Louis",
+       "don_role": "none (Surgery)",
+       "authorship_role": "senior",
+       "atlas_verified": false
+      }
+     ],
+     "note": "Senior author (lead) was missing from investigators"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "top10",
+     "old": true,
+     "new": false,
+     "note": "Top 10 is restricted to core-led records (v1.1 policy); 010 lead_don_status became affiliate on 2026-10-27 but top10 was not cleared"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "status",
+     "old": "recommended-for-conversation",
+     "new": "identified (not core-led; retained)",
+     "note": "Follows top10 removal; matches other retained non-core records"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "score_flags",
+     "old": null,
+     "new": [
+      "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+     ],
+     "note": "Matt Gaidica is a co-author; self-assessment flag was missing"
     }
    ],
    "investigator_brief": {
@@ -1228,9 +1346,12 @@
    "first_public_date": "2026-08-31",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
+   ],
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
    ]
   },
   {
@@ -1320,7 +1441,7 @@
    "next_action": "Decide open hardware vs. licensing for FLEX-DBS; DEP session on vendor and lab demand; list adopter labs (e.g., Creed).",
    "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
@@ -1343,6 +1464,16 @@
       "core",
       "Neuroscience"
      ]
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "score_flags",
+     "old": null,
+     "new": [
+      "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+     ],
+     "note": "Matt Gaidica is a co-author; self-assessment flag was missing"
     }
    ],
    "investigator_brief": {
@@ -1376,9 +1507,12 @@
    "first_public_date": "2026-10-12",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
-   "participating_department_ids": []
+   "participating_department_ids": [],
+   "score_flags": [
+    "Self-assessment: Matt Gaidica (DoN, pipeline owner) is a co-author; scores are a self-assessment by the Innovation Scout and were not independently reviewed."
+   ]
   },
   {
    "innovation_id": "DON-2026-012",
@@ -1493,7 +1627,7 @@
    "first_public_date": "2025-05-09",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -1593,7 +1727,7 @@
    "first_public_date": "2026-03-16",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -1713,7 +1847,7 @@
    "first_public_date": "2024-08-16",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -1846,7 +1980,7 @@
    "first_public_date": "2026-01-30",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -1943,7 +2077,7 @@
    "first_public_date": "2026-01-09",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2042,7 +2176,7 @@
    "first_public_date": "2026-02-09",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2150,7 +2284,7 @@
    "first_public_date": "2025",
    "date_precision": "year",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2245,14 +2379,16 @@
    "next_action": "Ask Barbour about clinical validation, the mHealth pathway, and how this relates to the lab's earlier active-learning assessment work.",
    "top10": false,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (automated pilot)",
    "human_confirmed": false,
    "scope": [
     "DoN"
    ],
    "neurotech_hub_relevant": false,
-   "related_innovations": [],
+   "related_innovations": [
+    "DON-2026-044"
+   ],
    "history": [
     {
      "date": "2026-10-24",
@@ -2268,6 +2404,16 @@
       "affiliate",
       "Biomedical Engineering"
      ]
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "related_innovations",
+     "old": [],
+     "new": [
+      "DON-2026-044"
+     ],
+     "note": "Sibling DLVM/DALE paper added as DON-2026-044"
     }
    ],
    "lead_don_status": "affiliate",
@@ -2277,7 +2423,7 @@
    "first_public_date": "2025-10-01",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -2395,7 +2541,7 @@
    "first_public_date": "2024-12-28",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2519,7 +2665,7 @@
    "first_public_date": "2026-09-24",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -2621,7 +2767,7 @@
    "first_public_date": "2026-07-27",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2721,7 +2867,7 @@
    "first_public_date": "2024-12-24",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -2837,7 +2983,7 @@
    "first_public_date": "2025-07-16",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -2937,7 +3083,7 @@
    "first_public_date": "2026-02-24",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -3067,7 +3213,7 @@
    "first_public_date": "2025-03-24",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -3178,7 +3324,7 @@
    "first_public_date": "2025-08-26",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ],
@@ -3290,7 +3436,7 @@
    "first_public_date": "2026-01",
    "date_precision": "month",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "anesthesiology",
     "don"
@@ -3392,7 +3538,7 @@
    "first_public_date": "2025-05-03",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -3508,7 +3654,7 @@
    "first_public_date": "2025-08-28",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -3642,7 +3788,7 @@
    "first_public_date": "2026-08-23",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -3735,7 +3881,7 @@
    "first_public_date": "2024-08-15",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -3843,7 +3989,7 @@
    "first_public_date": "2025-04-20",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -3941,7 +4087,7 @@
    "first_public_date": "2024-05-17",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "participating_department_ids": [
     "don"
    ]
@@ -4009,11 +4155,11 @@
      "eligibility": "General WashU ecosystem resource."
     }
    ],
-   "status": "identified",
+   "status": "recommended-for-conversation",
    "next_action": "Monitor; candidate for monthly reassessment",
-   "top10": false,
+   "top10": true,
    "discovery_date": "2026-10-24",
-   "last_review_date": "2026-10-25",
+   "last_review_date": "2026-11-01",
    "reviewed_by": "Innovation Scout (pilot v2)",
    "human_confirmed": false,
    "scope": [
@@ -4028,6 +4174,46 @@
      "date": "2026-10-24",
      "event": "created",
      "by": "Innovation Scout pilot v2 (core-led gap fill)"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "top10",
+     "old": false,
+     "new": true,
+     "note": "Fills the top-10 slot vacated by 010: highest-ranked non-top-10 core-led record (0.6*SU+0.4*CP = 62.8)"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "status",
+     "old": "identified",
+     "new": "recommended-for-conversation",
+     "note": "Promoted into top 10"
+    },
+    {
+     "date": "2026-11-01",
+     "event": "updated",
+     "field": "investigator_brief",
+     "old": null,
+     "new": {
+      "why_identified": "Promoted into the core-led top 10 on 2026-11-01 (ranked next by 0.6*SU+0.4*CP)",
+      "what_is_distinctive": "Recombinase-based cis conversion vs. manual recombination",
+      "maturity_questions": [
+       "How many labs or sites use it outside the originating lab?",
+       "What validation is still missing?",
+       "Are the code, hardware files and reagents public, and under what license?",
+       "What support would speed up adoption?"
+      ],
+      "pathways": "CGC strain and Addgene plasmid deposit; open dissemination",
+      "suggested_resources": [
+       "washu-innovation"
+      ],
+      "next_steps": "Monitor; candidate for monthly reassessment",
+      "flags": [],
+      "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+     },
+     "note": "Top-10 records carry an investigator brief"
     }
    ],
    "publication_date": "2026-07-06",
@@ -4035,9 +4221,26 @@
    "first_public_date": "2024-03-03",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
-   "participating_department_ids": []
+   "participating_department_ids": [],
+   "investigator_brief": {
+    "why_identified": "Promoted into the core-led top 10 on 2026-11-01 (ranked next by 0.6*SU+0.4*CP)",
+    "what_is_distinctive": "Recombinase-based cis conversion vs. manual recombination",
+    "maturity_questions": [
+     "How many labs or sites use it outside the originating lab?",
+     "What validation is still missing?",
+     "Are the code, hardware files and reagents public, and under what license?",
+     "What support would speed up adoption?"
+    ],
+    "pathways": "CGC strain and Addgene plasmid deposit; open dissemination",
+    "suggested_resources": [
+     "washu-innovation"
+    ],
+    "next_steps": "Monitor; candidate for monthly reassessment",
+    "flags": [],
+    "note": "Do not contact automatically. Respect the investigator's goals; open dissemination is a valid outcome."
+   }
   },
   {
    "innovation_id": "DON-2026-036",
@@ -4123,7 +4326,7 @@
    "first_public_date": "2026-04-13",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -4243,7 +4446,7 @@
    "first_public_date": "2025-06-17",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -4349,7 +4552,7 @@
    "first_public_date": "2023-12-21",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -4437,7 +4640,7 @@
    "first_public_date": "2024-11-27",
    "date_precision": "day",
    "first_seen_at": "2026-10-24",
-   "last_checked_at": "2026-10-25",
+   "last_checked_at": "2026-11-01",
    "lead_department_id": "don",
    "participating_department_ids": []
   },
@@ -4452,7 +4655,7 @@
    "status": "identified",
    "top10": false,
    "first_seen_at": "2026-10-27",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "history": [
     {
      "date": "2026-10-27",
@@ -4606,7 +4809,7 @@
    "status": "identified",
    "top10": false,
    "first_seen_at": "2026-10-27",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "history": [
     {
      "date": "2026-10-27",
@@ -4769,7 +4972,7 @@
    "status": "identified",
    "top10": false,
    "first_seen_at": "2026-10-27",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "history": [
     {
      "date": "2026-10-27",
@@ -4923,7 +5126,7 @@
    "status": "identified",
    "top10": false,
    "first_seen_at": "2026-10-27",
-   "last_checked_at": "2026-10-27",
+   "last_checked_at": "2026-11-01",
    "history": [
     {
      "date": "2026-10-27",
@@ -5031,6 +5234,279 @@
    "participating_department_ids": [
     "don"
    ]
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (weekly run)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (weekly run 2026-11-01)"
+    }
+   ],
+   "lead_flags": [],
+   "innovation_id": "DON-2026-044",
+   "name": "Bayesian distributional latent-variable models with active learning (DLVM + DALE) for executive-function testing",
+   "description": "Distributional latent variable models that pool observations across executive-function tasks and people, paired with Bayesian distributional active learning that picks the most informative next test item; simulation study with known ground truth.",
+   "investigators": [
+    {
+     "name": "Dennis Barbour",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Robert Kasumba",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Barbour lab)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Jacob R. Gardner",
+     "affiliation": "University of Pennsylvania",
+     "don_role": "external",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Barbour lab (Biomedical Engineering)",
+   "category": "algorithm/assessment method",
+   "domain": "digital-health",
+   "source_evidence": [
+    "https://doi.org/10.3758/s13428-026-03191-x",
+    "https://arxiv.org/abs/2510.00387",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13638740/"
+   ],
+   "problem_solved": "Cognitive test batteries need many trials per task and estimate each task separately",
+   "technical_advantage": "Cross-task inference from sparse or incomplete data; adaptive item selection by expected information gain; faster convergence than independent maximum-likelihood estimation in simulation",
+   "difference_from_prior": "Joint distributional latent model plus active sampling vs. fixed batteries scored task by task",
+   "maturity": "Peer-reviewed (Behavior Research Methods Oct 2026); preprint (arXiv Oct 2025)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 70,
+    "reproducibility": 65,
+    "adoption": 55,
+    "score": 65
+   },
+   "commercial_potential": {
+    "novelty": 60,
+    "customer_need": 60,
+    "feasibility": 65,
+    "market": 50,
+    "scalability": 60,
+    "score": 59
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Behavior Research Methods article published 2026-10-05 (CC BY 4.0; PMC13638740), 12 authors from WashU (BME, Computer Science and Engineering, Computational and Data Sciences), Maribor, Maryland, Northeastern and Penn; Barbour is last author. arXiv preprint 2510.00387 posted 2025-10-01. As stated in the abstract: in simulations with known ground truth, DLVM outperformed IMLE especially with little data, and DALE beat random sampling and fixed batteries, particularly in the first 80 trials.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Performance on real participants is not shown in this paper (simulation study).",
+   "translational_pathway": "Adaptive cognitive assessment software; research use first (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "mhealth-research-core",
+     "title": "mHealth Research Core (mHRC)",
+     "url": "https://icts.wustl.edu/items/mhealth-research-core/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU/ICTS-facing research resource; consult the core for project fit and service details."
+    },
+    {
+     "resource_id": "otm-core",
+     "title": "OTM \u2014 invention disclosure, evaluation, IP and licensing",
+     "url": "https://otm.wustl.edu/disclose-inventions/licensing-process/",
+     "needs": [
+      "ip-licensing",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU inventions; assignment and contact depend on academic unit. OTM\u2019s department lookup includes neuroscience-related units."
+    },
+    {
+     "resource_id": "icts",
+     "title": "ICTS Research Forum + CTRFP / Just-In-Time funding",
+     "url": "https://icts.wustl.edu/research-services/research-development-program/research-forum-program/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Research Forum is available to ICTS members across career stages and partner affiliations. CTRFP PI must be an ICTS member. The 2026 CTRFP cycle closed (invited full applications were due September 14, 2026); the next cycle has not been posted as of 2026-10-25. JIT has separate rolling processes and limits."
+    }
+   ],
+   "next_action": "Pair with DON-2026-019; watch for validation in human participants and released code.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [
+    "DON-2026-019"
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Biomedical Engineering",
+   "publication_date": "2026-10-05",
+   "first_public_date": "2025-10-01",
+   "date_precision": "day",
+   "lead_department_id": "bme",
+   "participating_department_ids": [
+    "don"
+   ],
+   "image_url": "images/don-2026-044.jpg"
+  },
+  {
+   "discovery_date": "2026-11-01",
+   "last_review_date": "2026-11-01",
+   "reviewed_by": "Innovation Scout (weekly run)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-01",
+   "last_checked_at": "2026-11-01",
+   "history": [
+    {
+     "date": "2026-11-01",
+     "event": "created",
+     "by": "Innovation Scout (weekly run 2026-11-01)"
+    }
+   ],
+   "lead_flags": [
+    "lead outside DoN (Radiology); DoN affiliates Goyal and Raichle are co-authors"
+   ],
+   "innovation_id": "DON-2026-045",
+   "name": "Knight Alzheimer Research Imaging (KARI) multimodal neuroimaging dataset",
+   "description": "Longitudinal multimodal MRI and amyloid/tau/FDG PET dataset from the Knight ADRC (1,645 participants, 6,217 acquisitions) with clinical, cognitive, genetic and biomarker data and quality-controlled processed outputs, made accessible to researchers.",
+   "investigators": [
+    {
+     "name": "Tammie L. S. Benzinger",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Radiology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "David A. Hoagey",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Radiology)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Manu Goyal",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Marcus Raichle",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "DoN affiliate",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "John C. Morris",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Neurology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Brian A. Gordon",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Radiology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Benzinger lab / Knight ADRC imaging core (Radiology)",
+   "category": "data resource/platform",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1038/s41467-026-78439-3",
+    "https://doi.org/10.21203/rs.3.rs-7962593/v1",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12637817/"
+   ],
+   "problem_solved": "Studying preclinical Alzheimer disease needs large, deeply phenotyped longitudinal imaging cohorts",
+   "technical_advantage": "Multimodal MRI plus amyloid, tau and FDG PET; longitudinal across healthy aging to symptomatic AD; processed, quality-controlled outputs with clinical, cognitive and genetic data",
+   "difference_from_prior": "Single-site longitudinal multimodal cohort with processed biomarkers vs. smaller or single-modality datasets",
+   "maturity": "Peer-reviewed (Nature Communications Oct 2026); preprint (Research Square Nov 2025)",
+   "stage_code_estimate": "s4",
+   "scientific_utility": {
+    "novelty": 60,
+    "usefulness": 85,
+    "reproducibility": 75,
+    "adoption": 70,
+    "score": 74
+   },
+   "commercial_potential": {
+    "novelty": 35,
+    "customer_need": 45,
+    "feasibility": 70,
+    "market": 30,
+    "scalability": 50,
+    "score": 44
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Nature Communications article published 2026-10-20 (CC BY-NC-ND); Research Square preprint posted 2025-11-07 (CC BY 4.0; PMC12637817). 30 WashU authors (Radiology, Neurology, Biostatistics, Psychological & Brain Sciences, Pathology, Occupational Therapy); Benzinger is last author. Cohort size and modalities as stated in the abstract.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Access terms for outside researchers were not checked in detail.",
+   "translational_pathway": "Shared research data resource; industry use would go through data-use agreements (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    },
+    {
+     "resource_id": "jroc",
+     "title": "Joint Research Office for Contracts (JROC)",
+     "url": "https://research.washu.edu/offices/jroc/",
+     "needs": [
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "WashU research agreements. JROC serves principal investigators, administrators, and sponsors university-wide; the required intake path depends on agreement type."
+    }
+   ],
+   "next_action": "Note as a data resource; link to imaging-method records if they use KARI.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Radiology",
+   "publication_date": "2026-10-20",
+   "first_public_date": "2025-11-07",
+   "date_precision": "day",
+   "lead_department_id": "radiology",
+   "participating_department_ids": [
+    "don",
+    "neurology"
+   ],
+   "image_url": "images/don-2026-045.jpg"
   }
  ],
  "changelog": [
@@ -5068,6 +5544,11 @@
    "date": "2026-10-27",
    "version": "1.3",
    "note": "Image catch-up: added openly licensed (CC BY) figures for 19 records (images/ folder, attribution in the repo's attribution file). 18 records have no usable open figure (NC/ND licenses, paywalled, or conference proceedings) and 013, 043 (protocols without images) and 005 (BioRender elements) were left without one."
+  },
+  {
+   "date": "2026-11-01",
+   "version": "1.3",
+   "note": "Weekly run 2026-11-01 (window 2026-10-13..2026-11-01) with monthly reassessment. Added DON-2026-044 DLVM + DALE adaptive executive-function testing (Barbour, Behavior Research Methods 2026-10-05; first public arXiv 2025-10-01; lead bme, don participates) and DON-2026-045 KARI multimodal neuroimaging dataset (Benzinger, Nature Communications 2026-10-20; first public Research Square 2025-11-07; lead radiology; don and neurology participate). Both have CC BY figures. Reassessment: no new journal versions for preprint records; 010 noted medRxiv v2 (2026-10-13), added senior author Rosengart, and removed it from the top 10 because it is no longer core-led (lead_don_status became affiliate on 2026-10-27); 035 (phiC31, core-led) took the slot. Self-assessment flags made consistent on 008-011. last_checked_at set to 2026-11-01 on all records. Unregistered departments seen as participants: Occupational Therapy, Psychological & Brain Sciences, Computer Science and Engineering. lead_department_id counts now: anesthesiology=2, bme=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 15."
   }
  ]
 }
