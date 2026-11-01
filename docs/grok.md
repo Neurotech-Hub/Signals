@@ -88,6 +88,10 @@ Partial dates are handled honestly: a `2025` record is treated as a range (Jan 1
 | `bme` | Biomedical Engineering |
 | `medicine` | Medicine |
 | `pathology` | Pathology & Immunology |
+| `pbs` | Psychological & Brain Sciences |
+| `biology` | Biology (neuroscience-related) |
+
+`biology` means neuroscience-related work led from Biology. The site filter shows `Biology (neuroscience-related)`. `pbs` is Psychological & Brain Sciences.
 
 **Keep `lead_don_status` in step with `don`.**
 
