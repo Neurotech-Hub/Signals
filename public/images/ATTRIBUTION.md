@@ -29,5 +29,6 @@ Figure images stored in this directory and referenced from `data/innovation_bank
 | `don-2026-044.jpg` | DON-2026-044 | Fig. 1 | Kasumba et al., Behavior Research Methods (2026), Fig. 1, doi:10.3758/s13428-026-03191-x. CC BY 4.0. | CC BY 4.0 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13638740/ |
 | `don-2026-045.jpg` | DON-2026-045 | Figure 1 | Hoagey et al., Research Square preprint (2025), Figure 1, doi:10.21203/rs.3.rs-7962593/v1. CC BY 4.0. | CC BY 4.0 | https://pmc.ncbi.nlm.nih.gov/articles/PMC12637817/ |
 | `don-2026-046.jpg` | DON-2026-046 | Graphical abstract | Gonzalez-Aponte et al., JCI Insight (2025), doi:10.1172/jci.insight.194582 | CC BY 4.0 | https://df6sxcketz7bb.cloudfront.net/manuscripts/194000/194582/large/jci.insight.194582.ga.jpg |
+| `don-2026-051.jpg` | DON-2026-051 | Figure 1 | Jensen et al., Front. Mol. Neurosci. (2023), doi:10.3389/fnmol.2023.1155754 | CC BY 4.0 | https://www.frontiersin.org/files/Articles/1155754/fnmol-16-1155754-HTML/image_m/fnmol-16-1155754-g001.jpg |
 
 License text: https://creativecommons.org/licenses/by/4.0/
