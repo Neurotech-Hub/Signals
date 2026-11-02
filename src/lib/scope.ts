@@ -48,6 +48,7 @@ const DEPARTMENT_LABELS: Record<string, string> = {
   pathology: 'Pathology & Immunology',
   pbs: 'Psychological & Brain Sciences',
   biology: 'Biology (neuroscience-related)',
+  devbio: 'Developmental Biology (neuroscience-related)',
 };
 
 export function departmentLabel(id: string): string {
