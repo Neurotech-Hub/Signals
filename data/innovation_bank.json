@@ -6216,11 +6216,14 @@
      "date": "2026-11-02",
      "event": "created",
      "by": "Innovation Scout (Developmental Biology department pass 2026-11-02)"
+    },
+    {
+     "date": "2026-11-02",
+     "event": "lead corrected per Matt: Goodhill primary appointment is Neuroscience",
+     "by": "Innovation Scout (per Matt, https://neuroscience.wustl.edu/people/geoffrey-goodhill-phd/)"
     }
    ],
-   "lead_flags": [
-    "lead in Developmental Biology (neuroscience-related); article lists joint Developmental Biology and Neuroscience appointment, so don participates; confirm whether Goodhill is core DoN"
-   ],
+   "lead_flags": [],
    "innovation_id": "DON-2026-052",
    "name": "Energy-cost quantification of larval zebrafish hunting movements (high-speed tracking, 3D fluid-dynamics simulation, RL model)",
    "description": "High-speed video tracking plus 3D computational fluid dynamics quantified the energy cost in Joules of each larval zebrafish hunting bout across three developmental stages, showing bout selection minimizes energy use, reproduced by a reinforcement-learning model and preserved after high-viscosity rearing.",
@@ -6228,7 +6231,7 @@
     {
      "name": "Geoffrey J. Goodhill",
      "affiliation": "Washington University in St. Louis",
-     "don_role": "none (Developmental Biology and Neuroscience)",
+     "don_role": "DoN core faculty",
      "authorship_role": "senior/corresponding",
      "atlas_verified": false
     },
@@ -6254,7 +6257,7 @@
      "atlas_verified": false
     }
    ],
-   "originating_lab": "Goodhill lab (Developmental Biology and Neuroscience)",
+   "originating_lab": "Goodhill lab (Neuroscience; joint Developmental Biology)",
    "category": "software/analysis method",
    "domain": "research-tool",
    "source_evidence": [
@@ -6304,14 +6307,14 @@
    "related_innovations": [
     "DON-2026-049"
    ],
-   "lead_don_status": "affiliate",
-   "lead_home_department": "Developmental Biology",
+   "lead_don_status": "core",
+   "lead_home_department": "Neuroscience (joint Developmental Biology)",
    "publication_date": "2026-02-12",
    "first_public_date": "2026-02-12",
    "date_precision": "day",
-   "lead_department_id": "devbio",
+   "lead_department_id": "don",
    "participating_department_ids": [
-    "don"
+    "devbio"
    ]
   },
   {
@@ -6484,6 +6487,11 @@
    "date": "2026-11-02",
    "version": "1.3",
    "note": "Developmental Biology department pass: added DON-2026-051 Mokalled zebrafish swim-tracking/gait assay with SwimFunction (lead devbio; image Front. Mol. Neurosci. Fig 1, CC BY 4.0), DON-2026-052 Goodhill larval zebrafish hunting energetics (lead devbio; don participates via joint appointment; no image, PNAS CC BY-NC-ND), DON-2026-053 Yoo miRNA neuronal reprogramming AD model (lead devbio; low Hub fit; no image, Science not open-licensed). Skipped Hermanstyne Neuron 2018 VIP SCN neurons (senior author Herzog, Biology, so not devbio-led; a biological finding, not a tool). Older first_public_dates (051 2023, 053 2024) keep them out of the new feed. Unregistered participants: Electrical and Systems Engineering, Mechanical Engineering and Materials Science. lead_department_id counts now: anesthesiology=2, biology=4, bme=3, devbio=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 16."
+  },
+  {
+   "date": "2026-11-02",
+   "version": "1.3",
+   "note": "DON-2026-052 lead corrected per Matt: Goodhill primary appointment is Neuroscience (https://neuroscience.wustl.edu/people/geoffrey-goodhill-phd/). lead_department_id devbio->don, lead_don_status affiliate->core, participating [don]->[devbio]; not added to top10. lead_department_id counts now: anesthesiology=2, biology=4, bme=3, devbio=2, don=16, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 16."
   }
  ]
 }
