@@ -1,6 +1,6 @@
 {
  "schema_version": "1.3",
- "generated": "2026-11-01",
+ "generated": "2026-11-02",
  "scope": "DoN pilot",
  "extensible_scopes": [
   "DoN",
@@ -6092,6 +6092,341 @@
    "participating_department_ids": [
     "biology"
    ]
+  },
+  {
+   "discovery_date": "2026-11-02",
+   "last_review_date": "2026-11-02",
+   "reviewed_by": "Innovation Scout (Developmental Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-02",
+   "last_checked_at": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "event": "created",
+     "by": "Innovation Scout (Developmental Biology department pass 2026-11-02)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Developmental Biology (neuroscience-related); DoN role not verified in Atlas"
+   ],
+   "innovation_id": "DON-2026-051",
+   "name": "Longitudinal swim-tracking assay with gait-quality metrics for zebrafish spinal cord regeneration (SwimFunction)",
+   "description": "Longitudinal swim tracking of 60 adult zebrafish over 8 weeks of spinal cord regeneration, integrating swim capacity, gait and axon/glial bridging; establishes rostral compensation as a gait-quality metric and shows 1-2 week post-injury measures predict 8-week outcomes.",
+   "investigators": [
+    {
+     "name": "Mayssa H. Mokalled",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Developmental Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Nicholas O. Jensen",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Mokalled lab, Developmental Biology)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Zachary Pincus",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Developmental Biology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Mokalled lab (Developmental Biology)",
+   "category": "assay/software",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.3389/fnmol.2023.1155754",
+    "https://doi.org/10.1101/2023.01.31.526502",
+    "https://github.com/MokalledLab/SwimFunction"
+   ],
+   "problem_solved": "Standard zebrafish regeneration readouts measure swim capacity, not gait quality, and correlate weakly with cellular repair",
+   "technical_advantage": "Gait-quality metric (rostral compensation) tracks neurological outcome; early measures predict 8-week recovery; open-source SwimFunction code (MIT)",
+   "difference_from_prior": "Multi-parameter longitudinal gait analysis vs. single swim-endurance or distance readouts",
+   "maturity": "Peer-reviewed (Front. Mol. Neurosci. Jul 2023); preprint (bioRxiv Jan 2023); code on GitHub (MIT)",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 65,
+    "usefulness": 70,
+    "reproducibility": 70,
+    "adoption": 50,
+    "score": 64
+   },
+   "commercial_potential": {
+    "novelty": 40,
+    "customer_need": 40,
+    "feasibility": 70,
+    "market": 25,
+    "scalability": 45,
+    "score": 42
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: bioRxiv preprint posted 2023-01-31 (10.1101/2023.01.31.526502); Frontiers in Molecular Neuroscience article 2023-07-10 (CC BY 4.0). Corresponding: Mayssa H. Mokalled (article affiliation Center of Regenerative Medicine; Atlas department Developmental Biology). SwimFunction repository: MIT License, created 2023-03-27.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open research assay (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "next_action": "Consider Neurotech Hub swim-tunnel build/test support; check SwimFunction adoption outside the lab.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Developmental Biology",
+   "publication_date": "2023-07-10",
+   "first_public_date": "2023-01-31",
+   "date_precision": "day",
+   "lead_department_id": "devbio",
+   "participating_department_ids": [],
+   "image_url": "images/don-2026-051.jpg"
+  },
+  {
+   "discovery_date": "2026-11-02",
+   "last_review_date": "2026-11-02",
+   "reviewed_by": "Innovation Scout (Developmental Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-02",
+   "last_checked_at": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "event": "created",
+     "by": "Innovation Scout (Developmental Biology department pass 2026-11-02)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Developmental Biology (neuroscience-related); article lists joint Developmental Biology and Neuroscience appointment, so don participates; confirm whether Goodhill is core DoN"
+   ],
+   "innovation_id": "DON-2026-052",
+   "name": "Energy-cost quantification of larval zebrafish hunting movements (high-speed tracking, 3D fluid-dynamics simulation, RL model)",
+   "description": "High-speed video tracking plus 3D computational fluid dynamics quantified the energy cost in Joules of each larval zebrafish hunting bout across three developmental stages, showing bout selection minimizes energy use, reproduced by a reinforcement-learning model and preserved after high-viscosity rearing.",
+   "investigators": [
+    {
+     "name": "Geoffrey J. Goodhill",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Developmental Biology and Neuroscience)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Thomas Darveniza",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Electrical and Systems Engineering)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Ramesh Agarwal",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Mechanical Engineering and Materials Science)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Michael McCullough",
+     "affiliation": "Australian National University",
+     "don_role": "external",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Goodhill lab (Developmental Biology and Neuroscience)",
+   "category": "software/analysis method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1073/pnas.2513853123",
+    "https://doi.org/10.5281/zenodo.18382329"
+   ],
+   "problem_solved": "How energetic cost shapes moment-to-moment movement choice in freely behaving animals is hard to measure",
+   "technical_advantage": "Per-bout energy cost in Joules from CFD; spans three developmental stages; code and data deposited on Zenodo",
+   "difference_from_prior": "Energetics-based account of bout selection vs. purely kinematic bout classification",
+   "maturity": "Peer-reviewed (PNAS Feb 2026); code/data on Zenodo (Jan 2026); no preprint found",
+   "stage_code_estimate": "s2",
+   "scientific_utility": {
+    "novelty": 70,
+    "usefulness": 60,
+    "reproducibility": 65,
+    "adoption": 40,
+    "score": 58
+   },
+   "commercial_potential": {
+    "novelty": 30,
+    "customer_need": 25,
+    "feasibility": 60,
+    "market": 15,
+    "scalability": 35,
+    "score": 31
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: PNAS article published 2026-02-12 (CC BY-NC-ND 4.0). Corresponding: Geoffrey J. Goodhill (Departments of Developmental Biology and Neuroscience, WashU; also University of Queensland). Zenodo deposit 10.5281/zenodo.18382329 dated 2026-01-27 (CC BY per OpenAlex; not opened directly). No bioRxiv preprint found in Crossref.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims.",
+   "translational_pathway": "Open research method (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "neurotech-hub",
+     "title": "Neurotech Hub",
+     "url": "https://neurotechhub.wustl.edu/",
+     "needs": [
+      "build-test",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Neuroscience-oriented WashU resource. Precise project prioritization and service terms are locally managed where not publicly stated."
+    }
+   ],
+   "next_action": "Confirm Goodhill's primary vs. joint DoN appointment; consider Hub high-speed behavior rig support.",
+   "neurotech_hub_relevant": true,
+   "related_innovations": [
+    "DON-2026-049"
+   ],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Developmental Biology",
+   "publication_date": "2026-02-12",
+   "first_public_date": "2026-02-12",
+   "date_precision": "day",
+   "lead_department_id": "devbio",
+   "participating_department_ids": [
+    "don"
+   ]
+  },
+  {
+   "discovery_date": "2026-11-02",
+   "last_review_date": "2026-11-02",
+   "reviewed_by": "Innovation Scout (Developmental Biology department pass)",
+   "human_confirmed": false,
+   "scope": [
+    "DoN"
+   ],
+   "status": "identified",
+   "top10": false,
+   "first_seen_at": "2026-11-02",
+   "last_checked_at": "2026-11-02",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "event": "created",
+     "by": "Innovation Scout (Developmental Biology department pass 2026-11-02)"
+    }
+   ],
+   "lead_flags": [
+    "lead in Developmental Biology (neuroscience-related); DoN role not verified in Atlas",
+    "low Hub fit"
+   ],
+   "innovation_id": "DON-2026-053",
+   "name": "microRNA-mediated direct neuronal reprogramming of patient fibroblasts into 3D spheroids modeling late-onset Alzheimer's neuropathology",
+   "description": "Applies high-efficiency miR-9/9*-124 direct reprogramming of fibroblasts from autosomal-dominant and late-onset AD patients into cortical neurons in 3D Matrigel and spheroids that develop amyloid-beta deposits, seed-competent tau and neuronal death, and respond to secretase and reverse-transcriptase inhibitors.",
+   "investigators": [
+    {
+     "name": "Andrew S.J. Yoo",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Developmental Biology)",
+     "authorship_role": "senior/corresponding",
+     "atlas_verified": false
+    },
+    {
+     "name": "Zhao Qing Sun",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Yoo lab)",
+     "authorship_role": "first author",
+     "atlas_verified": false
+    },
+    {
+     "name": "Celeste M. Karch",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Psychiatry)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    },
+    {
+     "name": "David M. Holtzman",
+     "affiliation": "Washington University in St. Louis",
+     "don_role": "none (Neurology)",
+     "authorship_role": "co-author",
+     "atlas_verified": false
+    }
+   ],
+   "originating_lab": "Yoo lab (Developmental Biology)",
+   "category": "cell model/method",
+   "domain": "research-tool",
+   "source_evidence": [
+    "https://doi.org/10.1126/science.adl2992"
+   ],
+   "problem_solved": "Patient-derived neuron models rarely recapitulate age-associated late-onset AD pathology",
+   "technical_advantage": "Retains donor aging signatures that iPSC routes erase; 3D spheroids show plaque and tau pathology; usable for compound testing",
+   "difference_from_prior": "Direct age-retaining conversion vs. iPSC-derived neurons reset to an embryonic-like state",
+   "maturity": "Peer-reviewed (Science Aug 2024); no preprint found",
+   "stage_code_estimate": "s3",
+   "scientific_utility": {
+    "novelty": 75,
+    "usefulness": 65,
+    "reproducibility": 60,
+    "adoption": 50,
+    "score": 62
+   },
+   "commercial_potential": {
+    "novelty": 55,
+    "customer_need": 55,
+    "feasibility": 55,
+    "market": 40,
+    "scalability": 45,
+    "score": 50
+   },
+   "confidence": "Medium",
+   "observations_validated": "Public record: Science article published 2024-08-02 (online 2024-08-01 per OpenAlex; not open-licensed). Corresponding: Andrew S.J. Yoo (article affiliation Center for Regenerative Medicine; Atlas department Developmental Biology). WashU co-authors from Psychiatry, Neurology, Developmental Biology and the Center for Cellular Imaging. No code or data repository checked.",
+   "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Low Neurotech Hub fit: wet-lab cell model, not a device or software tool.",
+   "translational_pathway": "Research disease model and screening platform (hypothesis)",
+   "recommended_resources": [
+    {
+     "resource_id": "hope-center",
+     "title": "Hope Center for Neurological Disorders",
+     "url": "https://hopecenter.wustl.edu/funding-awards/pilot-projects/",
+     "needs": [
+      "funding",
+      "expertise-mentorship"
+     ],
+     "lastVerified": "2026-10-26",
+     "verify_flags": [],
+     "eligibility": "Hope Center faculty membership required for the PI of the current pilot program; collaborator membership rules are less restrictive."
+    }
+   ],
+   "next_action": "Low Hub priority; track for neurodegeneration collaborations.",
+   "neurotech_hub_relevant": false,
+   "related_innovations": [],
+   "lead_don_status": "affiliate",
+   "lead_home_department": "Developmental Biology",
+   "publication_date": "2024-08-02",
+   "first_public_date": "2024-08-01",
+   "date_precision": "day",
+   "lead_department_id": "devbio",
+   "participating_department_ids": [
+    "neurology",
+    "psychiatry"
+   ]
   }
  ],
  "changelog": [
@@ -6144,6 +6479,11 @@
    "date": "2026-11-01",
    "version": "1.3",
    "note": "Biology department pass: added DON-2026-046 glioblastoma locomotor-activity monitoring (lead biology, Herzog; image JCI Insight graphical abstract, CC BY 4.0), DON-2026-047 MITE SCN functional connectome (lead biology; no image, CC BY-NC-ND), DON-2026-048 in utero fetoplacental PER2 recording (lead biology; no image, figure has third-party-style mouse illustrations), DON-2026-049 variable-difficulty prey-capture paradigm (lead biology; two Hengen preprints merged; no image, no CC / NC-ND), DON-2026-050 temporal RG criticality metric (lead external, University of Arkansas; biology participates; first_public_date = bioRxiv 2025-08-03; PNAS is CC BY 4.0 but the figure could not be fetched). Unregistered participants: Electrical and Systems Engineering, Obstetrics and Gynecology, Pediatrics, Public Health Sciences. lead_department_id counts now: anesthesiology=2, biology=4, bme=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 16."
+  },
+  {
+   "date": "2026-11-02",
+   "version": "1.3",
+   "note": "Developmental Biology department pass: added DON-2026-051 Mokalled zebrafish swim-tracking/gait assay with SwimFunction (lead devbio; image Front. Mol. Neurosci. Fig 1, CC BY 4.0), DON-2026-052 Goodhill larval zebrafish hunting energetics (lead devbio; don participates via joint appointment; no image, PNAS CC BY-NC-ND), DON-2026-053 Yoo miRNA neuronal reprogramming AD model (lead devbio; low Hub fit; no image, Science not open-licensed). Skipped Hermanstyne Neuron 2018 VIP SCN neurons (senior author Herzog, Biology, so not devbio-led; a biological finding, not a tool). Older first_public_dates (051 2023, 053 2024) keep them out of the new feed. Unregistered participants: Electrical and Systems Engineering, Mechanical Engineering and Materials Science. lead_department_id counts now: anesthesiology=2, biology=4, bme=3, devbio=3, don=15, medicine=1, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=2, radiology=4; omitted on 16."
   }
  ]
 }
