@@ -176,7 +176,7 @@ function InnovationRow({
         type="button"
         aria-expanded={open}
         onClick={() => onSelect(record.innovation_id)}
-        className="flex w-full items-center gap-3 px-3 py-3 text-left hover:bg-ink-100/40"
+        className="flex w-full items-start gap-3 px-3 py-3 text-left hover:bg-ink-100/40"
       >
         {image ? (
           <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg">
@@ -195,14 +195,20 @@ function InnovationRow({
         <span className="min-w-0 flex-1">
           <span className="block truncate text-sm font-medium text-ink-950">{record.name}</span>
           <span className={`mt-0.5 block text-xs text-ink-500 ${open ? '' : 'line-clamp-1'}`}>{record.description}</span>
+          {!open && (
+            <span className="mt-0.5 block truncate text-xs text-ink-700" title={record.originating_lab}>
+              {record.originating_lab}
+            </span>
+          )}
         </span>
-        <span className="discovery-aside hidden shrink-0 text-right text-xs text-ink-500 sm:block">
-          <span className="block text-ink-700">{record.originating_lab}</span>
-          {pub && <span className="data-label mt-1 block text-ink-500">{pub.label}</span>}
-        </span>
+        {pub && (
+          <span className="discovery-aside data-label mt-1 hidden shrink-0 text-right text-xs text-ink-500 sm:block">
+            {pub.label}
+          </span>
+        )}
         <span
           aria-hidden="true"
-          className={`screen-only grid h-7 w-7 shrink-0 place-items-center rounded-full border border-ink-100 text-ink-500 ${open ? 'rotate-90' : ''}`}
+          className={`screen-only mt-2.5 grid h-7 w-7 shrink-0 place-items-center rounded-full border border-ink-100 text-ink-500 ${open ? 'rotate-90' : ''}`}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="m9 6 6 6-6 6" />
