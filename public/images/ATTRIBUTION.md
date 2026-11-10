@@ -30,5 +30,9 @@ Figure images stored in this directory and referenced from `data/innovation_bank
 | `don-2026-045.jpg` | DON-2026-045 | Figure 1 | Hoagey et al., Research Square preprint (2025), Figure 1, doi:10.21203/rs.3.rs-7962593/v1. CC BY 4.0. | CC BY 4.0 | https://pmc.ncbi.nlm.nih.gov/articles/PMC12637817/ |
 | `don-2026-046.jpg` | DON-2026-046 | Graphical abstract | Gonzalez-Aponte et al., JCI Insight (2025), doi:10.1172/jci.insight.194582 | CC BY 4.0 | https://df6sxcketz7bb.cloudfront.net/manuscripts/194000/194582/large/jci.insight.194582.ga.jpg |
 | `don-2026-051.jpg` | DON-2026-051 | Figure 1 | Jensen et al., Front. Mol. Neurosci. (2023), doi:10.3389/fnmol.2023.1155754 | CC BY 4.0 | https://www.frontiersin.org/files/Articles/1155754/fnmol-16-1155754-HTML/image_m/fnmol-16-1155754-g001.jpg |
+| `don-2026-050.jpg` | DON-2026-050 | Figure 1 | Sooter et al., PNAS (2026), doi:10.1073/pnas.2526984123 | CC BY 4.0 | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/1124/13732201/2dc9efd5e689/pnas.2526984123fig01.webp |
+| `don-2026-055.jpg` | DON-2026-055 | Figure 1 (cropped, caption omitted) | Lu, Goodhill & Hu, Optimal spectral shrinkage via Krylov approximation (arXiv preprint, 2026), arXiv:2611.02122 | CC BY 4.0 | https://arxiv.org/pdf/2611.02122v1 |
+| `don-2026-059.jpg` | DON-2026-059 | Figure 1 | Jing et al., GROND: automated characterization of periodic and rhythmic EEG patterns (J Neural Eng, 2026), doi:10.1088/1741-2552/aeb331 | CC BY 4.0 | https://content.cld.iop.org/journals/1741-2552/23/6/066002/revision2/jneaeb331f1_hr.jpg |
+| `don-2026-061.jpg` | DON-2026-061 | Figure 1 | Alshikho et al., Topographic reference modelling of white matter hyperintensities across the adult lifespan (bioRxiv preprint, 2026), doi:10.64898/2026.10.28.760476 | CC BY 4.0 | https://www.biorxiv.org/content/biorxiv/early/2026/11/03/2026.10.28.760476/F1.large.jpg |
 
 License text: https://creativecommons.org/licenses/by/4.0/
