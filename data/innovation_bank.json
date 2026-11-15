@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3",
-  "generated": "2026-11-10",
+  "generated": "2026-11-15",
   "scope": "DoN pilot",
   "extensible_scopes": [
     "DoN",
@@ -124,7 +124,7 @@
       "first_public_date": "2026-02-17",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -232,7 +232,7 @@
       "first_public_date": "2025-04-15",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -353,7 +353,7 @@
       "first_public_date": "2026-09-06",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -463,7 +463,7 @@
       "first_public_date": "2025-05-03",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -608,7 +608,7 @@
       "first_public_date": "2024-12-13",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -752,7 +752,7 @@
       "first_public_date": "2026-01-27",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -863,7 +863,7 @@
       "first_public_date": "2026-05-23",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -986,7 +986,7 @@
       "first_public_date": "2025",
       "date_precision": "year",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -1111,7 +1111,7 @@
       "first_public_date": "2026-05-20",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": [],
       "score_flags": [
@@ -1346,7 +1346,7 @@
       "first_public_date": "2026-08-31",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -1507,7 +1507,7 @@
       "first_public_date": "2026-10-12",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": [],
       "score_flags": [
@@ -1627,7 +1627,7 @@
       "first_public_date": "2025-05-09",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -1727,7 +1727,7 @@
       "first_public_date": "2026-03-16",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -1847,7 +1847,7 @@
       "first_public_date": "2024-08-16",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -1980,7 +1980,7 @@
       "first_public_date": "2026-01-30",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -2077,7 +2077,7 @@
       "first_public_date": "2026-01-09",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2176,7 +2176,7 @@
       "first_public_date": "2026-02-09",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2284,7 +2284,7 @@
       "first_public_date": "2025",
       "date_precision": "year",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2423,7 +2423,7 @@
       "first_public_date": "2025-10-01",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -2541,7 +2541,7 @@
       "first_public_date": "2024-12-28",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2665,7 +2665,7 @@
       "first_public_date": "2026-09-24",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -2767,7 +2767,7 @@
       "first_public_date": "2026-07-27",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2867,7 +2867,7 @@
       "first_public_date": "2024-12-24",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -2983,7 +2983,7 @@
       "first_public_date": "2025-07-16",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -3083,7 +3083,7 @@
       "first_public_date": "2026-02-24",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "biology",
         "don",
@@ -3215,7 +3215,7 @@
       "first_public_date": "2025-03-24",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -3326,7 +3326,7 @@
       "first_public_date": "2025-08-26",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ],
@@ -3438,7 +3438,7 @@
       "first_public_date": "2026-01",
       "date_precision": "month",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "anesthesiology",
         "don"
@@ -3540,7 +3540,7 @@
       "first_public_date": "2025-05-03",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -3656,7 +3656,7 @@
       "first_public_date": "2025-08-28",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -3790,7 +3790,7 @@
       "first_public_date": "2026-08-23",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -3883,7 +3883,7 @@
       "first_public_date": "2024-08-15",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -3991,7 +3991,7 @@
       "first_public_date": "2025-04-20",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -4089,7 +4089,7 @@
       "first_public_date": "2024-05-17",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "participating_department_ids": [
         "don"
       ]
@@ -4223,7 +4223,7 @@
       "first_public_date": "2024-03-03",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": [],
       "investigator_brief": {
@@ -4328,7 +4328,7 @@
       "first_public_date": "2026-04-13",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -4448,7 +4448,7 @@
       "first_public_date": "2025-06-17",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -4554,7 +4554,7 @@
       "first_public_date": "2023-12-21",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -4642,7 +4642,7 @@
       "first_public_date": "2024-11-27",
       "date_precision": "day",
       "first_seen_at": "2026-10-24",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "lead_department_id": "don",
       "participating_department_ids": []
     },
@@ -4657,7 +4657,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-10-27",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-10-27",
@@ -4811,7 +4811,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-10-27",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-10-27",
@@ -4974,7 +4974,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-10-27",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-10-27",
@@ -5128,7 +5128,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-10-27",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-10-27",
@@ -5248,7 +5248,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -5380,7 +5380,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -5521,7 +5521,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -5657,7 +5657,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -5781,7 +5781,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -5888,7 +5888,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -6012,7 +6012,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-01",
@@ -6137,7 +6137,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-02",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-02",
@@ -6243,7 +6243,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-02",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-02",
@@ -6361,7 +6361,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-02",
-      "last_checked_at": "2026-11-08",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-02",
@@ -6475,7 +6475,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-08",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-08",
@@ -6628,7 +6628,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-08",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-08",
@@ -6738,7 +6738,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-08",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-08",
@@ -6881,7 +6881,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-08",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-08",
@@ -7001,7 +7001,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-08",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-08",
@@ -7133,7 +7133,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-10",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-10",
@@ -7228,7 +7228,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-10",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-10",
@@ -7328,7 +7328,7 @@
       "status": "identified",
       "top10": false,
       "first_seen_at": "2026-11-10",
-      "last_checked_at": "2026-11-10",
+      "last_checked_at": "2026-11-15",
       "history": [
         {
           "date": "2026-11-10",
@@ -7433,6 +7433,996 @@
         "radiology"
       ],
       "image_url": "images/don-2026-061.jpg"
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [
+        "DON-2026-058"
+      ],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-062",
+      "name": "Three-point bend test rig and open flexural-rigidity library for neuroendovascular devices",
+      "description": "A repeatable three-point bending method with a custom rig that measures lengthwise flexural-rigidity profiles of endovascular devices, used to build a quantitative library of guidewires, intermediate guide catheters and long sheaths used in neuroendovascular procedures.",
+      "investigators": [
+        {
+          "name": "Guy M. Genin",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Mechanical Engineering & Materials Science)",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": true
+        },
+        {
+          "name": "Joshua W. Osbun",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurosurgery)",
+          "authorship_role": "co-corresponding",
+          "atlas_verified": true
+        },
+        {
+          "name": "Mohamed A. Zayed",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Surgery)",
+          "authorship_role": "co-corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Michael Y. Qiu",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurosurgery, Division of Neurotechnology)",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        }
+      ],
+      "originating_lab": "CardioVascular Research Innovation in Surgery & Engineering (CVRISE) Center with the Division of Neurotechnology, Neurosurgery (Genin / Osbun / Zayed)",
+      "category": "test method/device dataset",
+      "domain": "research-tool",
+      "source_evidence": [
+        "https://doi.org/10.1016/j.jmbbm.2026.107690",
+        "https://zenodo.org/records/20499508"
+      ],
+      "problem_solved": "Device selection for neuroendovascular navigation lacks quantitative stiffness data because devices vary in stiffness along their length and are tedious to measure",
+      "technical_advantage": "High repeatability with detailed transition-zone profiles; first comprehensive library spanning guidewires, intermediate guides and long sheaths; raw data, MATLAB analysis and Arduino force-logging code released (CC BY 4.0)",
+      "difference_from_prior": "Lengthwise rigidity profiles across many commercial devices vs. single-point or manufacturer-reported stiffness values",
+      "maturity": "Peer-reviewed (J Mech Behav Biomed Mater Oct 2026); data and code on Zenodo",
+      "first_public_date": "2026-10-31",
+      "date_precision": "day",
+      "publication_date": "2026-10-31",
+      "stage_code_estimate": "s3",
+      "scientific_utility": {
+        "novelty": 55,
+        "usefulness": 65,
+        "reproducibility": 75,
+        "adoption": 50,
+        "score": 62
+      },
+      "commercial_potential": {
+        "novelty": 50,
+        "customer_need": 55,
+        "feasibility": 70,
+        "market": 45,
+        "scalability": 55,
+        "score": 54
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: Journal of the Mechanical Behavior of Biomedical Materials article, electronic publication 2026-10-31 (Europe PMC; issue Feb 2027; CC BY 4.0). All eight authors list the CVRISE Center, WashU; corresponding authors Mohamed A. Zayed, Joshua W. Osbun and Guy M. Genin. Zenodo record 10.5281/zenodo.20499508 (CC BY 4.0) holds per-device data, calc_EI_mod.m and force_logging.ino. Method and findings as stated in the abstract.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Lead department is uncertain (three co-corresponding authors in MEMS, Neurosurgery and Surgery), so lead_department_id is omitted. Link to patient-specific planning is proposed, not shown.",
+      "translational_pathway": "Reference data and test standard for device selection and patient-specific navigation planning (hypothesis)",
+      "next_action": "Watch for use in patient-specific navigation models; confirm figure licence for an image.",
+      "neurotech_hub_relevant": true,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "Mechanical Engineering & Materials Science",
+      "lead_flags": [
+        "lead uncertain: co-corresponding Genin (MEMS), Osbun (Neurosurgery), Zayed (Surgery)",
+        "Mechanical Engineering & Materials Science is not a registered department id",
+        "no DoN author identified"
+      ],
+      "participating_department_ids": [
+        "neurosurgery",
+        "bme"
+      ],
+      "image_url": "images/don-2026-062.jpg"
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-063",
+      "name": "BICAN basal ganglia single-cell multi-omics web platform",
+      "description": "An open, interactive web platform (basalganglia.epigenomes.net) for exploring BICAN single-cell multi-omic data from the basal ganglia of human, macaque, marmoset and mouse, with integrated views of gene expression, chromatin accessibility, DNA methylation, histone marks and chromatin conformation plus genome-browser and comparative epigenomic functions.",
+      "investigators": [
+        {
+          "name": "Ting Wang",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Genetics)",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": true
+        },
+        {
+          "name": "Daofeng Li",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Genetics)",
+          "authorship_role": "co-corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Wenjin Zhang",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Genetics)",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        }
+      ],
+      "originating_lab": "Wang lab, Edison Family Center for Genome Sciences & Systems Biology (Genetics)",
+      "category": "data resource/web platform",
+      "domain": "software",
+      "source_evidence": [
+        "https://doi.org/10.1016/j.crmeth.2026.101567",
+        "https://basalganglia.epigenomes.net/"
+      ],
+      "problem_solved": "BICAN basal ganglia multi-omics data are large and spread across modalities and species, which makes them hard to explore together",
+      "technical_advantage": "One browser for 10X Multiome, snm3C-seq and Paired-Tag data; cross-species comparison across human, macaque, marmoset and mouse; direct genome-browser support",
+      "difference_from_prior": "Integrated multi-modal, cross-species viewer for one brain structure vs. separate single-assay portals",
+      "maturity": "Peer-reviewed resource (Cell Reports Methods Nov 2026)",
+      "first_public_date": "2026-11-12",
+      "date_precision": "day",
+      "publication_date": "2026-11-12",
+      "stage_code_estimate": "s3",
+      "scientific_utility": {
+        "novelty": 60,
+        "usefulness": 70,
+        "reproducibility": 65,
+        "adoption": 55,
+        "score": 63
+      },
+      "commercial_potential": {
+        "novelty": 45,
+        "customer_need": 40,
+        "feasibility": 75,
+        "market": 30,
+        "scalability": 65,
+        "score": 48
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: Cell Reports Methods article, electronic publication 2026-11-12 (Europe PMC; CC BY-NC-ND 4.0, so no figure reused). Corresponding authors Ting Wang and Daofeng Li, Department of Genetics, WashU School of Medicine; first author Wenjin Zhang (Genetics). The platform URL resolved on 2026-11-15.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Lead department Genetics is not on the registry, so lead_department_id is omitted.",
+      "translational_pathway": "Community data resource; academic dissemination (hypothesis)",
+      "next_action": "Track additions of other BICAN brain regions to the platform.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "Genetics",
+      "lead_flags": [
+        "lead department Genetics is not a registered department id",
+        "no DoN author identified"
+      ],
+      "participating_department_ids": []
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-064",
+      "name": "HOMBA harmonized brain ontology and 3D atlases for human, macaque and marmoset basal ganglia",
+      "description": "The Harmonized Ontology of Mammalian Brain Anatomy (HOMBA): cross-species structural and cellular ontologies for the basal ganglia, mapped into neuroimaging-based common coordinate frameworks for human, macaque and marmoset, as the reference for documenting and mapping BICAN sampling.",
+      "investigators": [
+        {
+          "name": "Ed S. Lein",
+          "affiliation": "Allen Institute",
+          "don_role": "Allen Institute",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Song-Lin Ding",
+          "affiliation": "Allen Institute",
+          "don_role": "Allen Institute",
+          "authorship_role": "first/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "David Van Essen",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "DoN core",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Matthew Glasser",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "DoN affiliate (Radiology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Burke Q. Rosen",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none",
+          "authorship_role": "co-author",
+          "atlas_verified": false
+        }
+      ],
+      "originating_lab": "Allen Institute for Brain Science (Ding / Lein) with the Van Essen and Glasser labs",
+      "category": "atlas/ontology resource",
+      "domain": "research-tool",
+      "source_evidence": [
+        "https://doi.org/10.1016/j.cell.2026.10.033"
+      ],
+      "problem_solved": "Cell-type atlases and neuroimaging use different anatomical vocabularies and parcellations across species, which blocks cross-species and cross-scale comparison",
+      "technical_advantage": "Formal cross-species ontology tied to 3D reference frameworks; bridges neuroimaging and cellular/histological resolution; reference for all BICAN sampling",
+      "difference_from_prior": "Co-created structural and cellular ontologies harmonized across three primate species vs. species-specific atlases",
+      "maturity": "Peer-reviewed (Cell Nov 2026)",
+      "first_public_date": "2026-11",
+      "date_precision": "month",
+      "publication_date": "2026-11",
+      "stage_code_estimate": "s3",
+      "scientific_utility": {
+        "novelty": 70,
+        "usefulness": 70,
+        "reproducibility": 65,
+        "adoption": 60,
+        "score": 66
+      },
+      "commercial_potential": {
+        "novelty": 50,
+        "customer_need": 35,
+        "feasibility": 70,
+        "market": 25,
+        "scalability": 55,
+        "score": 44
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: Cell article in the November 2026 BICAN package (Crossref published 2026-11, record created 2026-11-12; CC BY 4.0). Corresponding authors Song-Lin Ding and Ed S. Lein (Allen Institute). WashU co-authors: Burke Q. Rosen, Matthew F. Glasser and David C. Van Essen. No day-level online date was found, so month precision is used.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. WashU role is co-authorship on the neuroimaging common coordinate frameworks; the share of WashU contribution is not stated in the abstract.",
+      "translational_pathway": "Reference standard for atlas, imaging and cell-type data integration (hypothesis)",
+      "next_action": "Confirm open figure for an image; watch for public release of the HOMBA files.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "affiliate",
+      "lead_home_department": "External (Allen Institute; Ding and Lein)",
+      "lead_flags": [
+        "lead external (Allen Institute); DoN core Van Essen and Radiology (Glasser) co-authors"
+      ],
+      "participating_department_ids": [
+        "don",
+        "radiology"
+      ],
+      "image_url": "images/don-2026-064.jpg"
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-065",
+      "name": "Harmonized five-class visual reading framework and web tool for tau PET staging",
+      "description": "A harmonized visual reading framework that stages tau PET into negative, low, moderate, high and atypical classes across four tracers using seven composite regions, with a free browser-based tool that guides raters; validated on head-to-head multi-tracer scans from 681 HEAD-study participants.",
+      "investigators": [
+        {
+          "name": "Tharick A. Pascoal",
+          "affiliation": "University of Pittsburgh",
+          "don_role": "external",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Emma P. Ruppert",
+          "affiliation": "University of Pittsburgh",
+          "don_role": "external",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Brian A. Gordon",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Radiology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Pascoal lab (University of Pittsburgh) for the HEAD study",
+      "category": "image-reading framework/web tool",
+      "domain": "diagnostic",
+      "source_evidence": [
+        "https://doi.org/10.1001/jamaneurol.2026.3253",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13595235/",
+        "https://visualreading.unitau.app/"
+      ],
+      "problem_solved": "Approved tau PET visual reads are binary and focused on advanced disease, which limits early detection and staging",
+      "technical_advantage": "Five-class staging across MK-6240, flortaucipir, RO948 and PI-2620; free web tool that runs locally; interrater and intertracer agreement tested in a multicenter head-to-head cohort",
+      "difference_from_prior": "Tracer-harmonized multi-stage visual read vs. the binary regulatory-approved flortaucipir read",
+      "maturity": "Peer-reviewed (JAMA Neurology Sep 2026; Nov 2026 issue)",
+      "first_public_date": "2026-09-21",
+      "date_precision": "day",
+      "publication_date": "2026-09-21",
+      "stage_code_estimate": "s4",
+      "scientific_utility": {
+        "novelty": 60,
+        "usefulness": 75,
+        "reproducibility": 70,
+        "adoption": 65,
+        "score": 68
+      },
+      "commercial_potential": {
+        "novelty": 55,
+        "customer_need": 70,
+        "feasibility": 70,
+        "market": 55,
+        "scalability": 70,
+        "score": 64
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: JAMA Neurology article published online 2026-09-21 (PMC13595235 pub-date; November 2026 issue; CC BY). Corresponding author Tharick A. Pascoal (University of Pittsburgh); Brian A. Gordon is the WashU co-author. Prospective cross-sectional HEAD study at 9 sites; 681 participants; free tool at visualreading.unitau.app, as stated in the article.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Clinical adoption depends on regulatory and reader-training steps not addressed here.",
+      "translational_pathway": "Clinical reading standard and reader-training tool for tau PET (hypothesis)",
+      "next_action": "Track adoption in WashU Knight ADRC imaging reads.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "External (University of Pittsburgh; Pascoal lab)",
+      "lead_flags": [
+        "lead external; WashU co-author Gordon (Radiology)"
+      ],
+      "participating_department_ids": [
+        "radiology"
+      ],
+      "image_url": "images/don-2026-065.jpg"
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [
+        "DON-2026-061"
+      ],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-066",
+      "name": "Multi-cohort nnU-Net for white matter hyperintensity segmentation across 2D and 3D FLAIR",
+      "description": "A single nnU-Net model using FLAIR and T1 images, trained across a neurodegenerative cohort (ADNI), a WashU small-vessel-disease cohort with paired 2D and 3D FLAIR (WWISH) and UK Biobank, that segments white matter hyperintensities consistently across acquisitions and transfers to an unseen ADNI3 protocol.",
+      "investigators": [
+        {
+          "name": "Chia-Ling Phuah",
+          "affiliation": "Barrow Neurological Institute",
+          "don_role": "external (formerly WashU Neurology)",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Yasheng Chen",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "first author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Andria Ford",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Jin-Moo Lee",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Hongyu An",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Radiology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Phuah lab (Barrow Neuro Analytics Center) with WashU Neurology and Radiology imaging groups",
+      "category": "software/segmentation model",
+      "domain": "software",
+      "source_evidence": [
+        "https://doi.org/10.64898/2026.11.11.26367656"
+      ],
+      "problem_solved": "WMH segmentation tools are usually built on narrow cohorts and protocols, so error and volume bias shift between 2D and 3D FLAIR in pooled studies",
+      "technical_advantage": "Higher Dice than SHIVA-WMH, segcsvdWMH and WMH-SynthSeg; smaller 2D vs 3D volume bias; better on low-burden scans and small lesions; volumes added prediction of incident dementia",
+      "difference_from_prior": "One model trained across disease contexts and acquisition types vs. single-cohort, single-protocol tools",
+      "maturity": "Preprint (medRxiv Nov 2026)",
+      "first_public_date": "2026-11-12",
+      "date_precision": "day",
+      "publication_date": "2026-11-12",
+      "stage_code_estimate": "s2",
+      "scientific_utility": {
+        "novelty": 60,
+        "usefulness": 75,
+        "reproducibility": 65,
+        "adoption": 60,
+        "score": 66
+      },
+      "commercial_potential": {
+        "novelty": 50,
+        "customer_need": 55,
+        "feasibility": 70,
+        "market": 45,
+        "scalability": 65,
+        "score": 56
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: medRxiv preprint v1 posted 2026-11-12 (neurology; CC BY-NC 4.0, so no figure reused). Corresponding author Chia-Ling Phuah, Barrow Neurological Institute; first author Yasheng Chen and co-authors Serguei Astafiev, Andria Ford, Jin-Moo Lee (WashU Neurology) and Hongyu An (Mallinckrodt Institute of Radiology). Performance figures as stated in the abstract. Public code availability not confirmed.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Lead is recorded as external because the corresponding author now lists Barrow; much of the data (WWISH, Knight ADRC) and most authors are WashU.",
+      "translational_pathway": "Shared WMH segmentation tool for multi-cohort imaging studies (hypothesis)",
+      "next_action": "Confirm code or model release; relate to vTRM (DON-2026-061).",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "External (Barrow Neurological Institute; Phuah lab)",
+      "lead_flags": [
+        "corresponding author at Barrow (Atlas still lists Phuah in WashU Neurology); WashU co-authors in Neurology and Radiology"
+      ],
+      "participating_department_ids": [
+        "neurology",
+        "radiology"
+      ]
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-067",
+      "name": "CorTec Brain Interchange and BCI2000 open translational ecosystem for implantable BCI and adaptive neuromodulation",
+      "description": "Integration of the CorTec Brain Interchange implantable sensing and stimulation device with the open-source BCI2000 platform, with a standard battery of benchtop tests, multi-year canine validation and a human feasibility demonstration, released with surgical protocols, pipelines, datasets and software.",
+      "investigators": [
+        {
+          "name": "Kai J. Miller",
+          "affiliation": "Mayo Clinic",
+          "don_role": "external",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Frederik Lampert",
+          "affiliation": "Mayo Clinic",
+          "don_role": "external",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Peter Brunner",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurosurgery)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "William Engelhardt",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none",
+          "authorship_role": "co-author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Nicholas Luczak",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none",
+          "authorship_role": "co-author",
+          "atlas_verified": false
+        }
+      ],
+      "originating_lab": "Miller lab (Mayo Clinic) with the Brunner lab / BCI2000 (WashU Neurosurgery)",
+      "category": "implantable BCI platform/software",
+      "domain": "device",
+      "source_evidence": [
+        "https://doi.org/10.1088/1741-2552/aec198"
+      ],
+      "problem_solved": "Implantable BCI and adaptive-neuromodulation research is held back by complex, closed platforms and no standard way to characterize them",
+      "technical_advantage": "Characterized noise, latency and impedance; stable chronic recordings in canines beyond three years; closed-loop stimulation on arbitrary spectral biomarkers; human feasibility with the benchtop system; protocols, data and software shared",
+      "difference_from_prior": "Open BCI2000-based ecosystem plus a standard characterization battery for an implantable device vs. vendor-only toolchains",
+      "maturity": "Peer-reviewed (J Neural Eng Nov 2026; accepted manuscript)",
+      "first_public_date": "2026-11-12",
+      "date_precision": "day",
+      "publication_date": "2026-11-12",
+      "stage_code_estimate": "s4",
+      "scientific_utility": {
+        "novelty": 65,
+        "usefulness": 70,
+        "reproducibility": 70,
+        "adoption": 55,
+        "score": 65
+      },
+      "commercial_potential": {
+        "novelty": 60,
+        "customer_need": 65,
+        "feasibility": 60,
+        "market": 55,
+        "scalability": 55,
+        "score": 60
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: Journal of Neural Engineering accepted manuscript online 2026-11-12 (Crossref; IOP standard licence, so no figure reused). Corresponding author Kai J. Miller (Mayo Clinic); WashU co-authors Peter Brunner (Neurosurgery; BCI2000), William Engelhardt and Nicholas Luczak. Five canines, longest implant over three years; one human participant on the benchtop system, as stated in the abstract.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Fully implanted human use is not reported.",
+      "translational_pathway": "Research platform for implantable BCI and closed-loop neuromodulation studies; path toward clinical trials (hypothesis)",
+      "next_action": "Watch for released code/data links and WashU studies using the BIC system.",
+      "neurotech_hub_relevant": true,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "External (Mayo Clinic; Miller lab)",
+      "lead_flags": [
+        "lead external; WashU co-author Brunner (Neurosurgery)"
+      ],
+      "participating_department_ids": [
+        "neurosurgery"
+      ]
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-068",
+      "name": "DxToniaNet video-based neural network for leg dystonia severity in children with cerebral palsy",
+      "description": "A neural network that estimates leg dystonia severity (Global Dystonia Rating Scale leg subscore) from routine 2D clinical video, using OpenPose keypoints and 69 expert-informed variance and amplitude features; developed on one center and tested on independent videos from a second center.",
+      "investigators": [
+        {
+          "name": "Bhooma R. Aravamuthan",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": true
+        },
+        {
+          "name": "Rishabh Bajpai",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Joel S. Perlmutter",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "DoN affiliate (Neurology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Aravamuthan lab (Neurology)",
+      "category": "machine-learning assessment tool",
+      "domain": "diagnostic",
+      "source_evidence": [
+        "https://doi.org/10.64898/2026.11.11.26367859"
+      ],
+      "problem_solved": "Leg dystonia severity in cerebral palsy is rated by experts, which is subjective and time-consuming for clinics and trials",
+      "technical_advantage": "Mean absolute error 1.71 points, below the 4-point MCID; 90-94% accuracy separating clinically meaningful differences; works on ordinary clinical video; tested on an independent center",
+      "difference_from_prior": "Automated severity estimate from 2D video vs. manual expert GDRS scoring",
+      "maturity": "Preprint (medRxiv Nov 2026)",
+      "first_public_date": "2026-11-13",
+      "date_precision": "day",
+      "publication_date": "2026-11-13",
+      "stage_code_estimate": "s2",
+      "scientific_utility": {
+        "novelty": 65,
+        "usefulness": 70,
+        "reproducibility": 60,
+        "adoption": 55,
+        "score": 63
+      },
+      "commercial_potential": {
+        "novelty": 60,
+        "customer_need": 70,
+        "feasibility": 65,
+        "market": 55,
+        "scalability": 65,
+        "score": 64
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: medRxiv preprint v1 posted 2026-11-13 (neurology; CC BY-NC-ND 4.0, so no figure reused). Corresponding author Bhooma R. Aravamuthan, Department of Neurology, WashU; Joel S. Perlmutter lists Neurology, Radiology, Neuroscience, Physical Therapy and Occupational Therapy. 298 children across two centers; performance as stated in the abstract.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Retrospective; prospective clinical use is not shown.",
+      "translational_pathway": "Objective outcome measure for clinics and dystonia trials (hypothesis)",
+      "next_action": "Watch for peer-reviewed version and code release.",
+      "neurotech_hub_relevant": true,
+      "lead_don_status": "affiliate",
+      "lead_home_department": "Neurology",
+      "lead_flags": [
+        "lead outside DoN (Neurology); DoN affiliate Perlmutter (Neuroscience appointment) co-author"
+      ],
+      "lead_department_id": "neurology",
+      "participating_department_ids": [
+        "don"
+      ]
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-069",
+      "name": "Fluid eMTBR-tau243 mass-spectrometry biomarker for mixed 3R/4R tauopathies including CTE",
+      "description": "Evaluation of CSF and plasma eMTBR-tau243, measured by a mass-spectrometry assay, across autopsy-confirmed and genetically defined tauopathies: it rises in mixed 3R/4R tauopathies (Alzheimer disease, chronic traumatic encephalopathy, mixed FTLD-MAPT variants) but not in 4R tauopathies, and plasma levels separated CTE stage III-IV from controls.",
+      "investigators": [
+        {
+          "name": "Chihiro Sato",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "senior",
+          "atlas_verified": true
+        },
+        {
+          "name": "Randall J. Bateman",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        },
+        {
+          "name": "Kanta Horie",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Nupur Ghoshal",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology; Psychiatry)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Tracy Family SILQ Center (Bateman / Sato, Neurology)",
+      "category": "fluid biomarker assay",
+      "domain": "diagnostic",
+      "source_evidence": [
+        "https://doi.org/10.1001/jama.2026.24689"
+      ],
+      "problem_solved": "There is no fluid test that tells mixed 3R/4R tau pathology (such as AD and CTE) apart from 4R tauopathies during life",
+      "technical_advantage": "Specific to mixed 3R/4R tau; works in CSF and plasma; plasma AUC 0.97 for CTE stage III-IV vs controls; tested against autopsy and genetic diagnoses",
+      "difference_from_prior": "Tau-isoform-informed fluid marker vs. p-tau markers that track AD pathology",
+      "maturity": "Peer-reviewed (JAMA Nov 2026)",
+      "first_public_date": "2026-11-13",
+      "date_precision": "day",
+      "publication_date": "2026-11-13",
+      "stage_code_estimate": "s4",
+      "scientific_utility": {
+        "novelty": 60,
+        "usefulness": 70,
+        "reproducibility": 60,
+        "adoption": 55,
+        "score": 62
+      },
+      "commercial_potential": {
+        "novelty": 55,
+        "customer_need": 65,
+        "feasibility": 55,
+        "market": 60,
+        "scalability": 55,
+        "score": 59
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: JAMA original investigation published online 2026-11-13 (Crossref; not openly licensed, so no image). WashU authors in Neurology and the Tracy Family SILQ Center (Horie, Koppisetti, Li, Yen, Ghoshal, Bateman, Sato); external sites UCSF, University of Florida and Mayo Clinic. 229 participants from four US biorepositories; results as stated in the abstract. The eMTBR-tau243 assay itself was reported earlier; this record covers its extension to non-AD tauopathies.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Small groups for CTE and FTLD-MAPT; early-stage CTE was not separated from controls.",
+      "translational_pathway": "Blood test to support in-life CTE and tauopathy classification (hypothesis)",
+      "next_action": "Watch for larger CTE cohorts and assay availability.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "Neurology",
+      "lead_flags": [
+        "lead outside DoN (Neurology); no DoN core or affiliate author identified"
+      ],
+      "lead_department_id": "neurology",
+      "participating_department_ids": []
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-070",
+      "name": "AMDX-8050 fluorescent ocular tracer for retinal detection of TDP-43 pathology",
+      "description": "A prototype of a clinical-stage small-molecule fluorescent tracer that labels cytoplasmic retinal deposits co-localizing with TDP-43 pathology in post-mortem retinas from ALS, FTD-TDP-43 and LATE donors, supporting non-invasive retinal imaging of TDP-43 proteinopathies.",
+      "investigators": [
+        {
+          "name": "Stella T. Sarraf",
+          "affiliation": "Amydis, Inc.",
+          "don_role": "external",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": false
+        },
+        {
+          "name": "Julie Pilotte",
+          "affiliation": "Amydis, Inc.",
+          "don_role": "external",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Cindy V. Ly",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Neurology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Amydis, Inc. (Sarraf) with WashU Neurology",
+      "category": "imaging tracer/diagnostic",
+      "domain": "diagnostic",
+      "source_evidence": [
+        "https://doi.org/10.1038/s41598-026-79621-9"
+      ],
+      "problem_solved": "TDP-43 pathology, central to ALS, FTD and LATE, cannot be detected in living patients",
+      "technical_advantage": "Labels retinal deposits that co-localize with TDP-43 pathology; deposit patterns resemble matched spinal cord and motor cortex; retina is optically accessible",
+      "difference_from_prior": "Retinal fluorescent tracer for TDP-43 vs. no available in-vivo TDP-43 biomarker",
+      "maturity": "Peer-reviewed (Scientific Reports Nov 2026); post-mortem tissue only",
+      "first_public_date": "2026-11-11",
+      "date_precision": "day",
+      "publication_date": "2026-11-11",
+      "stage_code_estimate": "s3",
+      "scientific_utility": {
+        "novelty": 65,
+        "usefulness": 60,
+        "reproducibility": 50,
+        "adoption": 45,
+        "score": 55
+      },
+      "commercial_potential": {
+        "novelty": 65,
+        "customer_need": 65,
+        "feasibility": 50,
+        "market": 55,
+        "scalability": 55,
+        "score": 59
+      },
+      "confidence": "Low",
+      "observations_validated": "Public record: Scientific Reports article published 2026-11-11 (Crossref; CC BY-NC-ND 4.0, so no figure reused). First and corresponding authors at Amydis, Inc.; Cindy V. Ly, Department of Neurology, WashU, is a co-author. Cadaveric retina results as stated in the abstract.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Company-led work on a company compound; no in-vivo human imaging is reported.",
+      "translational_pathway": "Company-led clinical development of a retinal imaging agent (hypothesis)",
+      "next_action": "Watch for in-vivo clinical imaging data.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "External (Amydis, Inc.)",
+      "lead_flags": [
+        "lead external (company); WashU co-author Ly (Neurology)"
+      ],
+      "participating_department_ids": [
+        "neurology"
+      ]
+    },
+    {
+      "discovery_date": "2026-11-15",
+      "last_review_date": "2026-11-15",
+      "reviewed_by": "Innovation Scout (weekly run 2026-11-15)",
+      "human_confirmed": false,
+      "scope": [
+        "DoN"
+      ],
+      "status": "identified",
+      "top10": false,
+      "first_seen_at": "2026-11-15",
+      "last_checked_at": "2026-11-15",
+      "history": [
+        {
+          "date": "2026-11-15",
+          "event": "created",
+          "by": "Innovation Scout (weekly run 2026-11-15)"
+        }
+      ],
+      "recommended_resources": [],
+      "related_innovations": [],
+      "investigator_brief": "",
+      "innovation_id": "DON-2026-071",
+      "name": "Assumption-lean community detection benchmark and likelihood-based community-count selection for connectome networks",
+      "description": "A benchmark of weighted stochastic block models, spectral clustering and k-means for resting-state functional connectivity, with a likelihood-based criterion using bootstrap confidence intervals to choose the number of communities; tested on synthetic networks and adult and infant neuroimaging cohorts.",
+      "investigators": [
+        {
+          "name": "Muriah D. Wheelock",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Radiology)",
+          "authorship_role": "senior/corresponding",
+          "atlas_verified": true
+        },
+        {
+          "name": "Ayoushman Bhattacharya",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Statistics & Data Science)",
+          "authorship_role": "first author",
+          "atlas_verified": false
+        },
+        {
+          "name": "Adam T. Eggebrecht",
+          "affiliation": "Washington University in St. Louis",
+          "don_role": "none (Radiology)",
+          "authorship_role": "co-author",
+          "atlas_verified": true
+        }
+      ],
+      "originating_lab": "Wheelock lab (Mallinckrodt Institute of Radiology)",
+      "category": "analysis method/benchmark",
+      "domain": "software",
+      "source_evidence": [
+        "https://doi.org/10.1101/2025.11.13.688333"
+      ],
+      "problem_solved": "Network neuroscience lacks a principled way to choose the number of communities when parcellating functional connectivity",
+      "technical_advantage": "WSBM and spectral clustering recovered true community counts on synthetic data; likelihood-based bootstrap criterion gave a unique K (11 in adults, about 15 in infants and toddlers) where common indices did not",
+      "difference_from_prior": "Does not assume assortative communities and uses a likelihood-based K criterion vs. silhouette-type indices",
+      "maturity": "Preprint (bioRxiv Nov 2025; v3 Nov 2026)",
+      "first_public_date": "2025-11-14",
+      "date_precision": "day",
+      "publication_date": "2025-11-14",
+      "stage_code_estimate": "s2",
+      "scientific_utility": {
+        "novelty": 55,
+        "usefulness": 60,
+        "reproducibility": 70,
+        "adoption": 50,
+        "score": 59
+      },
+      "commercial_potential": {
+        "novelty": 40,
+        "customer_need": 30,
+        "feasibility": 75,
+        "market": 20,
+        "scalability": 60,
+        "score": 41
+      },
+      "confidence": "Medium",
+      "observations_validated": "Public record: bioRxiv preprint v1 posted 2025-11-14, v2 2026-05-12, v3 2026-11-12 (neuroscience; CC BY 4.0). Corresponding author Muriah D. Wheelock (Mallinckrodt Institute of Radiology); co-authors from WashU Statistics & Data Science and Radiology and the University of Minnesota. Results as stated in the abstract. Surfaced this run through the v3 posting; not previously in the bank.",
+      "inferences": "Translational pathway and market notes are hypotheses, not validated. No patentability, FTO, IP ownership or commercial-value claims. Code release not confirmed.",
+      "translational_pathway": "Open analysis guidance for connectome studies (hypothesis)",
+      "next_action": "Confirm code release; watch for peer-reviewed version.",
+      "neurotech_hub_relevant": false,
+      "lead_don_status": "external/co-author only",
+      "lead_home_department": "Radiology",
+      "lead_flags": [
+        "lead outside DoN (Radiology); no DoN core or affiliate author identified"
+      ],
+      "lead_department_id": "radiology",
+      "participating_department_ids": []
     }
   ],
   "changelog": [
@@ -7511,6 +8501,11 @@
       "date": "2026-11-10",
       "version": "1.3",
       "summary": "lead_don_status realigned to docs/grok.md (no don on record = external/co-author only) for DON-2026-046, DON-2026-047, DON-2026-048, DON-2026-049, DON-2026-051, DON-2026-053, DON-2026-054, DON-2026-056, DON-2026-058, DON-2026-060"
+    },
+    {
+      "date": "2026-11-15",
+      "version": "1.3",
+      "note": "Weekly run 2026-11-15 (window 2026-10-25..2026-11-15). New: DON-2026-062 neuroendovascular device flexural-rigidity rig and library (lead uncertain: Genin MEMS / Osbun Neurosurgery / Zayed Surgery, so lead_department_id omitted; neurosurgery and bme participate), 063 BICAN basal ganglia multi-omics web platform (lead Genetics, not registered, omitted), 064 HOMBA harmonized basal ganglia ontology and 3D atlases (lead external, Allen Institute; don and radiology participate; month-precision date), 065 harmonized tau PET visual reading framework and web tool (lead external, Pittsburgh; radiology participates; CC BY figure), 066 multi-cohort nnU-Net WMH segmentation (lead external, Barrow; neurology and radiology participate), 067 CorTec Brain Interchange-BCI2000 ecosystem (lead external, Mayo Clinic; neurosurgery participates), 068 DxToniaNet leg-dystonia video model (lead neurology; don participates via Perlmutter), 069 fluid eMTBR-tau243 for mixed 3R/4R tauopathies (lead neurology), 070 AMDX-8050 retinal TDP-43 tracer (lead external, Amydis; neurology participates), 071 connectome community-detection benchmark (lead radiology; first public 2025-11-14). No new journal versions for preprint records; last_checked_at set to 2026-11-15 on all existing records. No top10 changes. Unregistered departments seen: Genetics, Mechanical Engineering & Materials Science, Surgery, Statistics & Data Science. lead_department_id counts now: anesthesiology=2, biology=4, bme=4, devbio=2, don=16, medicine=1, neurology=2, neurosurgery=2, ophthalmology=1, otolaryngology=1, pathology=1, psychiatry=3, radiology=5; omitted on 27. Images (CC BY 4.0): 062 Fig. 4, 064 Figure 1, 065 Figure 1; 071 left without an image (no suitable overview figure)."
     }
   ]
 }
